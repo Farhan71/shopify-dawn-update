@@ -94,6 +94,12 @@
         "content": "t:settings_schema.typography.settings.header__1.content"
       },
       {
+        "type": "checkbox",
+        "id": "xyz",
+        "label": "Enable header menu active",
+        "default": true
+      },
+      {
         "type": "font_picker",
         "id": "type_header_font",
         "default": "assistant_n4",
