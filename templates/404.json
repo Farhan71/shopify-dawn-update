@@ -22,14 +22,16 @@
         "be50a21a-e371-4a03-992e-887024490a21": {
           "type": "block-1",
           "settings": {
-            "extra_caption": "image caption",
+            "extra_image": "shopify:\/\/shop_images\/4_a8d4c930-623b-4a48-8151-2206b507e7c5.jpg",
+            "extra_caption": "image caption 3",
             "extraUrl": ""
           }
         },
         "b24dc8d4-dbdf-4468-bf6f-dbd5f895dc2b": {
           "type": "block-1",
           "settings": {
-            "extra_caption": "image caption",
+            "extra_image": "shopify:\/\/shop_images\/1_1feee419-f3d5-4f48-a188-7d135eb79bcb.jpg",
+            "extra_caption": "image caption 4",
             "extraUrl": ""
           }
         }
