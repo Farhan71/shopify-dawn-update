@@ -2,6 +2,44 @@
   "sections": {
     "main": {
       "type": "main-404",
+      "blocks": {
+        "04b1e161-82a0-4966-b9ec-6fa7eba98449": {
+          "type": "block-1",
+          "settings": {
+            "extra_image": "shopify:\/\/shop_images\/2_6b03989c-7a7b-4e81-b93c-a1d19367384a.jpg",
+            "extra_caption": "image caption 1",
+            "extraUrl": ""
+          }
+        },
+        "501444c1-955e-4f3e-b00b-4bbe99c889d9": {
+          "type": "block-1",
+          "settings": {
+            "extra_image": "shopify:\/\/shop_images\/3_d76f2bbc-0278-4dde-9c61-18ff27327e26.jpg",
+            "extra_caption": "image caption 2",
+            "extraUrl": ""
+          }
+        },
+        "be50a21a-e371-4a03-992e-887024490a21": {
+          "type": "block-1",
+          "settings": {
+            "extra_caption": "image caption",
+            "extraUrl": ""
+          }
+        },
+        "b24dc8d4-dbdf-4468-bf6f-dbd5f895dc2b": {
+          "type": "block-1",
+          "settings": {
+            "extra_caption": "image caption",
+            "extraUrl": ""
+          }
+        }
+      },
+      "block_order": [
+        "04b1e161-82a0-4966-b9ec-6fa7eba98449",
+        "501444c1-955e-4f3e-b00b-4bbe99c889d9",
+        "be50a21a-e371-4a03-992e-887024490a21",
+        "b24dc8d4-dbdf-4468-bf6f-dbd5f895dc2b"
+      ],
       "settings": {
         "title": "404 - Page Not Found",
         "image": "shopify:\/\/shop_images\/404-Image-min.jpg",
@@ -10,9 +48,20 @@
         "button": "click here to return home.",
         "buttonUrl": "shopify:\/\/collections\/frontpage"
       }
+    },
+    "ad57e3ef-8e07-40ca-b77b-f3d21ebd9d6e": {
+      "type": "main-404",
+      "settings": {
+        "title": "404 - Page Not Found",
+        "subtext1": "Oops, it looks like the page you are looking for is no longer here...",
+        "subtext2": "Choose one of the links below or",
+        "button": "click here to return home.",
+        "buttonUrl": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "ad57e3ef-8e07-40ca-b77b-f3d21ebd9d6e"
   ]
 }
