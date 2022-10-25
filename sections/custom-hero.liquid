@@ -1,2 +1,109 @@
-<h1> Hi, I am new custom hero page </h1>
-<h2> Hello </h2>
+<style type="text/css">
+   
+    .hero-section .hero-outer {
+        padding: {{ section.settings.outer-section-padding }}px;
+        background-image: url("{{ section.settings.hero-background-image | img_url: 'master' }}");
+        object-fit: cover;
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: {{ section.settings.section-width }}%;
+        margin: 0 auto;
+    }
+
+    .hero-section .hero-outer {
+      text-align: center;
+      
+    }
+
+    .hero-section .hero-inner {
+        opacity: 0.5;
+    }
+
+
+</style>
+
+
+
+
+
+
+<section class="hero-section">
+  <div class="hero-outer">
+    <div class="hero-inner">
+      <h2 class="hero-pre-title">{{ section.settings.pre-title }}
+      </h2>
+      <h1 class="hero-title">{{ section.settings.title }}
+      </h1>
+      {% for block in section.blocks %}
+        <span class="hero-day-times">{{ block.settings.days_times }} </span>
+      {% endfor %}
+     <button> Click Here! </button>
+    </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "custom-hero",
+    "settings": [
+      {
+        "type": "text",
+        "id": "pre-title",
+        "default": "67 Berwick Street, London, W1F 8GR",
+        "label": "Hero Pre-Title"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "default": "London Store",
+        "label": "Hero Title"
+      }, 
+      {
+        "type": "image_picker",
+        "id": "hero-background-image",
+        "label": "Hero Background Image"
+      }, 
+      {
+        "type": "range",
+        "id": "outer-section-padding",
+        "label": "Outer Padding", 
+        "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "px",
+        "default": 50
+      }, 
+      {
+        "type": "range",
+        "id": "section-width",
+        "label": "Section Width",  
+        "min": 50,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "default": 100
+      }
+    ],
+    "blocks": [
+      {
+        "name": "custom-hero-days-times",
+        "type": "block-1",
+        "settings": [
+          {
+            "type": "text",
+            "id": "days_times",
+            "label": "Add Day-Time Information"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "content",
+        "name": "custom-hero"
+      }
+    ]
+  }
+{% endschema %}
