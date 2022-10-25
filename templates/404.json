@@ -1,7 +1,15 @@
 {
   "sections": {
     "main": {
-      "type": "main-404"
+      "type": "main-404",
+      "settings": {
+        "title": "404 - Page Not Found",
+        "image": "shopify:\/\/shop_images\/404-Image-min.jpg",
+        "subtext1": "Oops, it looks like the page you are looking for is no longer here...",
+        "subtext2": "Choose one of the links below or",
+        "button": "click here to return home.",
+        "buttonUrl": "shopify:\/\/collections\/frontpage"
+      }
     }
   },
   "order": [
