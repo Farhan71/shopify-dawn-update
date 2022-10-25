@@ -1,0 +1,186 @@
+<style type="text/css">
+  
+  .template-404 .title + * {
+    margin-top: 1rem;
+  }
+  .title-404 {
+    font-size: 32px; font-family: 'Beirut Display',serif; font-weight: 500;
+  }
+  .subtext-404 {
+    font-family: 'Maison Neue' , 'Neue Haas Unica' , sans-serif ; font-weight: 400;
+  }
+.new-image {
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    
+}
+
+.extra-section-container {
+  padding: 0 auto;
+}
+
+.extra-section-inner {
+  max-width: 46%;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+
+
+.extra-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 20px 0 50px;
+  flex-wrap: wrap;
+}
+
+
+
+.extra-section-inner a {
+    color: inherit;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.extra-section-inner img {
+  max-width: 100%;
+    height: auto;
+    border-style: none;
+    vertical-align: top;
+}
+.extra-section-inner p {
+  margin-top: 20px;
+    font-size: 14px;
+    display: block;
+}
+
+@media screen and (min-width: 641px) {
+  .extra-section-inner {
+    max-width: 23%;
+}
+}
+
+@media screen and (min-width: 641px) {
+.extra-section-container {
+    padding: 0 50px;
+}
+}
+
+  @media screen and (min-width: 750px) {
+    .template-404 .title + * {
+      margin-top: 2rem;
+    }
+  } 
+</style>
+
+<div class="template-404 page-width page-margin center">
+  <p class="title-404">
+    {{ section.settings.title }}
+  </p>
+  <img loading="lazy" class="new-image" src="{{ section.settings.image | img_url: 'grande' }}" alt="image" height="" width="" defer>
+
+
+  <p class="subtext-404">
+   {{ section.settings.subtext1 }}
+  </p>
+  <p class="subtext-404">
+    <span>{{ section.settings.subtext2 }}</span> <a href="{{ section.settings.buttonUrl }}" class="">
+      {{ section.settings.button }}
+    </a>
+  </p> 
+</div>
+
+<div class="extra-section-container">
+  <div class="extra-section">
+    {% for block in section.blocks %}
+  
+  <div class="extra-section-inner">
+    <a href="{{ block.settings.extraUrl }}">
+      <img loading="lazy" class="" src="{{ block.settings.extra_image | img_url: 'grande' }}" alt="image" height="401" width="401" defer>
+  
+      <p>{{ block.settings.extra_caption }}</p>
+    </a>  
+  </div>
+         
+  {% endfor %}
+  </div>
+
+</div>
+
+
+
+{% schema %}
+{
+  "name": "Template 404",
+  "settings": [
+      {
+          "type": "text",
+          "id": "title",
+          "default": "404 - Page Not Found",
+          "label": "404 Heading Title"
+      },
+      {
+          "type": "image_picker",
+          "id": "image",
+          "label": "404 Image"
+      },
+      {
+          "type": "text",
+          "id": "subtext1",
+          "default": " Oops, it looks like the page you are looking for is no longer here...",
+          "label": "404 Subtext"
+      },
+      {
+          "type": "text",
+          "id": "subtext2",
+          "default": "Choose one of the links below or",
+          "label": "404 Subtext for link"
+      },
+      {
+          "type": "text",
+          "id": "button",
+          "default": "click here to return home.",
+          "label": "Button Label"
+      },
+      {
+          "type": "url",
+          "id": "buttonUrl",
+          "label": "Button URL"
+      }
+  ],
+  "blocks": [
+    {
+      "name": "Image with Text",
+      "type": "block-1",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "extra_image",
+          "label": "Image for Image with Text"
+        },
+        {
+          "type": "text",
+          "id": "extra_caption",
+          "label": "Text for Image with Text", 
+          "default": "image caption"
+        }, 
+        {
+          "type": "url",
+          "id": "extraUrl",
+          "label": "URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "category": "content",
+      "name" : "Template 404"
+    }
+  ]
+}
+{% endschema %}
