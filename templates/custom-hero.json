@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "main": {
+      "type": "custom-hero"
+    }
+  },
+  "order": ["main"]
+}
