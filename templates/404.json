@@ -50,21 +50,9 @@
         "button": "click here to return home.",
         "buttonUrl": "shopify:\/\/collections\/frontpage"
       }
-    },
-    "ad57e3ef-8e07-40ca-b77b-f3d21ebd9d6e": {
-      "type": "main-404",
-      "disabled": true,
-      "settings": {
-        "title": "404 - Page Not Found",
-        "subtext1": "Oops, it looks like the page you are looking for is no longer here...",
-        "subtext2": "Choose one of the links below or",
-        "button": "click here to return home.",
-        "buttonUrl": ""
-      }
     }
   },
   "order": [
-    "main",
-    "ad57e3ef-8e07-40ca-b77b-f3d21ebd9d6e"
+    "main"
   ]
 }
