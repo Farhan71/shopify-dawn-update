@@ -95,8 +95,8 @@
       },
       {
         "type": "checkbox",
-        "id": "xyz",
-        "label": "Enable header menu active",
+        "id": "header_menu_active_enabled",
+        "label": "t:settings_schema.typography.settings.header_menu_active_color.label",
         "default": true
       },
       {
