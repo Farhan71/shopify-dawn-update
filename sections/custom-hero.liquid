@@ -1,4 +1,11 @@
+
+
 <style type="text/css">
+
+  .hero-section {
+    margin: 20px;
+    height: auto;
+  }
    
     .hero-section .hero-outer {
         padding: {{ section.settings.outer-section-padding }}px;
@@ -8,37 +15,66 @@
         background-repeat: no-repeat;
         background-position: center;
         width: {{ section.settings.section-width }}%;
+        height: {{ section.settings.section-height }}px;
         margin: 0 auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+
     }
 
-    .hero-section .hero-outer {
-      text-align: center;
-      
+    .hero-section span {
+      display: block;
+      color: black;
+      font-size: 16px;
     }
 
     .hero-section .hero-inner {
-        opacity: 0.5;
+      width: 100%;
+     padding:{{ section.settings.inner-section-padding }}px ;
+      background-color: rgba(255, 255, 255, {{ section.settings.inner-bg-opacity }});
+     
+      
     }
 
 
+    .hero-section .hero-inner h1, .hero-section .hero-inner h2 {
+      margin: 0px;
+    }
+
+    
+    
+    .hero-section .hero-inner a {
+      text-decoration: none;
+      color: black;
+      padding: 12px 10px;
+      border-radius: 10px;
+      background-color: {{ section.settings.button-color }};
+      display: inline-block;
+      margin: 4px 2px;
+      border: none;
+      cursor: pointer;
+      color: white
+     }
+
+     .hero-section .hero-inner a:hover {
+      background-color: {{ section.settings.button-color-hover }};
+      
+     }
+
 </style>
-
-
-
 
 
 
 <section class="hero-section">
   <div class="hero-outer">
     <div class="hero-inner">
-      <h2 class="hero-pre-title">{{ section.settings.pre-title }}
-      </h2>
-      <h1 class="hero-title">{{ section.settings.title }}
-      </h1>
+      <h2 class="hero-pre-title">{{ section.settings.pre-title }}</h2>
+      <h1 class="hero-title">{{ section.settings.title }}</h1>
       {% for block in section.blocks %}
         <span class="hero-day-times">{{ block.settings.days_times }} </span>
       {% endfor %}
-     <button> Click Here! </button>
+       <a href="{{ section.settings.button-url }}"> {{ section.settings.button-txt }} </a>  
     </div>
   </div>
 </section>
@@ -66,6 +102,17 @@
         "label": "Hero Background Image"
       }, 
       {
+        "type": "text",
+        "id": "button-txt",
+        "default": "Click Here!",
+        "label": "Button Text"
+      },
+      {
+        "type": "url",
+        "id": "button-url",
+        "label": "Button URL"
+      },
+      {
         "type": "range",
         "id": "outer-section-padding",
         "label": "Outer Padding", 
@@ -84,6 +131,47 @@
         "step": 5,
         "unit": "%",
         "default": 100
+      }, 
+      {
+        "type": "range",
+        "id": "section-height",
+        "label": "Section height",  
+        "min": 200,
+        "max": 800,
+        "step": 10,
+        "unit": "px",
+        "default": 200
+      }, 
+      {
+        "type": "range",
+        "id": "inner-section-padding",
+        "label": "Inner Padding",  
+        "min": 20,
+        "max": 100,
+        "step": 10,
+        "unit": "px",
+        "default": 20
+      }, 
+      {
+        "type": "range",
+        "id": "inner-bg-opacity",
+        "label": "Inner Background Opacity",  
+        "min": 0,
+        "max": 1,
+        "step": 0.1,
+        "default": 0.5
+      }, 
+      {
+        "type": "color",
+        "id": "button-color",
+        "label": "Button Color",
+        "default": "#008080"
+      }, 
+      {
+        "type": "color",
+        "id": "button-color-hover",
+        "label": "Button Color (hover)",
+        "default": "#006666"
       }
     ],
     "blocks": [
@@ -101,7 +189,7 @@
     ],
     "presets": [
       {
-        "category": "content",
+        "category": "content-hero",
         "name": "custom-hero"
       }
     ]
