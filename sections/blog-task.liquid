@@ -8,12 +8,17 @@
 
 
 {% for item in section.blocks %}
-  {% case item.type %}
-    {% when "blockOne" %}
-      <p> {{ item.settings.text }} </p>
-    {% when "blockTwo" %}
-      <p> {{ item.settings.spacer }} </p>
-  {% endcase %}
+ 
+    {% case item.type %}
+      <div id= wrapper-{{ item.id } >
+      {% when "blockOne" %}
+        <p> {{ item.settings.text }} </p>
+      {% when "blockTwo" %}
+        <p> {{ item.settings.spacer }} </p>
+      </div>
+    {% endcase %}
+ 
+  
 {% endfor %}
 
 
