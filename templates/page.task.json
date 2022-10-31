@@ -1,14 +1,18 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "blog-task",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
+      }
+    },
+    "secondary": {
+      "type": "blog-task-secondary",
+      "settings": {
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "secondary"
   ]
 }
