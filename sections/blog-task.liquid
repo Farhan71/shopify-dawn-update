@@ -1,12 +1,50 @@
+
+<style>
+
+</style>
+
+
+
+
+
+{% for item in section.blocks %}
+  {% case item.type %}
+    {% when "blockOne" %}
+      <p> {{ item.settings.text }} </p>
+    {% when "blockTwo" %}
+      <p> {{ item.settings.spacer }} </p>
+  {% endcase %}
+{% endfor %}
+
+
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name" : "blog-task", 
+   "blocks": [
+        {
+          "name" : "text-block", 
+          "type" : "blockOne",
+          "settings" : [
+            {
+              "type": "text",
+              "id": "text",
+              "label": "Add Text Block"
+            }       
+          ]
+        },
+        {
+          "name" : "spacer-block", 
+          "type" : "blockTwo",
+          "settings" : [
+            {
+              "type": "text",
+              "id": "spacer",
+              "label": "Add Spacer Block"
+            }       
+          ]
+        }
+      ]
+  
+}
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}

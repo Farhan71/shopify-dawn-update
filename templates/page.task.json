@@ -4,15 +4,9 @@
       "type": "blog-task",
       "settings": {
       }
-    },
-    "secondary": {
-      "type": "blog-task-secondary",
-      "settings": {
-      }
     }
   },
   "order": [
-    "main",
-    "secondary"
+    "main"
   ]
 }
