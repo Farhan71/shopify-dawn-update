@@ -1,31 +1,97 @@
 
 <style>
+.main-section {
+  margin: {{ section.settings.main-section-margin-top }}px {{ section.settings.main-section-margin-right }}px {{ section.settings.main-section-margin-bottom }}px {{ section.settings.main-section-margin-left }}px;
+
+}
+
+
+{% for block in section.blocks %}
+  #text-wrapper-{{ block.id }}{
+    
+  }
+
+{% endfor %}
+
 
 </style>
 
 
 
+<div class="main-section" >
 
 
-{% for item in section.blocks %}
- 
-    {% case item.type %}
-      <div id= wrapper-{{ item.id } >
-      {% when "blockOne" %}
-        <p> {{ item.settings.text }} </p>
-      {% when "blockTwo" %}
-        <p> {{ item.settings.spacer }} </p>
-      </div>
-    {% endcase %}
- 
+  {% for item in section.blocks %}
+   
+      {% case item.type %}
+        
+        {% when "blockOne" %}
+
+          <div id= text-wrapper-{{ item.id }} >
+                 <p> {{ item.settings.richtext }} </p>
+          </div>
+       
+        {% when "blockTwo" %}
+          <div id= spacer-wrapper-{{ item.id }} >
+                 <p> {{ item.settings.spacer }} </p>
+          </div>
+
+      {% endcase %}
+   
+   
+  {% endfor %}
   
-{% endfor %}
+
+
+</div>
 
 
 
 {% schema %}
 {
   "name" : "blog-task", 
+  "settings" : [
+    {
+      "type": "range",
+      "id": "main-section-margin-top",
+      "label": "main section margin top", 
+      "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "px",
+        "default": 50
+    }, 
+    {      
+      "type": "range",
+      "id": "main-section-margin-right",
+      "label": "main section margin right", 
+      "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "px",
+        "default": 50
+    },
+    {      
+      "type": "range",
+      "id": "main-section-margin-bottom",
+      "label": "main section margin bottom", 
+      "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "px",
+        "default": 50
+    }, 
+    {      
+      "type": "range",
+      "id": "main-section-margin-left",
+      "label": "main section margin left", 
+      "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "px",
+        "default": 50
+    }
+  ],
    "blocks": [
         {
           "name" : "text-block", 
@@ -35,6 +101,11 @@
               "type": "text",
               "id": "text",
               "label": "Add Text Block"
+            }, 
+            {
+              "type": "richtext",
+              "id": "richtext", 
+              "label": "Change Text Block"
             }       
           ]
         },
