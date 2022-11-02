@@ -1,6 +1,6 @@
 <style>
   .main-section {
-    margin: {{ section.settings.main-section-margin-top }}px{{ section.settings.main-section-margin-right }}px{{ section.settings.main-section-margin-bottom }}px{{ section.settings.main-section-margin-left }}px;
+    margin: {{ section.settings.main-section-margin-top }}px {{ section.settings.main-section-margin-right }}px {{ section.settings.main-section-margin-bottom }}px {{ section.settings.main-section-margin-left }}px;
 
   }
 
@@ -9,22 +9,18 @@
     {% case item.type %}
 
     {% when "single-column-text-block" %}
-
-
-      #single-column-text-wrapper-{{ item.id }}{
-
-
-        margin: 0 item.settings.single-column-text-margin
+     #single-column-text-wrapper-{{ item.id }}{
+           margin: 0px {{ item.settings.single-column-text-margin }}px;
       }
-    }
-    px;
-  }
-{% when "blockTwo" %}
-  #spacer-wrapper-{{ item.id }}{
-    height: {{ item.settings.spacer-height }}px;
-  }
+    
+      {% when "blockTwo" %}
+            #spacer-wrapper-{{ item.id }}{
+              height: {{ item.settings.spacer-height }}px;
+            }
 {% endcase %}
 {% endfor %}
+
+
 </style>
 
 
@@ -166,6 +162,14 @@
         ]
       }
     ],
+    "default": {
+      "blocks": [
+          {
+            "type": "single-column-text-block"
+          }
+
+        ]
+    },
     "presets": [
 
       {
