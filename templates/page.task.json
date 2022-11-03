@@ -1,12 +1,17 @@
 {
   "sections": {
-    "main": {
-      "type": "wax-london-task",
+    "text": {
+      "type": "wax-london-text",
+      "settings": {
+      }
+    },
+    "single-image": {
+      "type": "wax-london-single-image",
       "settings": {
       }
     }
   },
   "order": [
-    "main"
+    "text", "single-image"
   ]
 }

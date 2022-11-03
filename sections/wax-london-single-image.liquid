@@ -1,0 +1,127 @@
+<style>
+    .single-image-section-wrapper {
+      padding: {{ section.settings.single-image-section-padding-top }}px {{ section.settings.single-image-section-padding-left }}px {{ section.settings.single-image-section-padding-bottom }}px {{ section.settings.single-image-section-padding-left }}px;
+      margin: 0px {{ section.settings.margin }}px;
+    }
+    .single-image-section-wrapper span p {
+      margin: 0px;
+    }
+  
+  
+  </style>
+  
+  
+  
+  <div class="single-image-section-wrapper ">
+  
+    <img src="{{ section.settings.image-picker | img_url: 'grande' }}" alt="" width="{{ section.settings.section-width }}" height="" loading="lazy"> 
+    <span class=" {{ section.settings.text-align }} "> {{ section.settings.image-caption }} </span>
+     
+  
+  
+  </div>
+  
+  
+  
+  {% schema %} 
+    {
+     "name":"wax-london-single-image",
+     "settings":[
+        {
+           "type":"range",
+           "id":"single-image-section-padding-top",
+           "label":"padding top",
+           "min":0,
+           "max":200,
+           "step":10,
+           "unit":"px",
+           "default":0
+        },
+        {
+           "type":"range",
+           "id":"single-image-section-padding-left",
+           "label":"padding right",
+           "min":0,
+           "max":200,
+           "step":10,
+           "unit":"px",
+           "default":0
+        },
+        {
+           "type":"range",
+           "id":"single-image-section-padding-bottom",
+           "label":"padding bottom",
+           "min":0,
+           "max":200,
+           "step":10,
+           "unit":"px",
+           "default":0
+        },
+        {
+           "type":"range",
+           "id":"single-image-section-padding-right",
+           "label":"padding left",
+           "min":0,
+           "max":200,
+           "step":10,
+           "unit":"px",
+           "default":0
+        },
+        {
+          "type": "image_picker",
+          "id": "image-picker",
+          "label": "Image"
+      },
+      {
+          "type":"richtext",
+          "id":"image-caption",
+          "label":"Image Caption"
+      }, 
+      {
+        "type": "range",
+        "id": "section-width",
+        "label": "width",  
+        "min": 100,
+        "max": 800,
+        "step": 10,
+        "unit": "px", 
+        "default": 200
+      },
+      {
+        "type": "range",
+        "id": "margin",
+        "label": "margin",  
+        "min": 0,
+        "max": 800,
+        "step": 10,
+        "unit": "px",
+        "default": 0
+      },
+      {
+         "type":"select",
+         "id":"text-align",
+         "label":"Align Caption",
+         "options":[
+            {
+               "value":"left",
+               "label":"Left"
+            },
+            {
+               "value":"center",
+               "label":"Center"
+            },
+            {
+               "value":"right",
+               "label":"Right"
+            }
+         ]
+      }
+     ],
+     "presets":[
+        {
+           "category":"content",
+           "name":"wax-london-single-image"
+        }
+     ]
+  }
+  {% endschema %}

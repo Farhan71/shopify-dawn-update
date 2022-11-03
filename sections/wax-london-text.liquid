@@ -1,6 +1,6 @@
 <style>
     .main-section {
-      margin: {{ section.settings.main-section-margin-top }}px {{ section.settings.main-section-margin-right }}px {{ section.settings.main-section-margin-bottom }}px {{ section.settings.main-section-margin-left }}px;
+      padding: {{ section.settings.main-section-margin-top }}px {{ section.settings.main-section-margin-right }}px {{ section.settings.main-section-margin-bottom }}px {{ section.settings.main-section-margin-left }}px;
   
     }
   
@@ -8,12 +8,19 @@
   {% for item in section.blocks %}
       {% case item.type %}
   
-          {% when "single-column-text-block" %}
+        {% when "single-column-text-block" %}
           #single-column-text-wrapper-{{ item.id }}{
                 margin: 0px {{ item.settings.single-column-text-margin }}px;
             }
+
+        {% when "double-column-text-block" %}
+                #double-column-text-wrapper-{{ item.id }}{
+                      margin: 0px {{ item.settings.double-column-text-margin }}px;
+                      display: flex;
+                      gap: {{ item.settings.double-column-text-gap }}px;
+                  }
           
-          {% when "blockTwo" %}
+        {% when "spacer-block" %}
                   #spacer-wrapper-{{ item.id }}{
                     height: {{ item.settings.spacer-height }}px;
                   }
@@ -41,7 +48,25 @@
             </p>
           </section>
   
-        {% when "blockTwo" %}
+          {% when "double-column-text-block" %}
+  
+            <section id="double-column-text-wrapper-{{ item.id }}">
+
+                <div class="{{ item.settings.double-column-left-text-align }}">
+                    <p >
+                        {{ item.settings.double-column-richtext-left }}
+                      </p>
+                </div>
+             <div class="{{ item.settings.double-column-right-text-align }}">
+                <p>
+                    {{ item.settings.double-column-richtext-right }}
+                  </p>
+             </div>
+              
+            </section>
+
+
+        {% when "spacer-block" %}
           <section id="spacer-wrapper-{{ item.id }}">
   
           </section>
@@ -57,7 +82,7 @@
   
   {% schema %}
     {
-     "name":"blog-task",
+     "name":"wax-london-task",
      "settings":[
         {
            "type":"range",
@@ -143,8 +168,84 @@
            ]
         },
         {
+           "name":"double-column-text-block",
+           "type":"double-column-text-block",
+           "settings":[
+              {
+                 "type":"richtext",
+                 "id":"double-column-richtext-left",
+                 "label":"Change Left Text Block",
+                 "default":"<p>hello world from left</p>"
+              },
+              {
+                 "type":"richtext",
+                 "id":"double-column-richtext-right",
+                 "label":"Change Right Text Block",
+                 "default":"<p>hello world Right</p>"
+              },
+              {
+                 "type":"select",
+                 "id":"double-column-left-text-align",
+                 "label":"Align Left Text Block",
+                 "options":[
+                    {
+                       "value":"left",
+                       "label":"Left"
+                    },
+                    {
+                       "value":"center",
+                       "label":"Center"
+                    },
+                    {
+                       "value":"right",
+                       "label":"Right"
+                    }
+                 ]
+              },
+              {
+                 "type":"select",
+                 "id":"double-column-right-text-align",
+                 "label":"Align Right Text Block",
+                 "options":[
+                    {
+                       "value":"left",
+                       "label":"Left"
+                    },
+                    {
+                       "value":"center",
+                       "label":"Center"
+                    },
+                    {
+                       "value":"right",
+                       "label":"Right"
+                    }
+                 ]
+              },
+              {
+           "type":"range",
+           "id":"double-column-text-gap",
+           "label":"Adjust Text Block Gap",
+           "min":5,
+           "max":20,
+           "step":1,
+           "unit":"px",
+           "default":5
+        },
+              {
+                 "type":"range",
+                 "id":"double-column-text-margin",
+                 "label":"text-margin",
+                 "min":50,
+                 "max":200,
+                 "step":10,
+                 "unit":"px",
+                 "default":50
+              }
+           ]
+        },
+        {
            "name":"spacer-block",
-           "type":"blockTwo",
+           "type":"spacer-block",
            "settings":[
               {
                  "type":"range",
@@ -169,13 +270,13 @@
      "presets":[
         {
            "category":"content",
-           "name":"blog-task",
+           "name":"wax-london-task",
            "blocks":[
               {
                  "type":"single-column-text-block"
               }, 
               {
-                "type": "blockTwo"
+                "type": "spacer-block"
               }
            ]
         }
