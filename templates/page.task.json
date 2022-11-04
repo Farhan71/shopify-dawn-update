@@ -1,7 +1,7 @@
 {
   "sections": {
-    "text": {
-      "type": "wax-london-text",
+    "text-and-spacer": {
+      "type": "wax-london-text-and-spacer",
       "settings": {
       }
     },
@@ -9,9 +9,14 @@
       "type": "wax-london-single-image",
       "settings": {
       }
+    },
+    "double-image": {
+      "type": "wax-london-double-image",
+      "settings": {
+      }
     }
   },
   "order": [
-    "text", "single-image"
+    "text-and-spacer", "single-image", "double-image"
   ]
 }

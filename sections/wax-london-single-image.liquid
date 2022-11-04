@@ -2,6 +2,10 @@
     .single-image-section-wrapper {
       padding: {{ section.settings.single-image-section-padding-top }}px {{ section.settings.single-image-section-padding-left }}px {{ section.settings.single-image-section-padding-bottom }}px {{ section.settings.single-image-section-padding-left }}px;
       margin: 0px {{ section.settings.margin }}px;
+      width: {{ section.settings.section-width }}%;
+    }
+    .single-image-section-wrapper img {
+      width: 100%;
     }
     .single-image-section-wrapper span p {
       margin: 0px;
@@ -14,7 +18,7 @@
   
   <div class="single-image-section-wrapper ">
   
-    <img src="{{ section.settings.image-picker | img_url: 'grande' }}" alt="" width="{{ section.settings.section-width }}" height="" loading="lazy"> 
+    <img src="{{ section.settings.image-picker | img_url: 'grande' }}" alt="" width="" height="" loading="lazy"> 
     <span class=" {{ section.settings.text-align }} "> {{ section.settings.image-caption }} </span>
      
   
@@ -81,11 +85,11 @@
         "type": "range",
         "id": "section-width",
         "label": "width",  
-        "min": 100,
-        "max": 800,
-        "step": 10,
-        "unit": "px", 
-        "default": 200
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "default": 100
       },
       {
         "type": "range",

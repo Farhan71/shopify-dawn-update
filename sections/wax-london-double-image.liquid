@@ -1,0 +1,197 @@
+<style>
+    .double-image-section-wrapper {
+        
+        
+        margin: 0px {{ section.settings.margin }}px; 
+      
+    }
+
+    .double-image-section-wrapper .double-image-section-inner {
+        display: inline-flex;
+        gap: {{ section.settings.image-gap }}px;
+    }
+
+    .double-image-section-wrapper div img {
+        width: 100%;
+        height: auto;
+    } 
+
+    .double-image-section-inner .image-left {
+        width: {{ section.settings.left-image-width }}px;
+    }
+
+    .double-image-section-inner .image-right {
+        width: {{ section.settings.right-image-width }}px;
+    }
+    .double-image-section-inner .image-left img {
+        border: {{ section.settings.left-image-border }}px solid red;
+    }
+    .double-image-section-inner .image-right img {
+        border: {{ section.settings.right-image-border }}px solid red;
+    }
+    .double-image-section-inner div span p {
+        margin: 0px;
+    }
+</style>
+
+<section class="double-image-section-wrapper">
+
+    <div class="double-image-section-inner">
+
+        <div class="image-left">
+            <img src=" {{ section.settings.image-left | img_url: 'grande' }} " alt="" width="" height="" loading="lazy"> 
+            <span class=" {{ section.settings.left-image-caption-align }} "> {{ section.settings.left-image-caption }} </span>
+        </div>
+    
+       <div class="image-right">
+            <img src=" {{ section.settings.image-right | img_url: 'grande' }} " alt="" width="" height="" loading="lazy"> 
+            <span class=" {{ section.settings.right-image-caption-align }} "> {{ section.settings.right-image-caption }} </span>
+       </div>
+
+    </div>
+    
+    
+</section>
+
+{% schema %}
+{
+    "name": "wax-london-double-image", 
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "image-left",
+          "label": "Image Left"
+        },
+        {
+          "type": "image_picker",
+          "id": "image-right",
+          "label": "Image Right"
+        },
+        {
+          "type":"richtext",
+          "id":"left-image-caption",
+          "label":"left Image Caption"
+      }, 
+      {
+          "type":"richtext",
+          "id":"right-image-caption",
+          "label":"right Image Caption"
+      }, 
+      {
+         "type":"select",
+         "id":"left-image-caption-align",
+         "label":"left image caption align",
+         "options":[
+            {
+               "value":"left",
+               "label":"Left"
+            },
+            {
+               "value":"center",
+               "label":"Center"
+            },
+            {
+               "value":"right",
+               "label":"Right"
+            }
+         ]
+      },
+      {
+         "type":"select",
+         "id":"right-image-caption-align",
+         "label":"right image caption align",
+         "options":[
+            {
+               "value":"left",
+               "label":"Left"
+            },
+            {
+               "value":"center",
+               "label":"Center"
+            },
+            {
+               "value":"right",
+               "label":"Right"
+            }
+         ]
+      },
+    //     {
+    //     "type": "range",
+    //     "id": "section-width",
+    //     "label": "width",  
+    //     "min": 10,
+    //     "max": 100,
+    //     "step": 5,
+    //     "unit": "%",
+    //     "default": 100
+    //    }, 
+    {
+        "type": "range",
+        "id": "left-image-width",
+        "label": "Left Image width",  
+        "min": 100,
+        "max": 800,
+        "step": 10,
+        "unit": "px",
+        "default": 200
+       },
+       {
+        "type": "range",
+        "id": "right-image-width", 
+        "label": "right Image width",  
+        "min": 100,
+        "max": 800,
+        "step": 10,
+        "unit": "px",
+        "default": 200
+       },
+       {
+        "type": "range",
+        "id": "left-image-border",
+        "label": "Left Image border",  
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "default": 0
+       },
+       {
+        "type": "range",
+        "id": "right-image-border",
+        "label": "right Image border",  
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "unit": "px",
+        "default": 0
+       },
+       {
+        "type": "range",
+        "id": "margin",
+        "label": "margin",  
+        "min": 0,
+        "max": 800,
+        "step": 10,
+        "unit": "px",
+        "default": 0
+      }
+        ,
+        {
+        "type": "range",
+        "id": "image-gap",
+        "label": "image gap",  
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "default": 0
+      }
+    ], 
+    "presets":[
+        {
+           "category":"content",
+           "name":"wax-london-double-image"
+        }
+     ]
+}
+{% endschema %}

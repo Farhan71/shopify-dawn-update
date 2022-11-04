@@ -1,6 +1,6 @@
 <style>
-    .main-section {
-      padding: {{ section.settings.main-section-margin-top }}px {{ section.settings.main-section-margin-right }}px {{ section.settings.main-section-margin-bottom }}px {{ section.settings.main-section-margin-left }}px;
+    .text-and-spacer-section-wrapper {
+      padding: {{ section.settings.padding-top }}px {{ section.settings.padding-right }}px {{ section.settings.padding-bottom }}px {{ section.settings.padding-left }}px;
   
     }
   
@@ -33,7 +33,7 @@
   
   
   
-  <div class="main-section">
+  <div class="text-and-spacer-section-wrapper">
   
   
     {% for item in section.blocks %}
@@ -53,7 +53,7 @@
             <section id="double-column-text-wrapper-{{ item.id }}">
 
                 <div class="{{ item.settings.double-column-left-text-align }}">
-                    <p >
+                    <p>
                         {{ item.settings.double-column-richtext-left }}
                       </p>
                 </div>
@@ -82,47 +82,47 @@
   
   {% schema %}
     {
-     "name":"wax-london-task",
+     "name":"wax-london-text-&-spacer",
      "settings":[
         {
            "type":"range",
-           "id":"main-section-margin-top",
-           "label":"main section margin top",
-           "min":50,
+           "id":"padding-top",
+           "label":"padding top",
+           "min":0,
            "max":200,
            "step":10,
            "unit":"px",
-           "default":50
+           "default":0
         },
         {
            "type":"range",
-           "id":"main-section-margin-right",
-           "label":"main section margin right",
-           "min":50,
+           "id":"padding-right",
+           "label":"padding right",
+           "min":0,
            "max":200,
            "step":10,
            "unit":"px",
-           "default":50
+           "default":0
         },
         {
            "type":"range",
-           "id":"main-section-margin-bottom",
-           "label":"main section margin bottom",
-           "min":50,
+           "id":"padding-bottom",
+           "label":"padding bottom",
+           "min":0,
            "max":200,
            "step":10,
            "unit":"px",
-           "default":50
+           "default":0
         },
         {
            "type":"range",
-           "id":"main-section-margin-left",
-           "label":"main section margin left",
-           "min":50,
+           "id":"padding-left",
+           "label":"padding left",
+           "min":0,
            "max":200,
            "step":10,
            "unit":"px",
-           "default":50
+           "default":0
         }
      ],
      "blocks":[
@@ -260,17 +260,10 @@
            ]
         }
      ],
-    //  "default":{
-    //     "blocks":[
-    //        {
-    //           "type":"single-column-text-block"
-    //        }
-    //     ]
-    //  },
      "presets":[
         {
            "category":"content",
-           "name":"wax-london-task",
+           "name":"wax-london-text-&-spacer",
            "blocks":[
               {
                  "type":"single-column-text-block"
