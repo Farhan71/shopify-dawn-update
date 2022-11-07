@@ -1,5 +1,6 @@
 <style>
-    #text-and-spacer-section-wrapper-{{ section.id }} {
+  
+   [id = "text-and-spacer-section-wrapper-{{ section.id }}"] {
       padding: {{ section.settings.padding-top }}px {{ section.settings.padding-right }}px {{ section.settings.padding-bottom }}px {{ section.settings.padding-left }}px;
   
     }
@@ -9,7 +10,7 @@
       {% case item.type %}
   
         {% when "single-column-text-block" %}
-         #text-and-spacer-section-wrapper-{{ section.id }} #single-column-text-wrapper-{{ item.id }}{
+         [id = "text-and-spacer-section-wrapper-{{ section.id }}"] #single-column-text-wrapper-{{ item.id }}{
                 margin: 0px {{ item.settings.single-column-text-margin }}px;
                 font-family: {{ item.settings.single-column-text-font-family }};
                 color: {{ item.settings.single-column-text-color }};
@@ -17,25 +18,25 @@
             }
 
         {% when "double-column-text-block" %}
-         #text-and-spacer-section-wrapper-{{ section.id }} #double-column-text-wrapper-{{ item.id }}{
+         [id = "text-and-spacer-section-wrapper-{{ section.id }}"] #double-column-text-wrapper-{{ item.id }}{
                       margin: 0px {{ item.settings.double-column-text-margin }}px;
                       display: flex;
                       gap: {{ item.settings.double-column-text-gap }}px;
                       
                   }
-                  #text-and-spacer-section-wrapper-{{ section.id }}  #double-column-text-wrapper-{{ item.id }} .left-section  {
+                  [id = "text-and-spacer-section-wrapper-{{ section.id }}"]  #double-column-text-wrapper-{{ item.id }} .left-section  {
                       font-family: {{ item.settings.double-column-left-text-font-family }};
                       color: {{ item.settings.double-column-left-text-color }};
                       font-size: {{ item.settings.double-column-left-text-size }}px;
                   }
-                  #text-and-spacer-section-wrapper-{{ section.id }} #double-column-text-wrapper-{{ item.id }} .right-section  {
+                  [id = "text-and-spacer-section-wrapper-{{ section.id }}"] #double-column-text-wrapper-{{ item.id }} .right-section  {
                      font-family: {{ item.settings.double-column-right-text-font-family }};
                      color: {{ item.settings.double-column-right-text-color }};
                      font-size: {{ item.settings.double-column-right-text-size }}px;
                  }
           
         {% when "spacer-block" %}
-         #text-and-spacer-section-wrapper-{{ section.id }} #spacer-wrapper-{{ item.id }}{
+         [id = "text-and-spacer-section-wrapper-{{ section.id }}"] #spacer-wrapper-{{ item.id }}{
                     height: {{ item.settings.spacer-height }}px;
                   }
   
