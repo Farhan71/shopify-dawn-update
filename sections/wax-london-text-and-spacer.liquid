@@ -1,5 +1,5 @@
 <style>
-    .text-and-spacer-section-wrapper {
+    #text-and-spacer-section-wrapper-{{ section.id }} {
       padding: {{ section.settings.padding-top }}px {{ section.settings.padding-right }}px {{ section.settings.padding-bottom }}px {{ section.settings.padding-left }}px;
   
     }
@@ -9,7 +9,7 @@
       {% case item.type %}
   
         {% when "single-column-text-block" %}
-          #single-column-text-wrapper-{{ item.id }}{
+         #text-and-spacer-section-wrapper-{{ section.id }} #single-column-text-wrapper-{{ item.id }}{
                 margin: 0px {{ item.settings.single-column-text-margin }}px;
                 font-family: {{ item.settings.single-column-text-font-family }};
                 color: {{ item.settings.single-column-text-color }};
@@ -17,25 +17,25 @@
             }
 
         {% when "double-column-text-block" %}
-                #double-column-text-wrapper-{{ item.id }}{
+         #text-and-spacer-section-wrapper-{{ section.id }} #double-column-text-wrapper-{{ item.id }}{
                       margin: 0px {{ item.settings.double-column-text-margin }}px;
                       display: flex;
                       gap: {{ item.settings.double-column-text-gap }}px;
                       
                   }
-                  #double-column-text-wrapper-{{ item.id }} .left-section  {
+                  #text-and-spacer-section-wrapper-{{ section.id }}  #double-column-text-wrapper-{{ item.id }} .left-section  {
                       font-family: {{ item.settings.double-column-left-text-font-family }};
                       color: {{ item.settings.double-column-left-text-color }};
                       font-size: {{ item.settings.double-column-left-text-size }}px;
                   }
-                  #double-column-text-wrapper-{{ item.id }} .right-section  {
+                  #text-and-spacer-section-wrapper-{{ section.id }} #double-column-text-wrapper-{{ item.id }} .right-section  {
                      font-family: {{ item.settings.double-column-right-text-font-family }};
                      color: {{ item.settings.double-column-right-text-color }};
                      font-size: {{ item.settings.double-column-right-text-size }}px;
                  }
           
         {% when "spacer-block" %}
-                  #spacer-wrapper-{{ item.id }}{
+         #text-and-spacer-section-wrapper-{{ section.id }} #spacer-wrapper-{{ item.id }}{
                     height: {{ item.settings.spacer-height }}px;
                   }
   
@@ -47,7 +47,7 @@
   
   
   
-  <div class="text-and-spacer-section-wrapper">
+  <div id="text-and-spacer-section-wrapper-{{ section.id }}">
   
   
     {% for item in section.blocks %}
