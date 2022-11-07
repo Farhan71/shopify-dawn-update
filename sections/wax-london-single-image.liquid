@@ -3,6 +3,8 @@
       padding: {{ section.settings.single-image-section-padding-top }}px {{ section.settings.single-image-section-padding-left }}px {{ section.settings.single-image-section-padding-bottom }}px {{ section.settings.single-image-section-padding-left }}px;
       margin: 0px {{ section.settings.margin }}px;
       width: {{ section.settings.section-width }}%;
+      height: {{ section.settings.section-height }}px;
+      overflow: hidden;
     }
 
     [id = "single-image-section-wrapper-{{ section.id }} "] img {
@@ -91,6 +93,16 @@
         "step": 5,
         "unit": "%",
         "default": 100
+      },
+      {
+        "type": "range",
+        "id": "section-height",
+        "label": "height",  
+        "min": 10,
+        "max": 900,
+        "step": 10,
+        "unit": "px",
+        "default": 500 
       },
       {
         "type": "range",
