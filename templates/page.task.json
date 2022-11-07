@@ -2,26 +2,150 @@
   "sections": {
     "text-and-spacer": {
       "type": "wax-london-text-and-spacer",
+      "blocks": {
+        "907b6cd9-f90e-4cda-8e5f-d3962b0f19c6": {
+          "type": "single-column-text-block",
+          "settings": {
+            "single-column-richtext": "<p><strong>Journal Title, It’s A Pretty <br\/>Long One Too.<\/strong><\/p>",
+            "single-column-text-align": "center",
+            "single-column-text-margin": 50,
+            "single-column-text-font-family": "Garamond, Baskerville, Caslon, serif",
+            "single-column-text-color": "#000000",
+            "single-column-text-size": 40
+          }
+        },
+        "49f673ec-7922-4e7b-87e4-0266fed6bace": {
+          "type": "single-column-text-block",
+          "settings": {
+            "single-column-richtext": "<p>Posted on: 13\/10\/2022 – Words by Lizzie<br\/> Posted in Integrity at<em> <\/em><a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\"><em>Wax<\/em><\/a><em>,<\/em> <a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\">Fabrics<\/a>, <a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\">Cool Stuff<\/a><\/p>",
+            "single-column-text-align": "center",
+            "single-column-text-margin": 200,
+            "single-column-text-font-family": "Helvetica, Arial, sans-serif",
+            "single-column-text-color": "#000000",
+            "single-column-text-size": 12
+          }
+        },
+        "2c105861-cf8c-4254-9671-0080fd529c8e": {
+          "type": "single-column-text-block",
+          "settings": {
+            "single-column-richtext": "<p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.<\/strong><\/p>",
+            "single-column-text-align": "left",
+            "single-column-text-margin": 200,
+            "single-column-text-font-family": "Garamond, Baskerville, Caslon, serif",
+            "single-column-text-color": "#000000",
+            "single-column-text-size": 20
+          }
+        },
+        "e331ce9e-d8a3-41d1-952d-f2d44b0a007d": {
+          "type": "single-column-text-block",
+          "settings": {
+            "single-column-richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<br\/><br\/> Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada.<\/p>",
+            "single-column-text-align": "left",
+            "single-column-text-margin": 200,
+            "single-column-text-font-family": "Helvetica, Arial, sans-serif",
+            "single-column-text-color": "#000000",
+            "single-column-text-size": 12
+          }
+        },
+        "78aa8fa9-1486-4466-a8aa-ab1bd4812b67": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 50
+          }
+        },
+        "b405ffb8-dd92-49b4-9b56-3413911f4c0c": {
+          "type": "double-column-text-block",
+          "settings": {
+            "double-column-richtext-left": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>",
+            "double-column-richtext-right": "<p>Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Sed eleifend arcu vel porta cursus. <br\/><br\/>Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Quisque a mattis turpis. Sed nisl purus, malesuada.<\/p>",
+            "double-column-left-text-align": "left",
+            "double-column-left-text-font-family": "Helvetica, Arial, sans-serif",
+            "double-column-left-text-color": "#000000",
+            "double-column-left-text-size": 12,
+            "double-column-right-text-align": "left",
+            "double-column-right-text-font-family": "Helvetica, Arial, sans-serif",
+            "double-column-right-text-color": "#000000",
+            "double-column-right-text-size": 12,
+            "double-column-text-gap": 10,
+            "double-column-text-margin": 50
+          }
+        },
+        "3df97f67-9e57-4945-a389-43061efd3ea5": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 50
+          }
+        }
+      },
+      "block_order": [
+        "907b6cd9-f90e-4cda-8e5f-d3962b0f19c6",
+        "49f673ec-7922-4e7b-87e4-0266fed6bace",
+        "2c105861-cf8c-4254-9671-0080fd529c8e",
+        "e331ce9e-d8a3-41d1-952d-f2d44b0a007d",
+        "78aa8fa9-1486-4466-a8aa-ab1bd4812b67",
+        "b405ffb8-dd92-49b4-9b56-3413911f4c0c",
+        "3df97f67-9e57-4945-a389-43061efd3ea5"
+      ],
       "settings": {
+        "padding-top": 0,
+        "padding-right": 0,
+        "padding-bottom": 0,
+        "padding-left": 0
       }
     },
     "single-image": {
       "type": "wax-london-single-image",
       "settings": {
+        "single-image-section-padding-top": 0,
+        "single-image-section-padding-left": 0,
+        "single-image-section-padding-bottom": 0,
+        "single-image-section-padding-right": 0,
+        "image-picker": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+        "image-caption": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+        "section-width": 35,
+        "margin": 410,
+        "text-align": "left"
       }
     },
     "double-image": {
       "type": "wax-london-double-image",
       "settings": {
+        "left-image-caption": "",
+        "right-image-caption": "",
+        "left-image-caption-align": "left",
+        "right-image-caption-align": "left",
+        "left-image-width": 200,
+        "right-image-width": 200,
+        "left-image-border": 0,
+        "right-image-border": 0,
+        "margin": 0,
+        "image-gap": 0
       }
     },
     "image-and-text": {
       "type": "wax-london-image-and-text",
       "settings": {
+        "section-text": "",
+        "image-caption": "",
+        "image-caption-align": "left",
+        "text-align": "left",
+        "image-section-width": 200,
+        "text-section-width": 200,
+        "text-color": "#000000",
+        "text-size": 10,
+        "margin": 0,
+        "left-right-gap": 0,
+        "text-section-padding-top-bottom": 0,
+        "text-section-padding-left-right": 0,
+        "text-section-background-color": "#F2F2F2",
+        "flip-content": false
       }
     }
   },
   "order": [
-    "text-and-spacer", "single-image", "double-image", "image-and-text"
+    "text-and-spacer",
+    "single-image",
+    "double-image",
+    "image-and-text"
   ]
 }
