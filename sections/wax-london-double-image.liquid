@@ -1,40 +1,46 @@
 <style>
-    .double-image-section-wrapper {
+    
+    [id = "double-image-section-wrapper-{{ section.id }}"] {
         
         
         margin: 0px {{ section.settings.margin }}px; 
       
     }
 
-    .double-image-section-wrapper .double-image-section-inner {
+    [id = "double-image-section-wrapper-{{ section.id }}"] .double-image-section-inner {
         display: inline-flex;
         gap: {{ section.settings.image-gap }}px;
     }
 
-    .double-image-section-wrapper div img {
+    [id = "double-image-section-wrapper-{{ section.id }}"] div img {
         width: 100%;
         height: auto;
     } 
 
-    .double-image-section-inner .image-left {
+    [id = "double-image-section-wrapper-{{ section.id }}"] .double-image-section-inner .image-left {
         width: {{ section.settings.left-image-width }}px;
     }
 
-    .double-image-section-inner .image-right {
+
+    [id = "double-image-section-wrapper-{{ section.id }}"] .double-image-section-inner .image-right {
         width: {{ section.settings.right-image-width }}px;
     }
-    .double-image-section-inner .image-left img {
+
+    [id = "double-image-section-wrapper-{{ section.id }}"] .double-image-section-inner .image-left img {
         border: {{ section.settings.left-image-border }}px solid red;
     }
-    .double-image-section-inner .image-right img {
+
+    [id = "double-image-section-wrapper-{{ section.id }}"] .double-image-section-inner .image-right img {
         border: {{ section.settings.right-image-border }}px solid red;
     }
-    .double-image-section-inner div span p {
+    
+    [id = "double-image-section-wrapper-{{ section.id }}"] .double-image-section-inner div span p {
         margin: 0px;
     }
 </style>
 
-<section class="double-image-section-wrapper">
+
+<section id="double-image-section-wrapper-{{ section.id }}">
 
     <div class="double-image-section-inner">
 

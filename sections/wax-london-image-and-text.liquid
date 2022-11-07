@@ -1,36 +1,36 @@
 <style>
-
-    .image-and-text-section-wrapper {
+    
+    [id = "image-and-text-section-wrapper-{{ section.id }}"] {
         
         
         margin: 0px {{ section.settings.margin }}px; 
       
     }
 
-    .image-and-text-section-wrapper  .image-and-text-section-inner {
+    [id = "image-and-text-section-wrapper-{{ section.id }}"]  .image-and-text-section-inner {
         display: inline-flex;
        flex-direction: row;;
         gap: {{ section.settings.left-right-gap }}px;
     }
 
     {% if section.settings.flip-content %}
-        .image-and-text-section-wrapper  .image-and-text-section-inner {
+        [id = "image-and-text-section-wrapper-{{ section.id }}"]  .image-and-text-section-inner {
             display: inline-flex;
            flex-direction: row-reverse;
             gap: {{ section.settings.left-right-gap }}px;
         }
     {% endif %}
 
-    .image-and-text-section-inner div img {
+    [id = "image-and-text-section-wrapper-{{ section.id }}"] .image-and-text-section-inner div img {
         width: 100%;
         height: auto;
     } 
 
-    .image-and-text-section-inner .image-section {
+    [id = "image-and-text-section-wrapper-{{ section.id }}"] .image-and-text-section-inner .image-section {
         width: {{ section.settings.image-section-width }}px;
     }
 
-    .image-and-text-section-inner .text-section {
+    [id = "image-and-text-section-wrapper-{{ section.id }}"] .image-and-text-section-inner .text-section {
         width: {{ section.settings.text-section-width }}px;
         background-color: {{ section.settings.text-section-background-color }};
         padding: {{ section.settings.text-section-padding-top-bottom }}px {{ section.settings.text-section-padding-left-right }}px;
@@ -39,21 +39,14 @@
         font-size: {{ section.settings.text-size }}px;
     }
 
-    {%- comment -%} .double-image-section-inner .image-left img {
-        border: {{ section.settings.left-image-border }}px solid red;
-    }
 
-    .double-image-section-inner .image-right img {
-        border: {{ section.settings.right-image-border }}px solid red;
-    } {%- endcomment -%}
-
-    .image-and-text-section-inner div span p {
+    [id = "image-and-text-section-wrapper-{{ section.id }}"] .image-and-text-section-inner div span p {
         margin: 0px;
     }
 
 </style>
 
-<section class="image-and-text-section-wrapper">
+<section id="image-and-text-section-wrapper-{{ section.id }}">
 
     <div class="image-and-text-section-inner">
 
