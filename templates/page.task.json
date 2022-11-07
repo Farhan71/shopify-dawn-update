@@ -14,9 +14,14 @@
       "type": "wax-london-double-image",
       "settings": {
       }
+    },
+    "image-and-text": {
+      "type": "wax-london-image-and-text",
+      "settings": {
+      }
     }
   },
   "order": [
-    "text-and-spacer", "single-image", "double-image"
+    "text-and-spacer", "single-image", "double-image", "image-and-text"
   ]
 }

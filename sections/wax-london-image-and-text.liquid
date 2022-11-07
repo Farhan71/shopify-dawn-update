@@ -1,0 +1,186 @@
+<style>
+
+    .image-and-text-section-wrapper {
+        
+        
+        margin: 0px {{ section.settings.margin }}px; 
+      
+    }
+
+    .image-and-text-section-wrapper  .image-and-text-section-inner {
+        display: inline-flex;
+        gap: {{ section.settings.left-right-gap }}px;
+    }
+
+    .image-and-text-section-inner div img {
+        width: 100%;
+        height: auto;
+    } 
+
+    .image-and-text-section-inner .left-section {
+        width: {{ section.settings.left-section-width }}px;
+    }
+
+    .image-and-text-section-inner .right-section {
+        width: {{ section.settings.right-section-width }}px;
+    }
+
+    {%- comment -%} .double-image-section-inner .image-left img {
+        border: {{ section.settings.left-image-border }}px solid red;
+    }
+
+    .double-image-section-inner .image-right img {
+        border: {{ section.settings.right-image-border }}px solid red;
+    } {%- endcomment -%}
+
+    .image-and-text-section-inner div span p {
+        margin: 0px;
+    }
+
+</style>
+
+<section class="image-and-text-section-wrapper">
+
+    <div class="image-and-text-section-inner">
+
+        <div class="left-section">
+            <img src=" {{ section.settings.section-image | img_url: 'grande' }} " alt="" width="" height="" loading="lazy"> 
+            <span class=" {{ section.settings.image-caption-align }} "> {{ section.settings.image-caption }} </span>
+        </div>
+    
+       <div class="right-section {{ section.settings.text-align }}">
+            {{ section.settings.section-text }}
+       </div>
+
+    </div>
+    
+    
+</section>
+
+{% schema %}
+{
+    "name": "wax-london-image-and-text", 
+    "settings": [
+        {
+          "type": "image_picker",
+          "id": "section-image",
+          "label": "Image"
+        },
+        {
+          "type":"richtext",
+          "id":"section-text",
+          "label":"text"
+        },
+        {
+          "type":"richtext",
+          "id":"image-caption",
+          "label":"Image Caption"
+      }, 
+      {
+         "type":"select",
+         "id":"image-caption-align",
+         "label":"image caption align",
+         "options":[
+            {
+               "value":"left",
+               "label":"Left"
+            },
+            {
+               "value":"center",
+               "label":"Center"
+            },
+            {
+               "value":"right",
+               "label":"Right"
+            }
+         ]
+      },
+      {
+         "type":"select",
+         "id":"text-align",
+         "label":"text align",
+         "options":[
+            {
+               "value":"left",
+               "label":"Left"
+            },
+            {
+               "value":"center",
+               "label":"Center"
+            },
+            {
+               "value":"right",
+               "label":"Right"
+            }
+         ]
+      },
+      {
+        "type": "range",
+        "id": "left-section-width",
+        "label": "Image width",  
+        "min": 100,
+        "max": 800,
+        "step": 10,
+        "unit": "px",
+        "default": 200
+       },
+       {
+        "type": "range",
+        "id": "right-section-width", 
+        "label": "text section width",  
+        "min": 100,
+        "max": 800,
+        "step": 10,
+        "unit": "px",
+        "default": 200
+       },
+    //    {
+    //     "type": "range",
+    //     "id": "left-image-border",
+    //     "label": "Left Image border",  
+    //     "min": 0,
+    //     "max": 20,
+    //     "step": 1,
+    //     "unit": "px",
+    //     "default": 0
+    //    },
+    //    {
+    //     "type": "range",
+    //     "id": "right-image-border",
+    //     "label": "right Image border",  
+    //     "min": 0,
+    //     "max": 20,
+    //     "step": 1,
+    //     "unit": "px",
+    //     "default": 0
+    //    },
+       {
+        "type": "range",
+        "id": "margin",
+        "label": "margin",  
+        "min": 0,
+        "max": 800,
+        "step": 10,
+        "unit": "px",
+        "default": 0
+      }
+        ,
+        {
+        "type": "range",
+        "id": "left-right-gap",
+        "label": "left right gap",  
+        "min": 0,
+        "max": 100,
+        "step": 5,
+        "unit": "px",
+        "default": 0
+      }
+    ], 
+    "presets":[
+        {
+           "category":"content",
+           "name":"wax-london-image-and-text"
+        }
+     ]
+}
+{% endschema %}
