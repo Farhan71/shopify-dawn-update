@@ -11,6 +11,9 @@
         {% when "single-column-text-block" %}
           #single-column-text-wrapper-{{ item.id }}{
                 margin: 0px {{ item.settings.single-column-text-margin }}px;
+                font-family: {{ item.settings.single-column-text-font-family }};
+                color: {{ item.settings.single-column-text-color }};
+                font-size: {{ item.settings.single-column-text-size }}px;
             }
 
         {% when "double-column-text-block" %}
@@ -18,7 +21,18 @@
                       margin: 0px {{ item.settings.double-column-text-margin }}px;
                       display: flex;
                       gap: {{ item.settings.double-column-text-gap }}px;
+                      
                   }
+                  #double-column-text-wrapper-{{ item.id }} .left-section  {
+                      font-family: {{ item.settings.double-column-left-text-font-family }};
+                      color: {{ item.settings.double-column-left-text-color }};
+                      font-size: {{ item.settings.double-column-left-text-size }}px;
+                  }
+                  #double-column-text-wrapper-{{ item.id }} .right-section  {
+                     font-family: {{ item.settings.double-column-right-text-font-family }};
+                     color: {{ item.settings.double-column-right-text-color }};
+                     font-size: {{ item.settings.double-column-right-text-size }}px;
+                 }
           
         {% when "spacer-block" %}
                   #spacer-wrapper-{{ item.id }}{
@@ -52,12 +66,12 @@
   
             <section id="double-column-text-wrapper-{{ item.id }}">
 
-                <div class="{{ item.settings.double-column-left-text-align }}">
+                <div class="left-section {{ item.settings.double-column-left-text-align }}">
                     <p>
                         {{ item.settings.double-column-richtext-left }}
                       </p>
                 </div>
-             <div class="{{ item.settings.double-column-right-text-align }}">
+             <div class="right-section {{ item.settings.double-column-right-text-align }}">
                 <p>
                     {{ item.settings.double-column-richtext-right }}
                   </p>
@@ -164,6 +178,27 @@
                  "step":10,
                  "unit":"px",
                  "default":50
+              },
+              {
+                "type": "font",
+                "id": "single-column-text-font-family",
+                "label" : "Font Family"
+              },
+              {
+                  "type": "color",
+                  "id": "single-column-text-color",
+                  "label": "Text Color",
+                  "default": "#000000"
+               },
+               {
+                 "type":"range",
+                 "id":"single-column-text-size",
+                 "label":"text size",
+                 "min":8,
+                 "max":40,
+                 "step":1,
+                 "unit":"px",
+                 "default":10
               }
            ]
         },
@@ -203,6 +238,27 @@
                  ]
               },
               {
+                "type": "font",
+                "id": "double-column-left-text-font-family",
+                "label" : "left Font Family"
+              },
+              {
+                  "type": "color",
+                  "id": "double-column-left-text-color",
+                  "label": "left Text Color",
+                  "default": "#000000"
+               },
+               {
+                 "type":"range",
+                 "id":"double-column-left-text-size",
+                 "label":"left text size",
+                 "min":8,
+                 "max":40,
+                 "step":1,
+                 "unit":"px",
+                 "default":10
+              },
+              {
                  "type":"select",
                  "id":"double-column-right-text-align",
                  "label":"Align Right Text Block",
@@ -220,6 +276,27 @@
                        "label":"Right"
                     }
                  ]
+              },
+              {
+                "type": "font",
+                "id": "double-column-right-text-font-family",
+                "label" : "right Font Family"
+              },
+              {
+                  "type": "color",
+                  "id": "double-column-right-text-color",
+                  "label": "right Text Color",
+                  "default": "#000000"
+               },
+               {
+                 "type":"range",
+                 "id":"double-column-right-text-size",
+                 "label":"right text size",
+                 "min":8,
+                 "max":40,
+                 "step":1,
+                 "unit":"px",
+                 "default":10
               },
               {
            "type":"range",
@@ -241,6 +318,7 @@
                  "unit":"px",
                  "default":50
               }
+              
            ]
         },
         {
