@@ -11,7 +11,14 @@
             "single-column-text-margin": 50,
             "single-column-text-font-family": "Garamond, Baskerville, Caslon, serif",
             "single-column-text-color": "#000000",
-            "single-column-text-size": 40
+            "single-column-text-size": 40,
+            "single-column-line-height": 1
+          }
+        },
+        "dd520776-9d6d-4f51-8310-54c5d2e369e1": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 10
           }
         },
         "49f673ec-7922-4e7b-87e4-0266fed6bace": {
@@ -22,7 +29,14 @@
             "single-column-text-margin": 200,
             "single-column-text-font-family": "Helvetica, Arial, sans-serif",
             "single-column-text-color": "#000000",
-            "single-column-text-size": 12
+            "single-column-text-size": 12,
+            "single-column-line-height": 1.5
+          }
+        },
+        "ed68cec7-f88c-4501-96b4-90ea97b59c26": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 50
           }
         },
         "2c105861-cf8c-4254-9671-0080fd529c8e": {
@@ -33,7 +47,14 @@
             "single-column-text-margin": 200,
             "single-column-text-font-family": "Garamond, Baskerville, Caslon, serif",
             "single-column-text-color": "#000000",
-            "single-column-text-size": 20
+            "single-column-text-size": 20,
+            "single-column-line-height": 1.5
+          }
+        },
+        "44b91116-ae35-4dc4-9606-1c1be4cb9c37": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 20
           }
         },
         "e331ce9e-d8a3-41d1-952d-f2d44b0a007d": {
@@ -44,7 +65,8 @@
             "single-column-text-margin": 200,
             "single-column-text-font-family": "Helvetica, Arial, sans-serif",
             "single-column-text-color": "#000000",
-            "single-column-text-size": 12
+            "single-column-text-size": 12,
+            "single-column-line-height": 1.5
           }
         },
         "78aa8fa9-1486-4466-a8aa-ab1bd4812b67": {
@@ -58,13 +80,17 @@
           "settings": {
             "double-column-richtext-left": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim.<\/p>",
             "double-column-richtext-right": "<p>Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Sed eleifend arcu vel porta cursus. <br\/><br\/>Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Quisque a mattis turpis. Sed nisl purus, malesuada.<\/p>",
+            "double-column-left-width": 530,
+            "double-column-right-width": 530,
             "double-column-left-text-align": "left",
             "double-column-left-text-font-family": "Helvetica, Arial, sans-serif",
             "double-column-left-text-color": "#000000",
+            "double-column-left-line-height": 1.5,
             "double-column-left-text-size": 12,
             "double-column-right-text-align": "left",
             "double-column-right-text-font-family": "Helvetica, Arial, sans-serif",
             "double-column-right-text-color": "#000000",
+            "double-column-right-line-height": 1.5,
             "double-column-right-text-size": 12,
             "double-column-text-gap": 10,
             "double-column-text-margin": 50
@@ -79,15 +105,18 @@
       },
       "block_order": [
         "907b6cd9-f90e-4cda-8e5f-d3962b0f19c6",
+        "dd520776-9d6d-4f51-8310-54c5d2e369e1",
         "49f673ec-7922-4e7b-87e4-0266fed6bace",
+        "ed68cec7-f88c-4501-96b4-90ea97b59c26",
         "2c105861-cf8c-4254-9671-0080fd529c8e",
+        "44b91116-ae35-4dc4-9606-1c1be4cb9c37",
         "e331ce9e-d8a3-41d1-952d-f2d44b0a007d",
         "78aa8fa9-1486-4466-a8aa-ab1bd4812b67",
         "b405ffb8-dd92-49b4-9b56-3413911f4c0c",
         "3df97f67-9e57-4945-a389-43061efd3ea5"
       ],
       "settings": {
-        "padding-top": 0,
+        "padding-top": 50,
         "padding-right": 0,
         "padding-bottom": 0,
         "padding-left": 0
@@ -101,24 +130,79 @@
         "single-image-section-padding-bottom": 0,
         "single-image-section-padding-right": 0,
         "image-picker": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
-        "image-caption": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
-        "section-width": 15,
-        "margin": 230,
-        "text-align": "left"
+        "image-caption": "<p>Model wears<a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\"> Whiting Shirt Cosmic Papaya Check<\/a> with<a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\"> Dean T Shirt Black<\/a> and <a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\">Pleat Trousers Black<\/a><\/p>",
+        "caption-color": "#000000",
+        "caption-size": 12,
+        "text-align": "left",
+        "section-width": 40,
+        "margin": 380
+      }
+    },
+    "ac223070-5b17-4fe0-8475-16ec44ca4821": {
+      "type": "wax-london-single-image",
+      "settings": {
+        "single-image-section-padding-top": 0,
+        "single-image-section-padding-left": 0,
+        "single-image-section-padding-bottom": 0,
+        "single-image-section-padding-right": 0,
+        "image-picker": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+        "image-caption": "<p>Model wears <a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\">Whiting Shirt Cosmic Papaya Check<\/a> with <a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\">Dean T Shirt Black<\/a> and <a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\">Pleat Trousers Black<\/a><\/p>",
+        "caption-font-family": "",
+        "caption-color": "#000000",
+        "caption-size": 12,
+        "text-align": "left",
+        "section-width": 70,
+        "margin": 190
+      }
+    },
+    "abb82d7e-4b9d-4d61-a705-b8ea4caf7a86": {
+      "type": "wax-london-single-image",
+      "settings": {
+        "single-image-section-padding-top": 0,
+        "single-image-section-padding-left": 0,
+        "single-image-section-padding-bottom": 0,
+        "single-image-section-padding-right": 0,
+        "image-picker": "shopify:\/\/shop_images\/04-10-2022-WAX1465_7e31aff5-3722-4dc8-989e-cd4efc701ac5.jpg",
+        "image-caption": "<p>Model wears <a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\">Whiting Shirt Cosmic Papaya Check<\/a> with<a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\"> Dean T Shirt Black<\/a> and <a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\">Pleat Trousers Black<\/a><\/p>",
+        "caption-font-family": "",
+        "caption-color": "#000000",
+        "caption-size": 12,
+        "text-align": "center",
+        "section-width": 100,
+        "margin": 0
       }
     },
     "double-image": {
       "type": "wax-london-double-image",
       "settings": {
+        "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+        "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
         "left-image-caption": "",
         "right-image-caption": "",
         "left-image-caption-align": "left",
         "right-image-caption-align": "left",
-        "left-image-width": 200,
-        "right-image-width": 200,
+        "left-image-width": 250,
+        "right-image-width": 250,
         "left-image-border": 0,
         "right-image-border": 0,
-        "margin": 0,
+        "margin": 340,
+        "image-gap": 0
+      }
+    },
+    "1eefce2f-464c-4a9a-8532-ba24bffed5dc": {
+      "type": "wax-london-double-image",
+      "settings": {
+        "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+        "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+        "left-image-caption": "<p>jhhlhu<\/p>",
+        "right-image-caption": "<p>hlhjkl<\/p>",
+        "left-image-caption-align": "left",
+        "right-image-caption-align": "left",
+        "left-image-width": 250,
+        "right-image-width": 250,
+        "left-image-border": 0,
+        "right-image-border": 20,
+        "margin": 340,
         "image-gap": 0
       }
     },
@@ -145,7 +229,10 @@
   "order": [
     "text-and-spacer",
     "77ba9cc4-9bef-4dfd-8172-c6f135d3509e",
+    "ac223070-5b17-4fe0-8475-16ec44ca4821",
+    "abb82d7e-4b9d-4d61-a705-b8ea4caf7a86",
     "double-image",
+    "1eefce2f-464c-4a9a-8532-ba24bffed5dc",
     "image-and-text"
   ]
 }
