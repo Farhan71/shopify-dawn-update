@@ -15,24 +15,40 @@
                 font-family: {{ item.settings.single-column-text-font-family }};
                 color: {{ item.settings.single-column-text-color }};
                 font-size: {{ item.settings.single-column-text-size }}px;
+                line-height: {{ item.settings.single-column-line-height }}em;
             }
-
+            [id = "text-and-spacer-section-wrapper-{{ section.id }}"] #single-column-text-wrapper-{{ item.id }} p a {
+               color: {{ item.settings.single-column-text-color }};
+            }
+            [id = "text-and-spacer-section-wrapper-{{ section.id }}"] #single-column-text-wrapper-{{ item.id }} p {
+               margin: 0 auto;
+            }
         {% when "double-column-text-block" %}
          [id = "text-and-spacer-section-wrapper-{{ section.id }}"] #double-column-text-wrapper-{{ item.id }}{
                       margin: 0px {{ item.settings.double-column-text-margin }}px;
-                      display: flex;
+                      display: inline-flex;
                       gap: {{ item.settings.double-column-text-gap }}px;
                       
                   }
-                  [id = "text-and-spacer-section-wrapper-{{ section.id }}"]  #double-column-text-wrapper-{{ item.id }} .left-section  {
+           [id = "text-and-spacer-section-wrapper-{{ section.id }}"]  #double-column-text-wrapper-{{ item.id }} .left-section  {
                       font-family: {{ item.settings.double-column-left-text-font-family }};
                       color: {{ item.settings.double-column-left-text-color }};
                       font-size: {{ item.settings.double-column-left-text-size }}px;
+                      line-height: {{ item.settings.double-column-left-line-height }}em;
+                      width: {{ item.settings.double-column-left-width}}px;
                   }
-                  [id = "text-and-spacer-section-wrapper-{{ section.id }}"] #double-column-text-wrapper-{{ item.id }} .right-section  {
+          [id = "text-and-spacer-section-wrapper-{{ section.id }}"]  #double-column-text-wrapper-{{ item.id }} .left-section  p {
+            margin: 0 auto;
+                  }
+          [id = "text-and-spacer-section-wrapper-{{ section.id }}"] #double-column-text-wrapper-{{ item.id }} .right-section  {
                      font-family: {{ item.settings.double-column-right-text-font-family }};
                      color: {{ item.settings.double-column-right-text-color }};
                      font-size: {{ item.settings.double-column-right-text-size }}px;
+                     line-height: {{ item.settings.double-column-right-line-height }}em;
+                     width: {{ item.settings.double-column-right-width }}px; 
+                 }
+                 [id = "text-and-spacer-section-wrapper-{{ section.id }}"] #double-column-text-wrapper-{{ item.id }} .right-section p {
+                  margin: 0 auto;
                  }
           
         {% when "spacer-block" %}
@@ -200,6 +216,16 @@
                  "step":1,
                  "unit":"px",
                  "default":10
+              },
+              {
+                 "type":"range",
+                 "id":"single-column-line-height",
+                 "label":"line height",
+                 "min":1,
+                 "max":3,
+                 "step":0.1,
+                 "unit":"em",
+                 "default":1.5
               }
            ]
         },
@@ -218,6 +244,26 @@
                  "id":"double-column-richtext-right",
                  "label":"Change Right Text Block",
                  "default":"<p>hello world Right</p>"
+              },
+              {
+                 "type":"range",
+                 "id":"double-column-left-width",
+                 "label":"left width",
+                 "min":100,
+                 "max":800,
+                 "step":10,
+                 "unit":"px",
+                 "default":200
+              },
+              {
+                 "type":"range",
+                 "id":"double-column-right-width",
+                 "label":"right width",
+                 "min":100,
+                 "max":800,
+                 "step":10,
+                 "unit":"px",
+                 "default":200
               },
               {
                  "type":"select",
@@ -249,6 +295,16 @@
                   "label": "left Text Color",
                   "default": "#000000"
                },
+               {
+                 "type":"range",
+                 "id":"double-column-left-line-height",
+                 "label":"left block line height",
+                 "min":1,
+                 "max":3,
+                 "step":0.1,
+                 "unit":"em",
+                 "default":1.5
+              },
                {
                  "type":"range",
                  "id":"double-column-left-text-size",
@@ -291,6 +347,16 @@
                },
                {
                  "type":"range",
+                 "id":"double-column-right-line-height",
+                 "label":"right block line height",
+                 "min":1,
+                 "max":3,
+                 "step":0.1,
+                 "unit":"em",
+                 "default":1.5
+              },
+               {
+                 "type":"range",
                  "id":"double-column-right-text-size",
                  "label":"right text size",
                  "min":8,
@@ -304,7 +370,7 @@
            "id":"double-column-text-gap",
            "label":"Adjust Text Block Gap",
            "min":5,
-           "max":20,
+           "max":50,
            "step":1,
            "unit":"px",
            "default":5

@@ -3,18 +3,26 @@
       padding: {{ section.settings.single-image-section-padding-top }}px {{ section.settings.single-image-section-padding-left }}px {{ section.settings.single-image-section-padding-bottom }}px {{ section.settings.single-image-section-padding-left }}px;
       margin: 0px {{ section.settings.margin }}px;
       width: {{ section.settings.section-width }}%;
-      height: {{ section.settings.section-height }}px;
-      overflow: hidden;
+    
     }
 
     [id = "single-image-section-wrapper-{{ section.id }} "] img {
       width: 100%;
     }
+    [id = "single-image-section-wrapper-{{ section.id }} "] span {
+      font-family: {{ section.settings.caption-font-family }};
+      color: {{ section.settings.caption-color }};
+      font-size: {{ section.settings.caption-size }}px;
+      
+    }
     [id = "single-image-section-wrapper-{{ section.id }} "] span p {
       margin: 0px;
+      
     }
   
-  
+    [id = "single-image-section-wrapper-{{ section.id }} "] span p a {
+      color: {{ section.settings.caption-color }};
+    }
   </style>
   
   
@@ -85,34 +93,25 @@
           "label":"Image Caption"
       }, 
       {
-        "type": "range",
-        "id": "section-width",
-        "label": "width",  
-        "min": 10,
-        "max": 100,
-        "step": 5,
-        "unit": "%",
-        "default": 100
+         "type": "font",
+         "id": "caption-font-family",
+         "label" : "caption Font Family"
       },
       {
-        "type": "range",
-        "id": "section-height",
-        "label": "height",  
-        "min": 10,
-        "max": 900,
-        "step": 10,
-        "unit": "px",
-        "default": 500 
+         "type": "color",
+         "id": "caption-color",
+         "label": "caption Text Color",
+         "default": "#000000"
       },
       {
-        "type": "range",
-        "id": "margin",
-        "label": "margin",  
-        "min": 0,
-        "max": 800,
-        "step": 10,
-        "unit": "px",
-        "default": 0
+         "type":"range",
+         "id":"caption-size",
+         "label":"caption text size",
+         "min":8,
+         "max":40,
+         "step":1,
+         "unit":"px",
+         "default":10
       },
       {
          "type":"select",
@@ -132,7 +131,38 @@
                "label":"Right"
             }
          ]
+      },
+      {
+        "type": "range",
+        "id": "section-width",
+        "label": "width",  
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "unit": "%",
+        "default": 100
+      },
+      // {
+      //   "type": "range",
+      //   "id": "section-height",
+      //   "label": "height",  
+      //   "min": 10,
+      //   "max": 900,
+      //   "step": 10,
+      //   "unit": "px",
+      //   "default": 500 
+      // },
+      {
+        "type": "range",
+        "id": "margin",
+        "label": "margin",  
+        "min": 0,
+        "max": 800,
+        "step": 10,
+        "unit": "px",
+        "default": 0
       }
+      
      ],
      "presets":[
         {
