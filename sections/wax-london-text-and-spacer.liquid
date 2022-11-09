@@ -25,8 +25,7 @@
             }
         {% when "double-column-text-block" %}
          [id = "text-and-spacer-section-wrapper-{{ section.id }}"] #double-column-text-wrapper-{{ item.id }}{
-                      margin: 0 auto;
-                      justify-content: center;
+                      margin: 0px {{ item.settings.double-column-text-margin }}px;
                       display: inline-flex;
                       gap: {{ item.settings.double-column-text-gap }}px;
                       
@@ -375,18 +374,17 @@
            "step":1,
            "unit":"px",
            "default":5
-        }
-      //   ,
-      //         {
-      //            "type":"range",
-      //            "id":"double-column-text-margin",
-      //            "label":"text-margin",
-      //            "min":50,
-      //            "max":200,
-      //            "step":10,
-      //            "unit":"px",
-      //            "default":50
-      //         }
+        },
+              {
+                 "type":"range",
+                 "id":"double-column-text-margin",
+                 "label":"text-margin",
+                 "min":50,
+                 "max":200,
+                 "step":10,
+                 "unit":"px",
+                 "default":50
+              }
               
            ]
         },
