@@ -1,7 +1,8 @@
 <style>
    [id = "single-image-section-wrapper-{{ section.id }} "] {
       padding: {{ section.settings.single-image-section-padding-top }}px {{ section.settings.single-image-section-padding-left }}px {{ section.settings.single-image-section-padding-bottom }}px {{ section.settings.single-image-section-padding-left }}px;
-      margin: 0px {{ section.settings.margin }}px;
+      margin: 0 auto;
+      text-align: center;
       width: {{ section.settings.section-width }}%;
     
     }
@@ -141,7 +142,7 @@
         "step": 5,
         "unit": "%",
         "default": 100
-      },
+      }
       // {
       //   "type": "range",
       //   "id": "section-height",
@@ -152,16 +153,16 @@
       //   "unit": "px",
       //   "default": 500 
       // },
-      {
-        "type": "range",
-        "id": "margin",
-        "label": "margin",  
-        "min": 0,
-        "max": 800,
-        "step": 10,
-        "unit": "px",
-        "default": 0
-      }
+      // {
+      //   "type": "range",
+      //   "id": "margin",
+      //   "label": "margin",  
+      //   "min": 0,
+      //   "max": 800,
+      //   "step": 10,
+      //   "unit": "px",
+      //   "default": 0
+      // }
       
      ],
      "presets":[
