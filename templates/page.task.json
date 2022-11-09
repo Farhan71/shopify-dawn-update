@@ -27,7 +27,7 @@
             "single-column-richtext": "<p>Posted on: 13\/10\/2022 – Words by Lizzie<br\/> Posted in Integrity at<em> <\/em><a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\"><em>Wax<\/em><\/a><em>,<\/em> <a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\">Fabrics<\/a>, <a href=\"\/blogs\/news\" target=\"_blank\" title=\"News\">Cool Stuff<\/a><\/p>",
             "single-column-text-align": "center",
             "single-column-text-margin": 200,
-            "single-column-text-font-family": "Helvetica, Arial, sans-serif",
+            "single-column-text-font-family": "Garamond, Baskerville, Caslon, serif",
             "single-column-text-color": "#000000",
             "single-column-text-size": 12,
             "single-column-line-height": 1.5
@@ -93,7 +93,7 @@
             "double-column-right-line-height": 1.5,
             "double-column-right-text-size": 12,
             "double-column-text-gap": 10,
-            "double-column-text-margin": 50
+            "double-column-text-margin": 200
           }
         },
         "3df97f67-9e57-4945-a389-43061efd3ea5": {
@@ -134,8 +134,7 @@
         "caption-color": "#000000",
         "caption-size": 12,
         "text-align": "left",
-        "section-width": 40,
-        "margin": 380
+        "section-width": 40
       }
     },
     "ac223070-5b17-4fe0-8475-16ec44ca4821": {
@@ -151,8 +150,7 @@
         "caption-color": "#000000",
         "caption-size": 12,
         "text-align": "left",
-        "section-width": 70,
-        "margin": 190
+        "section-width": 70
       }
     },
     "abb82d7e-4b9d-4d61-a705-b8ea4caf7a86": {
@@ -168,8 +166,7 @@
         "caption-color": "#000000",
         "caption-size": 12,
         "text-align": "center",
-        "section-width": 100,
-        "margin": 0
+        "section-width": 100
       }
     },
     "double-image": {
@@ -185,9 +182,8 @@
         "right-image-width": 250,
         "left-image-border": 0,
         "right-image-border": 0,
-        "left-image-border-color": "#F2F2F2",
-        "right-image-border-color": "#F2F2F2",
-        "margin": 340,
+        "left-image-border-color": "#f2f2f2",
+        "right-image-border-color": "#f2f2f2",
         "image-gap": 0
       }
     },
@@ -204,9 +200,8 @@
         "right-image-width": 258,
         "left-image-border": 0,
         "right-image-border": 20,
-        "left-image-border-color": "#F2F2F2",
+        "left-image-border-color": "#f2f2f2",
         "right-image-border-color": "#211c1d",
-        "margin": 340,
         "image-gap": 0
       }
     },
@@ -223,9 +218,8 @@
         "right-image-width": 250,
         "left-image-border": 20,
         "right-image-border": 0,
-        "left-image-border-color": "#F2F2F2",
-        "right-image-border-color": "#F2F2F2",
-        "margin": 340,
+        "left-image-border-color": "#f2f2f2",
+        "right-image-border-color": "#f2f2f2",
         "image-gap": 0
       }
     },
@@ -242,9 +236,8 @@
         "right-image-width": 250,
         "left-image-border": 0,
         "right-image-border": 0,
-        "left-image-border-color": "#F2F2F2",
-        "right-image-border-color": "#F2F2F2",
-        "margin": 340,
+        "left-image-border-color": "#f2f2f2",
+        "right-image-border-color": "#f2f2f2",
         "image-gap": 0
       }
     },
@@ -261,9 +254,8 @@
         "right-image-width": 450,
         "left-image-border": 0,
         "right-image-border": 0,
-        "left-image-border-color": "#F2F2F2",
-        "right-image-border-color": "#F2F2F2",
-        "margin": 140,
+        "left-image-border-color": "#f2f2f2",
+        "right-image-border-color": "#f2f2f2",
         "image-gap": 0
       }
     },
@@ -280,9 +272,8 @@
         "right-image-width": 450,
         "left-image-border": 0,
         "right-image-border": 0,
-        "left-image-border-color": "#F2F2F2",
-        "right-image-border-color": "#F2F2F2",
-        "margin": 130,
+        "left-image-border-color": "#f2f2f2",
+        "right-image-border-color": "#f2f2f2",
         "image-gap": 15
       }
     },
@@ -339,27 +330,67 @@
         "right-image-width": 428,
         "left-image-border": 0,
         "right-image-border": 20,
-        "left-image-border-color": "#F2F2F2",
-        "right-image-border-color": "#F2F2F2",
-        "margin": 190,
+        "left-image-border-color": "#f2f2f2",
+        "right-image-border-color": "#f2f2f2",
         "image-gap": 0
+      }
+    },
+    "52669e95-3d6a-4d3b-97b0-78556a808fd5": {
+      "type": "wax-london-text-and-spacer",
+      "blocks": {
+        "79757065-abbd-49b6-b0cd-7d3410e44193": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 50
+          }
+        },
+        "template--16584252096766__52669e95-3d6a-4d3b-97b0-78556a808fd5-1667991354561b4b68-0": {
+          "type": "single-column-text-block",
+          "settings": {
+            "single-column-richtext": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Sed maximus malesuada nibh sed ultrices.”<\/p>",
+            "single-column-text-align": "left",
+            "single-column-text-margin": 200,
+            "single-column-text-font-family": "",
+            "single-column-text-color": "#000000",
+            "single-column-text-size": 20,
+            "single-column-line-height": 1.5
+          }
+        },
+        "template--16584252096766__52669e95-3d6a-4d3b-97b0-78556a808fd5-1667991354561b4b68-1": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 50
+          }
+        }
+      },
+      "block_order": [
+        "79757065-abbd-49b6-b0cd-7d3410e44193",
+        "template--16584252096766__52669e95-3d6a-4d3b-97b0-78556a808fd5-1667991354561b4b68-0",
+        "template--16584252096766__52669e95-3d6a-4d3b-97b0-78556a808fd5-1667991354561b4b68-1"
+      ],
+      "settings": {
+        "padding-top": 0,
+        "padding-right": 0,
+        "padding-bottom": 0,
+        "padding-left": 0
       }
     },
     "image-and-text": {
       "type": "wax-london-image-and-text",
       "settings": {
-        "section-text": "",
+        "section-image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+        "section-text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero.<br\/><br\/> Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
         "image-caption": "",
         "image-caption-align": "left",
         "text-align": "left",
-        "image-section-width": 200,
-        "text-section-width": 200,
+        "image-section-width": 470,
+        "text-section-width": 310,
         "text-color": "#000000",
-        "text-size": 10,
-        "margin": 0,
-        "left-right-gap": 0,
-        "text-section-padding-top-bottom": 0,
-        "text-section-padding-left-right": 0,
+        "text-size": 8,
+        "margin": 250,
+        "left-right-gap": 45,
+        "text-section-padding-top-bottom": 45,
+        "text-section-padding-left-right": 45,
         "text-section-background-color": "#f2f2f2",
         "flip-content": false
       }
@@ -378,6 +409,7 @@
     "764b2af1-b74a-464f-a73e-7a7b702b377b",
     "0f5c9f5e-4a01-4403-abc1-de183a976ac7",
     "424f1718-4ec7-4238-a939-3aeef4c8b38f",
+    "52669e95-3d6a-4d3b-97b0-78556a808fd5",
     "image-and-text"
   ]
 }
