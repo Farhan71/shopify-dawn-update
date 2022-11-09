@@ -196,8 +196,8 @@
       "settings": {
         "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
         "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
-        "left-image-caption": "<p>jhhlhu<\/p>",
-        "right-image-caption": "<p>hlhjkl<\/p>",
+        "left-image-caption": "",
+        "right-image-caption": "",
         "left-image-caption-align": "left",
         "right-image-caption-align": "left",
         "left-image-width": 250,
@@ -207,6 +207,141 @@
         "left-image-border-color": "#F2F2F2",
         "right-image-border-color": "#211c1d",
         "margin": 340,
+        "image-gap": 0
+      }
+    },
+    "b1ad9f10-6c4b-4765-b520-f756d6255ea9": {
+      "type": "wax-london-double-image",
+      "settings": {
+        "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+        "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+        "left-image-caption": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+        "right-image-caption": "<p>Model wears Oz Shirt Grey and Yellow Check with Fisherman Beanie Khaki and Pleat Trousers Black<\/p>",
+        "left-image-caption-align": "left",
+        "right-image-caption-align": "left",
+        "left-image-width": 258,
+        "right-image-width": 250,
+        "left-image-border": 20,
+        "right-image-border": 0,
+        "left-image-border-color": "#F2F2F2",
+        "right-image-border-color": "#F2F2F2",
+        "margin": 340,
+        "image-gap": 0
+      }
+    },
+    "35f097d6-d3c0-4e82-aace-4e9b8edf0be0": {
+      "type": "wax-london-double-image",
+      "settings": {
+        "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+        "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+        "left-image-caption": "",
+        "right-image-caption": "",
+        "left-image-caption-align": "left",
+        "right-image-caption-align": "left",
+        "left-image-width": 250,
+        "right-image-width": 250,
+        "left-image-border": 0,
+        "right-image-border": 0,
+        "left-image-border-color": "#F2F2F2",
+        "right-image-border-color": "#F2F2F2",
+        "margin": 340,
+        "image-gap": 0
+      }
+    },
+    "047687a1-bb45-4c12-b42a-8aa238ef8cd1": {
+      "type": "wax-london-double-image",
+      "settings": {
+        "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+        "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+        "left-image-caption": "",
+        "right-image-caption": "",
+        "left-image-caption-align": "left",
+        "right-image-caption-align": "left",
+        "left-image-width": 450,
+        "right-image-width": 450,
+        "left-image-border": 0,
+        "right-image-border": 0,
+        "left-image-border-color": "#F2F2F2",
+        "right-image-border-color": "#F2F2F2",
+        "margin": 140,
+        "image-gap": 0
+      }
+    },
+    "764b2af1-b74a-464f-a73e-7a7b702b377b": {
+      "type": "wax-london-double-image",
+      "settings": {
+        "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+        "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+        "left-image-caption": "",
+        "right-image-caption": "",
+        "left-image-caption-align": "left",
+        "right-image-caption-align": "left",
+        "left-image-width": 450,
+        "right-image-width": 450,
+        "left-image-border": 0,
+        "right-image-border": 0,
+        "left-image-border-color": "#F2F2F2",
+        "right-image-border-color": "#F2F2F2",
+        "margin": 130,
+        "image-gap": 15
+      }
+    },
+    "0f5c9f5e-4a01-4403-abc1-de183a976ac7": {
+      "type": "wax-london-text-and-spacer",
+      "blocks": {
+        "02d8a506-b43d-4d0e-a052-8ba4ac1c4fcf": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 20
+          }
+        },
+        "template--16584252096766__0f5c9f5e-4a01-4403-abc1-de183a976ac7-16679852215403e6a3-0": {
+          "type": "single-column-text-block",
+          "settings": {
+            "single-column-richtext": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed ipsum et diam tincidunt scelerisque. Integer gravida quam nibh, nec sollicitudin metus mollis nec. In vulputate, neque id fermentum scelerisque, nisi neque porttitor velit, id scelerisque purus libero ut nulla. Praesent fringilla convallis egestas. Sed maximus malesuada nibh sed ultrices.<\/p>",
+            "single-column-text-align": "left",
+            "single-column-text-margin": 130,
+            "single-column-text-font-family": "",
+            "single-column-text-color": "#000000",
+            "single-column-text-size": 20,
+            "single-column-line-height": 1.5
+          }
+        },
+        "921f5d66-c7db-4ac1-ab74-4304b9c9c2c2": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 20
+          }
+        }
+      },
+      "block_order": [
+        "02d8a506-b43d-4d0e-a052-8ba4ac1c4fcf",
+        "template--16584252096766__0f5c9f5e-4a01-4403-abc1-de183a976ac7-16679852215403e6a3-0",
+        "921f5d66-c7db-4ac1-ab74-4304b9c9c2c2"
+      ],
+      "settings": {
+        "padding-top": 0,
+        "padding-right": 0,
+        "padding-bottom": 0,
+        "padding-left": 0
+      }
+    },
+    "424f1718-4ec7-4238-a939-3aeef4c8b38f": {
+      "type": "wax-london-double-image",
+      "settings": {
+        "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+        "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+        "left-image-caption": "",
+        "right-image-caption": "",
+        "left-image-caption-align": "left",
+        "right-image-caption-align": "left",
+        "left-image-width": 420,
+        "right-image-width": 428,
+        "left-image-border": 0,
+        "right-image-border": 20,
+        "left-image-border-color": "#F2F2F2",
+        "right-image-border-color": "#F2F2F2",
+        "margin": 190,
         "image-gap": 0
       }
     },
@@ -237,6 +372,12 @@
     "abb82d7e-4b9d-4d61-a705-b8ea4caf7a86",
     "double-image",
     "1eefce2f-464c-4a9a-8532-ba24bffed5dc",
+    "b1ad9f10-6c4b-4765-b520-f756d6255ea9",
+    "35f097d6-d3c0-4e82-aace-4e9b8edf0be0",
+    "047687a1-bb45-4c12-b42a-8aa238ef8cd1",
+    "764b2af1-b74a-464f-a73e-7a7b702b377b",
+    "0f5c9f5e-4a01-4403-abc1-de183a976ac7",
+    "424f1718-4ec7-4238-a939-3aeef4c8b38f",
     "image-and-text"
   ]
 }
