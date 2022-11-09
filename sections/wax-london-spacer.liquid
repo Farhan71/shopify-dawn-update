@@ -1,0 +1,33 @@
+ <section class="spacer-wrapper-{{ section.id }}">
+  
+</section>
+
+<style>
+     .spacer-wrapper-{{ section.id }}{
+        height: {{ section.settings.spacer-height }}px;
+      }
+</style>
+
+{% schema %}
+{
+    "name": "wax-london-spacer",
+    "settings": [
+        {
+            "type":"range",
+            "id":"spacer-height",
+            "label":"spacer-height",
+            "min":10,
+            "max":200,
+            "step":10,
+            "unit":"px",
+            "default":50
+        }
+    ],
+    "presets": [
+        {
+           "category":"content",
+           "name":"wax-london-spacer"
+        }
+    ]
+}
+{% endschema %}

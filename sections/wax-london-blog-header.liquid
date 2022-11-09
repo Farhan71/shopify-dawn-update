@@ -1,0 +1,32 @@
+<section class="blog-header-{{ section.id }}">
+    <span> {{ article.author }} </span>
+    <span> {{ article.title }} </span>
+    <span> {{ article.published_at }} </span> 
+</section>
+
+
+{% schema %}
+{
+    "name": "wax-london-blog-header",
+    "settings": [
+        {
+            
+                 "type":"range",
+                 "id":"double-column-text-margin",
+                 "label":"text-margin",
+                 "min":50,
+                 "max":200,
+                 "step":10,
+                 "unit":"px",
+                 "default":50
+              
+        }
+    ],
+    "presets": [
+        {
+           "category":"content",
+           "name":"wax-london-blog-header"
+        }
+    ]
+}
+{% endschema %}

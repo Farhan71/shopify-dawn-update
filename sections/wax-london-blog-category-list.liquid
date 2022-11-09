@@ -1,0 +1,151 @@
+<section class="blog-category-list-wrapper-{{ section.id }} blog-category-list-{{ section.settings.section-width }}">
+
+    <span> {{ section.settings.title }} </span>
+
+    {% for item in section.blocks %}
+        <div class="block-{{ item.id }}">
+            {% case item.type %}
+                {% when "category-list" %}
+                    <a href=" {{ item.settings.category-link }} "> {{ item.settings.category-name }} </a>
+                {% else %}
+                    
+            {% endcase %}
+        </div>
+    {% endfor %}
+</section>
+
+<style>
+    .blog-category-list-wrapper-{{ section.id }} {
+        text-align: center;
+    }
+    .blog-category-list-wrapper-{{ section.id }} span {
+        font-size: {{ section.settings.title-font-size }}px;
+        display: block;
+    }
+    .blog-category-list-wrapper-{{ section.id }}.blog-category-list-small {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .blog-category-list-wrapper-{{ section.id }}.blog-category-list-medium {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .blog-category-list-wrapper-{{ section.id }}.blog-category-list-full {
+        max-width: 100%;
+        
+    }
+
+    .blog-category-list-wrapper-{{ section.id }}.blog-category-list-custom {
+        max-width: {{ section.settings.custom-section-width | append: "px" }};
+        margin: 0 auto;
+    }
+
+    {% for item in section.blocks %} 
+    .block-{{ item.id }} {
+        display: inline;
+    }
+    .block-{{ item.id }} a {
+                text-decoration: none;
+                color: black;
+                font-size: {{ section.settings.category-title-font-size }}px;
+                margin: auto 4px;
+    }
+
+
+    {% endfor %}
+
+
+</style>
+
+{% schema %}
+{
+    "name": "wax-london-blog-cat-list",
+    "settings" : [
+        {
+            "type" : "text",
+            "id" : "title",
+            "label" : "title"
+        },
+        {
+            "type":"range",
+            "id":"title-font-size",
+            "label":"title font size",
+            "min":8,
+            "max":40,
+            "step":1,
+            "unit":"px",
+            "default":10
+        },
+        {
+            "type":"range",
+            "id":"category-title-font-size",
+            "label":"category title font size",
+            "min":8,
+            "max":40,
+            "step":1,
+            "unit":"px",
+            "default":10
+        },
+        {
+            "type": "select",
+            "id": "section-width",
+            "label": "Section Width",
+            "options": [
+            {
+            "value": "small",
+            "label": "Small"
+            },
+            {
+            "value": "medium",
+            "label": "Medium"
+            },
+            {
+            "value": "full",
+            "label": "Full"
+            },
+            {
+            "value": "custom",
+            "label": "Custom"
+            }
+        ],
+        "default": "medium"
+        },
+        {  
+            "type": "range",
+            "id": "custom-section-width",
+            "label": "Custom section width",
+            "min": 200,
+            "max": 1900,
+            "step": 50,
+            "unit": "px",
+            "default": 800
+        }
+  ],
+  "blocks": [
+    {
+        "name" : "category-list", 
+        "type" : "category-list",
+        "settings" : [
+            {
+                "type" : "text",
+                "id" : "category-name",
+                "label" : "category-name"
+            },
+            {
+                "type" : "url",
+                "id" : "category-link",
+                "label" : "category-link"
+            }
+        ]
+    }
+  ],
+  "presets": [
+    {
+        "category":"content",
+        "name":"wax-london-blog-cat-list"
+    }
+  ]
+}
+{% endschema %}
