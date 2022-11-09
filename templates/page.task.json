@@ -185,6 +185,8 @@
         "right-image-width": 250,
         "left-image-border": 0,
         "right-image-border": 0,
+        "left-image-border-color": "#F2F2F2",
+        "right-image-border-color": "#F2F2F2",
         "margin": 340,
         "image-gap": 0
       }
@@ -202,6 +204,8 @@
         "right-image-width": 258,
         "left-image-border": 0,
         "right-image-border": 20,
+        "left-image-border-color": "#F2F2F2",
+        "right-image-border-color": "#211c1d",
         "margin": 340,
         "image-gap": 0
       }
