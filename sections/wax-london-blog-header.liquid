@@ -1,8 +1,47 @@
-<section class="blog-header-{{ section.id }}">
-    <span> {{ article.author }} </span>
-    <span> {{ article.title }} </span>
-    <span> {{ article.published_at }} </span> 
+<section class="blog-header-{{ section.id }} blog-header-{{ section.settings.section-width }}">
+    <span class="title"> {{ article.title }} </span>
+    <span> Posted on {{ article.published_at }} - Words by {{ article.author }} </span> 
+    
+    <span> Posted in Integrity at  
+    {% for tag in article.tags %}
+        {{ tag }} ,
+    {% endfor %}
+</span>
 </section>
+ 
+<style>
+    .blog-header-{{ section.id }} {
+        text-align: center;
+    }
+    .blog-header-{{ section.id }} .title {
+        font-size: 30px;
+        font-weight: bolder;
+    }
+    .blog-header-{{ section.id }} span {
+        display: block;
+    }
+
+    .blog-header-{{ section.id }}.blog-header-small {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .blog-header-{{ section.id }}.blog-header-medium {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .blog-header-{{ section.id }}.blog-header-full {
+        max-width: 100%;
+        
+    }
+
+    .blog-header-{{ section.id }}.blog-header-custom {
+        max-width: {{ section.settings.custom-section-width | append: "px" }};
+        margin: 0 auto;
+    }
+</style>
+
 
 
 {% schema %}
@@ -10,16 +49,38 @@
     "name": "wax-london-blog-header",
     "settings": [
         {
-            
-                 "type":"range",
-                 "id":"double-column-text-margin",
-                 "label":"text-margin",
-                 "min":50,
-                 "max":200,
-                 "step":10,
-                 "unit":"px",
-                 "default":50
-              
+            "type": "select",
+            "id": "section-width",
+            "label": "Section Width",
+            "options": [
+            {
+            "value": "small",
+            "label": "Small"
+            },
+            {
+            "value": "medium",
+            "label": "Medium"
+            },
+            {
+            "value": "full",
+            "label": "Full"
+            },
+            {
+            "value": "custom",
+            "label": "Custom"
+            }
+        ],
+        "default": "medium"
+        },
+        {  
+            "type": "range",
+            "id": "custom-section-width",
+            "label": "Custom section width",
+            "min": 200,
+            "max": 1900,
+            "step": 50,
+            "unit": "px",
+            "default": 800
         }
     ],
     "presets": [
