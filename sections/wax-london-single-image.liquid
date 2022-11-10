@@ -1,88 +1,110 @@
 <style>
-   [id = "single-image-section-wrapper-{{ section.id }} "] {
-      padding: {{ section.settings.single-image-section-padding-top }}px {{ section.settings.single-image-section-padding-left }}px {{ section.settings.single-image-section-padding-bottom }}px {{ section.settings.single-image-section-padding-left }}px;
-      margin: 0 auto;
-      text-align: center;
-      width: {{ section.settings.section-width }}%;
-    
-    }
 
-    [id = "single-image-section-wrapper-{{ section.id }} "] img {
-      width: 100%;
-    }
-    [id = "single-image-section-wrapper-{{ section.id }} "] span {
-      font-family: {{ section.settings.caption-font-family }};
-      color: {{ section.settings.caption-color }};
-      font-size: {{ section.settings.caption-size }}px;
+   {% for block in section.blocks %}
+     
+      {% case block.type %}
+         {% when "single-image-block" %}
+            
+            .single-image-block-{{ block.id }}.block-width-small {
+               max-width: 600px;
+               margin: 0 auto;
+            }
+            .single-image-block-{{ block.id }}.block-width-medium {
+               max-width: 900px;
+               margin: 0 auto;
+            }
+            .single-image-block-{{ block.id }}.block-width-full {
+               max-width: 100%;
+            }
       
-    }
-    [id = "single-image-section-wrapper-{{ section.id }} "] span p {
-      margin: 0px;
+            .single-image-block-{{ block.id }}.block-width-custom {
+               max-width: {{ block.settings.custom-block-width | append: "px" }};
+               margin: 0 auto;
+            }
       
-    }
+                   
+            .single-image-block-{{ block.id }} img {
+               width: 100%;
+            }
+
+               .single-image-block-{{ block.id }} span {
+               font-family: {{ block.settings.caption-font-family }};
+               color: {{ block.settings.caption-color }};
+               font-size: {{ block.settings.caption-size }}px;
+               
+               }
+               .single-image-block-{{ block.id }} span p {
+               margin: 0px;
+               
+               }
+
+               .single-image-block-{{ block.id }} span p a {
+               color: {{ block.settings.caption-color }};
+               }
+               
+            {% if block.settings.show-caption %}
+               .single-image-section-{{ section.id }} .single-image-block-{{ block.id }} span {
+                  display: none;
+               }
+            {% endif %}
+
+
+            {% when "spacer-block" %}
+               .single-column-text-{{ section.id }}  .spacer-{{ block.id }} {
+                   height: {{ block.settings.spacer-height }}px;
+               }
+            
+      {% endcase %}
+
+     
   
-    [id = "single-image-section-wrapper-{{ section.id }} "] span p a {
-      color: {{ section.settings.caption-color }};
-    }
+   {% endfor %}
+
+ 
+
   </style>
   
   
   
-  <div id="single-image-section-wrapper-{{ section.id }} "> 
+  <section class="single-image-section-{{ section.id }} "> 
+
+   {% for block in section.blocks %}
+      {% case block.type %}
+         {% when "single-image-block" %}
+            <div class="single-image-block-{{ block.id }} block-width-{{ block.settings.block-width }}">
+               <img src="{{ block.settings.image-picker | img_url: 'grande' }}" alt="" width="" height="" loading="lazy"> 
+               <span class=" {{ block.settings.text-align }} "> {{ block.settings.image-caption }} </span>
+            </div>
+           
+               
+
+         {% when 'spacer-block' %}
+
+            <section class="spacer-{{ block.id }}">
+                  
+            </section>
+         
+      {% endcase %}
+      
+   {% endfor %}
   
-    <img src="{{ section.settings.image-picker | img_url: 'grande' }}" alt="" width="" height="" loading="lazy"> 
-    <span class=" {{ section.settings.text-align }} "> {{ section.settings.image-caption }} </span>
+   
      
   
   
-  </div>
+</section>
   
   
   
   {% schema %} 
     {
      "name":"wax-london-single-image",
-     "settings":[
-        {
-           "type":"range",
-           "id":"single-image-section-padding-top",
-           "label":"padding top",
-           "min":0,
-           "max":200,
-           "step":10,
-           "unit":"px",
-           "default":0
-        },
-        {
-           "type":"range",
-           "id":"single-image-section-padding-left",
-           "label":"padding right",
-           "min":0,
-           "max":200,
-           "step":10,
-           "unit":"px",
-           "default":0
-        },
-        {
-           "type":"range",
-           "id":"single-image-section-padding-bottom",
-           "label":"padding bottom",
-           "min":0,
-           "max":200,
-           "step":10,
-           "unit":"px",
-           "default":0
-        },
-        {
-           "type":"range",
-           "id":"single-image-section-padding-right",
-           "label":"padding left",
-           "min":0,
-           "max":200,
-           "step":10,
-           "unit":"px",
-           "default":0
-        },
+     "blocks": [
+         {
+            "name": "single-image-block",
+            "type": "single-image-block",
+            "settings":[
+       
         {
           "type": "image_picker",
           "id": "image-picker",
@@ -133,38 +155,67 @@
             }
          ]
       },
+
       {
-        "type": "range",
-        "id": "section-width",
-        "label": "width",  
-        "min": 10,
-        "max": 100,
-        "step": 5,
-        "unit": "%",
-        "default": 100
+                "type": "select",
+                "id": "block-width",
+                "label": "Block width",
+                "options": [
+                {
+                "value": "small",
+                "label": "Small"
+                },
+                {
+                "value": "medium",
+                "label": "Medium"
+                },
+                {
+                "value": "full",
+                "label": "Full"
+                },
+                {
+                "value": "custom",
+                "label": "Custom"
+                }
+            ],
+            "default": "medium"
+            },
+            {  
+                "type": "range",
+                "id": "custom-block-width",
+                "label": "Custom block width",
+                "min": 200,
+                "max": 1900,
+                "step": 50,
+                "unit": "px",
+                "default": 800
+            },
+      {
+        "type": "checkbox",
+        "id": "show-caption",
+        "label": "show caption",
+        "default": false
       }
-      // {
-      //   "type": "range",
-      //   "id": "section-height",
-      //   "label": "height",  
-      //   "min": 10,
-      //   "max": 900,
-      //   "step": 10,
-      //   "unit": "px",
-      //   "default": 500 
-      // },
-      // {
-      //   "type": "range",
-      //   "id": "margin",
-      //   "label": "margin",  
-      //   "min": 0,
-      //   "max": 800,
-      //   "step": 10,
-      //   "unit": "px",
-      //   "default": 0
-      // }
-      
-     ],
+     ]
+
+         },
+         {
+            "type": "spacer-block",
+            "name": "Spacer",
+              "settings":[
+                {
+                  "type": "range",
+                  "id": "spacer-height",
+                  "label": "Spacer Height",
+                  "min": 0,
+                  "max": 200,
+                  "step": 5,
+                  "unit": "px",
+                  "default": 30
+                }
+              ]
+         }
+     ], 
      "presets":[
         {
            "category":"content",

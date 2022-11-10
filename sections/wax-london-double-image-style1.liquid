@@ -1,0 +1,298 @@
+<section class="double-image-style1-{{ section.id }}">
+    {% for block in section.blocks %}
+        {% case block.type %}
+            {% when "double-image-block" %}
+                <div class="double-image-block-{{ block.id }} block-width-{{ block.settings.block-width }}">
+
+                    <div class="image-part">
+                        <div class="left-image">
+                            <img src="{{ block.settings.image-left | img_url: 'grande' }}" alt="" width="" height="" loading="lazy">
+                        </div>
+
+                        <div class="right-image">
+                            <img src="{{ block.settings.image-right | img_url: 'grande' }}" alt="" width="" height="" loading="lazy">
+                        </div>
+                                   
+                    </div>
+
+                    <div class="text-part">
+                        <div class="left-caption">
+                            <span> {{ block.settings.left-image-caption }} </span> 
+                        </div>       
+
+                        <div class="right-caption">
+                            <span> {{ block.settings.right-image-caption }} </span>  
+                        </div>                   
+                    </div>
+
+
+
+
+
+                   
+
+                </div>
+            
+
+
+            {% when 'spacer-block' %}
+
+                <section class="spacer-{{ block.id }}">
+                        
+                </section>
+
+        {% endcase %}
+    {% endfor %}
+</section>
+
+
+
+<style>
+   
+    {% for block in section.blocks %}
+
+        {% case block.type %}
+            {% when "double-image-block" %}
+                .double-image-block-{{ block.id }} span {
+                    display: none;
+                }
+                       
+                .double-image-block-{{ block.id }} .text-part span p {
+                    margin: 0 auto;
+                }
+            .double-image-block-{{ block.id }}.block-width-small {
+                max-width: 600px;
+                margin: 0 auto;
+             }
+             .double-image-block-{{ block.id }}.block-width-medium {
+                max-width: 900px;
+                margin: 0 auto;
+             }
+             .double-image-block-{{ block.id }}.block-width-full {
+                max-width: 100%;
+             }
+       
+             .double-image-block-{{ block.id }}.block-width-custom {
+                max-width: {{ block.settings.custom-block-width | append: "px" }};
+                margin: 0 auto;
+             }
+       
+
+             .double-image-block-{{ block.id }} .image-part {
+                display: flex;
+                justify-content: center;
+              
+             }
+             
+             .double-image-block-{{ block.id }} .text-part {
+                display: flex;
+                justify-content: center;
+              
+             }
+
+             .double-image-block-{{ block.id }} .image-part .left-image,  .double-image-block-{{ block.id }} .image-part .right-image  {
+                width: 50%;
+             }
+
+             .double-image-block-{{ block.id }} .text-part .left-caption,  .double-image-block-{{ block.id }} .text-part .right-caption  {
+                width: 50%;
+             }
+
+             .double-image-block-{{ block.id }} img {
+                height: 100%;
+                width: 100%;
+             }
+             
+
+             {% if block.settings.space-between-images %}
+                
+             .double-image-block-{{ block.id }} .image-part  {
+                display: flex;
+                justify-content: space-between;
+             }
+             .double-image-block-{{ block.id }} .text-part {
+                display: flex;
+                justify-content: space-between;
+             }
+
+
+             .double-image-block-{{ block.id }} .image-part .left-image,  .double-image-block-{{ block.id }} .image-part .right-image  {
+                width: 49%;
+             }
+
+             .double-image-block-{{ block.id }} .text-part .left-caption,  .double-image-block-{{ block.id }} .text-part .right-caption  {
+                width: 49%;
+             }
+
+             {% endif %}
+
+
+             {% if block.settings.left-image-small %}
+
+                .double-image-block-{{ block.id }}  .image-part .left-image {
+{%- comment -%}                     
+                    display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    background-color: #f2f2f2; {%- endcomment -%}
+                }
+                .double-image-block-{{ block.id }}  .image-part .left-image img {
+                    padding: 45px;
+                    background-color: #f2f2f2;
+                }
+               
+                
+             {% endif %}
+
+             {% if block.settings.right-image-small %}
+
+                .double-image-block-{{ block.id }}  .image-part .right-image {
+                    {%- comment -%} display: flex;
+                    justify-content: center;
+                    align-items: center; 
+                    background-color: #f2f2f2; {%- endcomment -%}
+                }
+                .double-image-block-{{ block.id }}  .image-part .right-image img {
+                   padding: 45px;
+                   background-color: #f2f2f2;
+                    
+                }
+                
+             {% endif %}
+
+             {% if block.settings.show-caption %}
+                .double-image-block-{{ block.id }} span {
+                    display: inline;
+                }
+             {% endif %}
+
+            {% when "spacer-block" %}
+                .double-image-style1-{{ section.id }}  .spacer-{{ block.id }} {
+                    height: {{ block.settings.spacer-height }}px;
+                }
+            
+        {% endcase %}
+        
+    {% endfor %}
+
+
+</style>
+
+
+
+{% schema %}
+{
+    "name": "wl-double-image-style1",
+    "settings": [
+      
+    ],
+    "blocks": [
+        {
+            "name": "double-image-block",
+            "type": "double-image-block",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image-left",
+                    "label": "Image Left"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "image-right",
+                    "label": "Image Right"
+                },
+                {
+                    "type":"richtext",
+                    "id":"left-image-caption",
+                    "label":"left Image Caption"
+                }, 
+                {
+                    "type":"richtext",
+                    "id":"right-image-caption",
+                    "label":"right Image Caption"
+                },
+                {
+                "type": "select",
+                "id": "block-width",
+                "label": "Block width",
+                "options": [
+                {
+                "value": "small",
+                "label": "Small"
+                },
+                {
+                "value": "medium",
+                "label": "Medium"
+                },
+                {
+                "value": "full",
+                "label": "Full"
+                },
+                {
+                "value": "custom",
+                "label": "Custom"
+                }
+            ],
+            "default": "medium"
+            },
+            {  
+                "type": "range",
+                "id": "custom-block-width",
+                "label": "Custom block width",
+                "min": 200,
+                "max": 1900,
+                "step": 50,
+                "unit": "px",
+                "default": 800
+            },
+            {
+        "type": "checkbox",
+        "id": "show-caption",
+        "label": "show caption",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "left-image-small",
+        "label": "left image small",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "right-image-small",
+        "label": "right image small",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "space-between-images",
+        "label": "space between images",
+        "default": false
+      }
+            ]
+        },
+        {
+            "type": "spacer-block",
+            "name": "Spacer",
+              "settings":[
+                {
+                    "type": "range",
+                    "id": "spacer-height",
+                    "label": "Spacer Height",
+                    "min": 0,
+                    "max": 200,
+                    "step": 5,
+                    "unit": "px",
+                    "default": 30
+                }
+              ]
+        }
+    ],
+    "presets": [
+        {
+         "category":"content",
+           "name":"wl-double-image-style1"
+        }
+    ]
+}
+{% endschema %}

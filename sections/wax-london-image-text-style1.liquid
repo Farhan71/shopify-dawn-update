@@ -1,0 +1,249 @@
+<section class="image-text-style1-{{ section.id }}">
+
+    {% for block in section.blocks %}
+        {% case block.type %}
+            {% when "image-text-block" %}
+
+                <div class="image-text-style1-block-{{ block.id }} style1-block-width-{{ block.settings.block-width }}">
+
+                    <div class="image-part">
+                        <div class="image">
+                            <img src="{{ block.settings.image | img_url: 'grande' }}" alt="" width="" height="" loading="lazy">
+                        </div>
+
+                        <div class="caption">
+                            <span> {{ block.settings.caption }} </span> 
+                        </div>       
+
+
+                            
+                    </div>
+
+                    <div class="text-part">
+
+                        {{ block.settings.text }}                 
+                    </div>
+
+                </div>
+            
+
+
+            {% when 'spacer-block' %}
+
+                <section class="spacer-{{ block.id }}">
+                        
+                </section>
+
+        {% endcase %}
+    {% endfor %}
+</section>
+
+
+
+<style>
+   
+    {% for block in section.blocks %}
+
+        {% case block.type %}
+
+            {% when "image-text-block" %}
+                .image-text-style1-block-{{ block.id }} span {
+                    display: none;
+                }
+                       
+               
+                .image-text-style1-block-{{ block.id }}.style1-block-width-small {
+                max-width: 600px;
+                margin: 0 auto;
+             }
+             .image-text-style1-block-{{ block.id }}.style1-block-width-medium {
+                max-width: 900px;
+                margin: 0 auto;
+             }
+             .image-text-style1-block-{{ block.id }}.style1-block-width-full {
+                max-width: 100%;
+             }
+       
+             .image-text-style1-block-{{ block.id }}.style1-block-width-custom {
+                max-width: {{ block.settings.custom-block-width | append: "px" }};
+                margin: 0 auto;
+             }
+       
+
+             .image-text-style1-block-{{ block.id }}  {
+                display: flex;
+                justify-content: space-around;
+              
+             }
+             
+            
+
+             .image-text-style1-block-{{ block.id }} .image-part   {
+                width: calc(  {{ block.settings.image-part-width }}% - 1% );
+             }
+
+             .image-text-style1-block-{{ block.id }} .text-part  {
+                width: calc( 99% -  {{ block.settings.left-part-width }}% )
+             }
+
+             .image-text-style1-block-{{ block.id }} img  {
+                height: 100%;
+                width: 100%;
+             }
+             
+
+
+
+            
+
+             {% if block.settings.show-caption %}
+                .image-text-style1-block-{{ block.id }} span {
+                    display: inline;
+                }
+             {% endif %}
+
+             {% if block.settings.image-right %}
+                .image-text-style1-block-{{ block.id }}  {
+                  
+                    flex-direction: row-reverse;
+                  
+                 }
+                
+             {% endif %}
+
+
+
+
+            {% when "spacer-block" %}
+                .double-image-style1-{{ section.id }}  .spacer-{{ block.id }} {
+                    height: {{ block.settings.spacer-height }}px;
+                }
+            
+        {% endcase %}
+        
+    {% endfor %}
+
+
+</style>
+
+
+
+{% schema %}
+{
+    "name": "wl-image-text-style1",
+    "settings": [
+      
+    ],
+    "blocks": [
+        {
+            "name": "image-text-block",
+            "type": "image-text-block",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type":"richtext",
+                    "id":"caption",
+                    "label":"Image Caption"
+                }, 
+                {
+                    "type":"richtext",
+                    "id":"text",
+                    "label":"description"
+                },
+                {
+                 "type":"range",
+                 "id":"description-text-size",
+                 "label":"description text size",
+                 "min":8,
+                 "max":40,
+                 "step":1,
+                 "unit":"px",
+                 "default":10
+              },
+                {
+                "type": "select",
+                "id": "block-width",
+                "label": "Block width",
+                "options": [
+                {
+                "value": "small",
+                "label": "Small"
+                },
+                {
+                "value": "medium",
+                "label": "Medium"
+                },
+                {
+                "value": "full",
+                "label": "Full"
+                },
+                {
+                "value": "custom",
+                "label": "Custom"
+                }
+            ],
+            "default": "medium"
+            },
+            {  
+                "type": "range",
+                "id": "custom-block-width",
+                "label": "Custom block width",
+                "min": 200,
+                "max": 1900,
+                "step": 50,
+                "unit": "px",
+                "default": 800
+            },
+            {
+                "type": "range",
+                "id": "image-part-width",
+                "label": "image part width",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "%",
+                "default": 50
+            }, 
+            {
+        "type": "checkbox",
+        "id": "image-right",
+        "label": "image right",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show-caption",
+        "label": "show caption",
+        "default": false
+      }
+            ]
+        },
+        {
+            "type": "spacer-block",
+            "name": "Spacer",
+              "settings":[
+                {
+                    "type": "range",
+                    "id": "spacer-height",
+                    "label": "Spacer Height",
+                    "min": 0,
+                    "max": 200,
+                    "step": 5,
+                    "unit": "px",
+                    "default": 30
+                }
+              ]
+        }
+    ],
+    "presets": [
+        {
+         "category":"content",
+           "name":"wl-image-text-style1"
+        }
+    ]
+}
+{% endschema %}
