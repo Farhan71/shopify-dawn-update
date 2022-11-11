@@ -21,6 +21,10 @@
                max-width: {{ block.settings.custom-block-width | append: "px" }};
                margin: 0 auto;
             }
+
+            .single-image-section-{{ section.id }} .single-image-block-{{ block.id }} span {
+               display: none;
+            }
       
                    
             .single-image-block-{{ block.id }} img {
@@ -44,13 +48,13 @@
                
             {% if block.settings.show-caption %}
                .single-image-section-{{ section.id }} .single-image-block-{{ block.id }} span {
-                  display: none;
+                  display: inline;
                }
             {% endif %}
 
 
             {% when "spacer-block" %}
-               .single-column-text-{{ section.id }}  .spacer-{{ block.id }} {
+               .single-image-section-{{ section.id }}  .spacer-{{ block.id }} {
                    height: {{ block.settings.spacer-height }}px;
                }
             
