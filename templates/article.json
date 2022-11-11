@@ -753,7 +753,13 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/1_1feee419-f3d5-4f48-a188-7d135eb79bcb.jpg",
-            "block_width": 600
+            "block_width": 700
+          }
+        },
+        "5aa0b26c-0611-43b5-afae-8a72dbc73007": {
+          "type": "spacer",
+          "settings": {
+            "space_height": 30
           }
         },
         "3ea3fc12-c927-44c6-9f22-4b1ad9574a39": {
@@ -769,6 +775,23 @@
             "list_item": "<p>List 2<\/p>",
             "block_width": 400
           }
+        },
+        "d40c20d2-5a46-49dc-8834-a010bf2ed345": {
+          "type": "list",
+          "settings": {
+            "list_item": "<p>List 3<\/p>",
+            "block_width": 400
+          }
+        },
+        "bf8fcb33-c7fd-4f5e-b388-4c31d38b2c7d": {
+          "type": "button",
+          "settings": {
+            "button_text": "Listen Now",
+            "button_url": "",
+            "button_text_color": "#ffffff",
+            "button_bg_color": "#333333",
+            "button_font_size": 15
+          }
         }
       },
       "block_order": [
@@ -779,8 +802,11 @@
         "f922950b-e89f-41c2-8d79-2b7305066910",
         "820f3eab-ebcc-49e8-ad8b-5ea06de1583f",
         "9d8f45c1-a01b-4de0-9844-e06e376bb2af",
+        "5aa0b26c-0611-43b5-afae-8a72dbc73007",
         "3ea3fc12-c927-44c6-9f22-4b1ad9574a39",
-        "f4a47ec2-8f3d-4874-9876-4ad06e9cf794"
+        "f4a47ec2-8f3d-4874-9876-4ad06e9cf794",
+        "d40c20d2-5a46-49dc-8834-a010bf2ed345",
+        "bf8fcb33-c7fd-4f5e-b388-4c31d38b2c7d"
       ],
       "settings": {
       }
