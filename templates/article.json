@@ -700,6 +700,27 @@
     },
     "faq": {
       "type": "faq",
+      "blocks": {
+        "d906b181-9845-40cb-a768-210f57797356": {
+          "type": "spacer",
+          "settings": {
+            "space_height": 30
+          }
+        },
+        "7eeb7c09-7845-4fcd-9de0-507e3978e99c": {
+          "type": "question",
+          "settings": {
+            "question_text": "<p>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/p>",
+            "question_font_size": 18,
+            "question_colour": "#E37730",
+            "block_width": 600
+          }
+        }
+      },
+      "block_order": [
+        "d906b181-9845-40cb-a768-210f57797356",
+        "7eeb7c09-7845-4fcd-9de0-507e3978e99c"
+      ],
       "settings": {
       }
     },
