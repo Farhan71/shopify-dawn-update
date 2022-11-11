@@ -2,12 +2,55 @@
   "sections": {
     "blog-category-list": {
       "type": "wax-london-blog-category-list",
+      "blocks": {
+        "6f4c6d21-0275-4a2f-9c1b-32bdae9f30cb": {
+          "type": "category-list",
+          "settings": {
+            "category-name": "Latest",
+            "category-link": ""
+          }
+        },
+        "1b84d082-7e19-4167-9bf4-36968e80474f": {
+          "type": "category-list",
+          "settings": {
+            "category-name": "Wax Meets",
+            "category-link": ""
+          }
+        },
+        "2571ee28-9c3b-464c-8eac-1bd71a83baba": {
+          "type": "category-list",
+          "settings": {
+            "category-name": "Integrity At Wax",
+            "category-link": ""
+          }
+        },
+        "b3993b96-7b7b-4014-a300-f48b9e67ae75": {
+          "type": "category-list",
+          "settings": {
+            "category-name": "Wax Radio",
+            "category-link": ""
+          }
+        }
+      },
+      "block_order": [
+        "6f4c6d21-0275-4a2f-9c1b-32bdae9f30cb",
+        "1b84d082-7e19-4167-9bf4-36968e80474f",
+        "2571ee28-9c3b-464c-8eac-1bd71a83baba",
+        "b3993b96-7b7b-4014-a300-f48b9e67ae75"
+      ],
       "settings": {
+        "title": "Journal",
+        "title-font-size": 24,
+        "category-title-font-size": 16,
+        "section-width": "medium",
+        "custom-section-width": 800
       }
     },
     "blog-header": {
       "type": "wax-london-blog-header",
       "settings": {
+        "section-width": "medium",
+        "custom-section-width": 800
       }
     },
     "single-column-text": {
@@ -48,6 +91,7 @@
     "spacer": {
       "type": "wax-london-spacer",
       "settings": {
+        "spacer-height": 50
       }
     },
     "faq": {
@@ -62,8 +106,17 @@
     }
   },
   "order": [
-    "blog-category-list", "blog-header", "single-column-text", "double-column-text", "single-image",
-    "double-image-style1", "double-image-style2", "image-text-style1", "image-text-style2", "spacer",
-    "faq", "youtube"
+    "blog-category-list",
+    "blog-header",
+    "single-column-text",
+    "double-column-text",
+    "single-image",
+    "double-image-style1",
+    "double-image-style2",
+    "image-text-style1",
+    "image-text-style2",
+    "spacer",
+    "faq",
+    "youtube"
   ]
 }
