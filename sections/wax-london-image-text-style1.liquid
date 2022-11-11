@@ -13,10 +13,7 @@
 
                         <div class="caption">
                             <span> {{ block.settings.caption }} </span> 
-                        </div>       
-
-
-                            
+                        </div>                                 
                     </div>
 
                     <div class="text-part">
@@ -72,7 +69,7 @@
 
              .image-text-style1-block-{{ block.id }}  {
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
               
              }
              
@@ -83,7 +80,12 @@
              }
 
              .image-text-style1-block-{{ block.id }} .text-part  {
-                width: calc( 99% -  {{ block.settings.left-part-width }}% )
+                width: calc( 99% -  {{ block.settings.image-part-width }}% );
+                font-size: {{ block.settings.description-text-size }}px;
+             }
+
+             .image-text-style1-block-{{ block.id }} .text-part p {
+                margin: 0 auto;
              }
 
              .image-text-style1-block-{{ block.id }} img  {
