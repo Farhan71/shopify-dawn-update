@@ -272,6 +272,12 @@
             "right-image-small": false,
             "space-between-images": true
           }
+        },
+        "8c0c1f74-7784-4538-9315-8b22af80e5b3": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
         }
       },
       "block_order": [
@@ -282,7 +288,8 @@
         "f3736e41-4416-4bbb-b17c-45278f4505bd",
         "54ab9d28-59d0-4e38-ad3d-1c2893e7a508",
         "2463c9ab-61d7-413a-a08a-4b364307d450",
-        "cb371a5d-9d98-42a2-b721-92ecd65aadb8"
+        "cb371a5d-9d98-42a2-b721-92ecd65aadb8",
+        "8c0c1f74-7784-4538-9315-8b22af80e5b3"
       ],
       "settings": {
       }
