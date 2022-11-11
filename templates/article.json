@@ -739,6 +739,15 @@
             "question_colour": "#E37730",
             "block_width": 600
           }
+        },
+        "820f3eab-ebcc-49e8-ad8b-5ea06de1583f": {
+          "type": "answer",
+          "settings": {
+            "ans_text": "<p>Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "ans_font_size": 16,
+            "ans_colour": "#333333",
+            "block_width": 600
+          }
         }
       },
       "block_order": [
@@ -746,7 +755,8 @@
         "7eeb7c09-7845-4fcd-9de0-507e3978e99c",
         "d758bff9-3afe-4972-9037-ea584d1f4ce9",
         "4aa77c50-12cb-4731-8b6b-75dd07a1e9f1",
-        "f922950b-e89f-41c2-8d79-2b7305066910"
+        "f922950b-e89f-41c2-8d79-2b7305066910",
+        "820f3eab-ebcc-49e8-ad8b-5ea06de1583f"
       ],
       "settings": {
       }
