@@ -55,6 +55,20 @@
     },
     "single-column-text": {
       "type": "wax-london-single-column-text",
+      "blocks": {
+        "fa5bf1a2-6cf1-4d19-9c17-49feef298983": {
+          "type": "single-column-text-block",
+          "settings": {
+            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam.<\/p>",
+            "font-size": 16,
+            "block-width": "medium",
+            "custom-block-width": 800
+          }
+        }
+      },
+      "block_order": [
+        "fa5bf1a2-6cf1-4d19-9c17-49feef298983"
+      ],
       "settings": {
       }
     },
