@@ -11,9 +11,7 @@
                             <img src="{{ block.settings.image | img_url: 'grande' }}" alt="" width="" height="" loading="lazy">
                         </div>
 
-                        <div class="caption">
-                            <span> {{ block.settings.caption }} </span> 
-                        </div>                                 
+                                                    
                     </div>
 
                     <div class="text-part">
@@ -81,26 +79,34 @@
               
              }
              
-             .image-text-style2-block-{{ block.id }}  img {
-                height: 100%;
-                width: 100%;
-             }
+            
 
              .image-text-style2-block-{{ block.id }} .image-part   {
                 width: 50%;
 
              }
+             .image-text-style2-block-{{ block.id }} .image-part   {
+                width: 50%;
+
+             }
+             .image-text-style2-block-{{ block.id }} .image-part .image  {
+                height: 100%;
+
+             }
 
              .image-text-style2-block-{{ block.id }} .text-part  {
                 display: flex;
-                align-content: center;
-                flex-wrap: wrap;
+                
+
+             align-content: center;
+                flex-wrap: wrap; 
+
                 background-color: {{ block.settings.text-bg-color }};
                 width: 50%;
                 
              }
              .image-text-style2-block-{{ block.id }} .text-part .text-part-inner {
-                margin: 20px auto;
+                margin: 20px auto; 
                 width: 80%;
              }
              .image-text-style2-block-{{ block.id }} .text-part .title {
