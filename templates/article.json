@@ -614,24 +614,86 @@
       "settings": {
       }
     },
-    "double-image-style2": {
-      "type": "wax-london-double-image-style2",
+    "a2ee0eac-ca12-4985-a9ae-93a9c8012f8a": {
+      "type": "wax-london-image-text-style1",
       "blocks": {
-        "0ba5e8b5-ce1d-499f-abe4-879979e4cc8d": {
-          "type": "double-image-block",
+        "7f2167f4-2dcf-4336-8395-205e9146a436": {
+          "type": "image-text-block",
           "settings": {
-            "left-image-caption": "",
-            "right-image-caption": "",
-            "block-width": "medium",
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+            "caption": "",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "description-text-size": 10,
+            "block-width": "full",
             "custom-block-width": 800,
-            "left-part-width": 50,
-            "show-caption": false,
-            "space-between-images": false
+            "image-part-width": 70,
+            "image-right": false,
+            "show-caption": false
+          }
+        },
+        "4dedaeb3-1c2d-4749-b910-c067d5e4aa7d": {
+          "type": "image-text-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1465.jpg",
+            "caption": "",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "description-text-size": 10,
+            "block-width": "full",
+            "custom-block-width": 800,
+            "image-part-width": 70,
+            "image-right": true,
+            "show-caption": false
+          }
+        },
+        "c3d3d87e-5da0-469a-96f2-2d589bbc1d19": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
           }
         }
       },
       "block_order": [
-        "0ba5e8b5-ce1d-499f-abe4-879979e4cc8d"
+        "7f2167f4-2dcf-4336-8395-205e9146a436",
+        "4dedaeb3-1c2d-4749-b910-c067d5e4aa7d",
+        "c3d3d87e-5da0-469a-96f2-2d589bbc1d19"
+      ],
+      "settings": {
+      }
+    },
+    "double-image-style2": {
+      "type": "wax-london-double-image-style2",
+      "blocks": {
+        "575c43e9-f0d4-4fd5-9c78-a8aefcb29964": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "0ba5e8b5-ce1d-499f-abe4-879979e4cc8d": {
+          "type": "double-image-block",
+          "settings": {
+            "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "left-image-caption": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "right-image-caption": "<p>Model wears Oz Shirt Grey and Yellow Check with Fisherman Beanie Khaki and Pleat Trousers Black<\/p>",
+            "block-width": "full",
+            "custom-block-width": 800,
+            "left-part-width": 70,
+            "show-caption": true,
+            "space-between-images": true
+          }
+        },
+        "d60d9896-ac9e-46c2-b836-b411e7d5e3f9": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        }
+      },
+      "block_order": [
+        "575c43e9-f0d4-4fd5-9c78-a8aefcb29964",
+        "0ba5e8b5-ce1d-499f-abe4-879979e4cc8d",
+        "d60d9896-ac9e-46c2-b836-b411e7d5e3f9"
       ],
       "settings": {
       }
@@ -666,6 +728,7 @@
     "d13d41c5-930e-40a8-a41c-977d1c3f7403",
     "image-text-style1",
     "image-text-style2",
+    "a2ee0eac-ca12-4985-a9ae-93a9c8012f8a",
     "double-image-style2",
     "faq",
     "youtube",
