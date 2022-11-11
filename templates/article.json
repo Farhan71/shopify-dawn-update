@@ -398,6 +398,64 @@
       "settings": {
       }
     },
+    "2a32fd0d-0d81-49cd-9f37-f48af301e47a": {
+      "type": "wax-london-single-column-text",
+      "blocks": {
+        "f0335f7e-c417-4484-bb50-e4a902471d8f": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "e12a133e-e4cd-40fd-9365-62254185a5a4": {
+          "type": "single-column-text-block",
+          "settings": {
+            "text-content": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Sed maximus malesuada nibh sed ultrices.”<\/p>",
+            "font-size": 20,
+            "block-width": "small",
+            "custom-block-width": 800
+          }
+        },
+        "5cd9a6c2-9e59-4797-b497-d053092787a0": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        }
+      },
+      "block_order": [
+        "f0335f7e-c417-4484-bb50-e4a902471d8f",
+        "e12a133e-e4cd-40fd-9365-62254185a5a4",
+        "5cd9a6c2-9e59-4797-b497-d053092787a0"
+      ],
+      "settings": {
+      }
+    },
+    "d13d41c5-930e-40a8-a41c-977d1c3f7403": {
+      "type": "wax-london-double-image-style1",
+      "blocks": {
+        "140c89a1-5df2-442e-8a74-6eebe562555f": {
+          "type": "double-image-block",
+          "settings": {
+            "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "left-image-caption": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "right-image-caption": "<p>Model wears Oz Shirt Grey and Yellow Check with Fisherman Beanie Khaki and Pleat Trousers Black<\/p>",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "show-caption": true,
+            "left-image-small": true,
+            "right-image-small": false,
+            "space-between-images": false
+          }
+        }
+      },
+      "block_order": [
+        "140c89a1-5df2-442e-8a74-6eebe562555f"
+      ],
+      "settings": {
+      }
+    },
     "double-image-style2": {
       "type": "wax-london-double-image-style2",
       "settings": {
@@ -434,6 +492,8 @@
     "double-image-style1",
     "a60cdbf2-7474-48fa-98ae-48851b5578d1",
     "05ba6569-58be-4d93-9699-e1d4549edbe1",
+    "2a32fd0d-0d81-49cd-9f37-f48af301e47a",
+    "d13d41c5-930e-40a8-a41c-977d1c3f7403",
     "double-image-style2",
     "image-text-style1",
     "image-text-style2",
