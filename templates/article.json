@@ -813,11 +813,51 @@
     },
     "youtube": {
       "type": "youtube-spotify",
-      "settings": {
-      }
-    },
-    "d54a4200-86a0-42d1-a10a-26a1131ad4a8": {
-      "type": "wax-london-double-image-style1",
+      "blocks": {
+        "3128ca74-4465-4a55-8396-56d311f97fef": {
+          "type": "youtube-spotify-block",
+          "settings": {
+            "embedded-code": "<iframe width=\"942\" height=\"530\" src=\"https:\/\/www.youtube.com\/embed\/zCXyMln3RaE\" title=\"Create A Login Form With A Light Button With HTML & CSS\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "block-width": "full",
+            "custom-block-width": 800
+          }
+        },
+        "32059f52-b96f-4c56-8d88-f1f70be8fa59": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "e47c5c41-47d5-4ad6-a8d2-c616497cbce4": {
+          "type": "youtube-spotify-block",
+          "settings": {
+            "embedded-code": "<iframe width=\"942\" height=\"530\" src=\"https:\/\/www.youtube.com\/embed\/zCXyMln3RaE\" title=\"Create A Login Form With A Light Button With HTML & CSS\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "block-width": "medium",
+            "custom-block-width": 800
+          }
+        },
+        "fc93a82f-3bd6-47f6-9124-b059d62f6b3e": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "d86d9121-3fb5-4582-8b7e-f8bd61f35610": {
+          "type": "youtube-spotify-block",
+          "settings": {
+            "embedded-code": "<iframe width=\"942\" height=\"530\" src=\"https:\/\/www.youtube.com\/embed\/zCXyMln3RaE\" title=\"Create A Login Form With A Light Button With HTML & CSS\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen><\/iframe>",
+            "block-width": "small",
+            "custom-block-width": 800
+          }
+        }
+      },
+      "block_order": [
+        "3128ca74-4465-4a55-8396-56d311f97fef",
+        "32059f52-b96f-4c56-8d88-f1f70be8fa59",
+        "e47c5c41-47d5-4ad6-a8d2-c616497cbce4",
+        "fc93a82f-3bd6-47f6-9124-b059d62f6b3e",
+        "d86d9121-3fb5-4582-8b7e-f8bd61f35610"
+      ],
       "settings": {
       }
     }
@@ -839,7 +879,6 @@
     "a2ee0eac-ca12-4985-a9ae-93a9c8012f8a",
     "double-image-style2",
     "faq",
-    "youtube",
-    "d54a4200-86a0-42d1-a10a-26a1131ad4a8"
+    "youtube"
   ]
 }
