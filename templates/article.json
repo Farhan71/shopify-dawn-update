@@ -170,7 +170,7 @@
             "caption-font-family": "Helvetica, Arial, sans-serif",
             "caption-color": "#000000",
             "caption-size": 10,
-            "text-align": "left",
+            "text-align": "center",
             "block-width": "full",
             "custom-block-width": 800,
             "show-caption": false
