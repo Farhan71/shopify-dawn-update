@@ -188,6 +188,79 @@
     },
     "double-image-style1": {
       "type": "wax-london-double-image-style1",
+      "blocks": {
+        "678628ae-2fcb-4ef4-89b0-e18de92a6a8d": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "d636fe39-5a9f-4c94-8789-50d1f6f6a89e": {
+          "type": "double-image-block",
+          "settings": {
+            "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "left-image-caption": "",
+            "right-image-caption": "",
+            "block-width": "small",
+            "custom-block-width": 800,
+            "show-caption": false,
+            "left-image-small": false,
+            "right-image-small": false,
+            "space-between-images": false
+          }
+        },
+        "18e9926b-1a2a-4e73-8d17-d6e30590bbf4": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "5076d45a-c454-4168-987c-bfa26e4ea5ef": {
+          "type": "double-image-block",
+          "settings": {
+            "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "left-image-caption": "",
+            "right-image-caption": "",
+            "block-width": "small",
+            "custom-block-width": 800,
+            "show-caption": false,
+            "left-image-small": false,
+            "right-image-small": true,
+            "space-between-images": false
+          }
+        },
+        "f3736e41-4416-4bbb-b17c-45278f4505bd": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "54ab9d28-59d0-4e38-ad3d-1c2893e7a508": {
+          "type": "double-image-block",
+          "settings": {
+            "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "left-image-caption": "<p>Model wears Whiting Shirt Cosmic Papaya Check with Dean T Shirt Black and Pleat Trousers Black<\/p>",
+            "right-image-caption": "<p>Model wears Oz Shirt Grey and Yellow Check with Fisherman Beanie Khaki and Pleat Trousers Black<\/p>",
+            "block-width": "small",
+            "custom-block-width": 800,
+            "show-caption": true,
+            "left-image-small": true,
+            "right-image-small": false,
+            "space-between-images": false
+          }
+        }
+      },
+      "block_order": [
+        "678628ae-2fcb-4ef4-89b0-e18de92a6a8d",
+        "d636fe39-5a9f-4c94-8789-50d1f6f6a89e",
+        "18e9926b-1a2a-4e73-8d17-d6e30590bbf4",
+        "5076d45a-c454-4168-987c-bfa26e4ea5ef",
+        "f3736e41-4416-4bbb-b17c-45278f4505bd",
+        "54ab9d28-59d0-4e38-ad3d-1c2893e7a508"
+      ],
       "settings": {
       }
     },
