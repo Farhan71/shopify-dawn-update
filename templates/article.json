@@ -813,6 +813,12 @@
             "button_bg_color": "#333333",
             "button_font_size": 15
           }
+        },
+        "efd626e4-0144-4d08-8225-de87ae5d56a7": {
+          "type": "spacer",
+          "settings": {
+            "space_height": 30
+          }
         }
       },
       "block_order": [
@@ -827,7 +833,8 @@
         "3ea3fc12-c927-44c6-9f22-4b1ad9574a39",
         "f4a47ec2-8f3d-4874-9876-4ad06e9cf794",
         "d40c20d2-5a46-49dc-8834-a010bf2ed345",
-        "bf8fcb33-c7fd-4f5e-b388-4c31d38b2c7d"
+        "bf8fcb33-c7fd-4f5e-b388-4c31d38b2c7d",
+        "efd626e4-0144-4d08-8225-de87ae5d56a7"
       ],
       "settings": {
       }
@@ -835,6 +842,12 @@
     "youtube": {
       "type": "youtube-spotify",
       "blocks": {
+        "760920c9-bb1a-43ec-a81e-817c6726a3e9": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
         "3128ca74-4465-4a55-8396-56d311f97fef": {
           "type": "youtube-spotify-block",
           "settings": {
@@ -873,6 +886,7 @@
         }
       },
       "block_order": [
+        "760920c9-bb1a-43ec-a81e-817c6726a3e9",
         "3128ca74-4465-4a55-8396-56d311f97fef",
         "32059f52-b96f-4c56-8d88-f1f70be8fa59",
         "e47c5c41-47d5-4ad6-a8d2-c616497cbce4",
