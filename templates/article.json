@@ -148,6 +148,12 @@
             "show-caption": false
           }
         },
+        "2b65bb17-b18f-42b4-8c57-ae351aeeff43": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
         "770b0f7a-7c31-4a29-9e20-11a36f68047f": {
           "type": "single-image-block",
           "settings": {
@@ -160,6 +166,12 @@
             "block-width": "medium",
             "custom-block-width": 800,
             "show-caption": false
+          }
+        },
+        "82ee43c1-63e8-41c2-99e1-38caad188330": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
           }
         },
         "ed384fdf-52be-4704-9a62-63f85dd2675f": {
@@ -175,13 +187,22 @@
             "custom-block-width": 800,
             "show-caption": false
           }
+        },
+        "e62f311f-c1c6-498a-835f-e5cce045b15f": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
         }
       },
       "block_order": [
         "22fce636-ec78-4e89-a45e-04a9ce325606",
         "1ce5adfb-3c36-4eae-903c-287254f70a74",
+        "2b65bb17-b18f-42b4-8c57-ae351aeeff43",
         "770b0f7a-7c31-4a29-9e20-11a36f68047f",
-        "ed384fdf-52be-4704-9a62-63f85dd2675f"
+        "82ee43c1-63e8-41c2-99e1-38caad188330",
+        "ed384fdf-52be-4704-9a62-63f85dd2675f",
+        "e62f311f-c1c6-498a-835f-e5cce045b15f"
       ],
       "settings": {
       }
@@ -565,7 +586,7 @@
             "btn-text": "Shop The Look",
             "btn-url": "",
             "btn-bg-color": "#333333",
-            "btn-text-color": "#fff",
+            "btn-text-color": "#ffffff",
             "block-width": "medium",
             "custom-block-width": 800,
             "image-right": true,
@@ -712,7 +733,7 @@
           "settings": {
             "question_text": "<p><strong>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/strong><\/p>",
             "question_font_size": 18,
-            "question_colour": "#E37730",
+            "question_colour": "#e37730",
             "block_width": 600
           }
         },
@@ -736,7 +757,7 @@
           "settings": {
             "question_text": "<p><strong>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/strong><\/p>",
             "question_font_size": 19,
-            "question_colour": "#E37730",
+            "question_colour": "#e37730",
             "block_width": 600
           }
         },
