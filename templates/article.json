@@ -340,6 +340,25 @@
       "settings": {
       }
     },
+    "a60cdbf2-7474-48fa-98ae-48851b5578d1": {
+      "type": "wax-london-single-column-text",
+      "blocks": {
+        "56cc1d3e-a710-43a6-9321-339fca0eaa0a": {
+          "type": "single-column-text-block",
+          "settings": {
+            "text-content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam mollis, nulla at tempus feugiat, ligula diam tempus velit, quis semper urna sapien eu nunc. Nullam volutpat tellus ac quam convallis, sit amet tincidunt turpis hendrerit. Donec id blandit enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer sed ipsum et diam tincidunt scelerisque. Integer gravida quam nibh, nec sollicitudin metus mollis nec. In vulputate, neque id fermentum scelerisque, nisi neque porttitor velit, id scelerisque purus libero ut nulla. Praesent fringilla convallis egestas. Sed maximus malesuada nibh sed ultrices.<\/p>",
+            "font-size": 22,
+            "block-width": "medium",
+            "custom-block-width": 800
+          }
+        }
+      },
+      "block_order": [
+        "56cc1d3e-a710-43a6-9321-339fca0eaa0a"
+      ],
+      "settings": {
+      }
+    },
     "double-image-style2": {
       "type": "wax-london-double-image-style2",
       "settings": {
@@ -364,11 +383,6 @@
       "type": "youtube-spotify",
       "settings": {
       }
-    },
-    "a60cdbf2-7474-48fa-98ae-48851b5578d1": {
-      "type": "wax-london-single-column-text",
-      "settings": {
-      }
     }
   },
   "order": [
@@ -379,11 +393,11 @@
     "double-column-text",
     "single-image",
     "double-image-style1",
+    "a60cdbf2-7474-48fa-98ae-48851b5578d1",
     "double-image-style2",
     "image-text-style1",
     "image-text-style2",
     "faq",
-    "youtube",
-    "a60cdbf2-7474-48fa-98ae-48851b5578d1"
+    "youtube"
   ]
 }
