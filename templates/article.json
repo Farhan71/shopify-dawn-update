@@ -762,6 +762,13 @@
             "list_item": "<p>List 1<\/p>",
             "block_width": 400
           }
+        },
+        "f4a47ec2-8f3d-4874-9876-4ad06e9cf794": {
+          "type": "list",
+          "settings": {
+            "list_item": "<p>List 2<\/p>",
+            "block_width": 400
+          }
         }
       },
       "block_order": [
@@ -772,7 +779,8 @@
         "f922950b-e89f-41c2-8d79-2b7305066910",
         "820f3eab-ebcc-49e8-ad8b-5ea06de1583f",
         "9d8f45c1-a01b-4de0-9844-e06e376bb2af",
-        "3ea3fc12-c927-44c6-9f22-4b1ad9574a39"
+        "3ea3fc12-c927-44c6-9f22-4b1ad9574a39",
+        "f4a47ec2-8f3d-4874-9876-4ad06e9cf794"
       ],
       "settings": {
       }
