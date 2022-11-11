@@ -486,6 +486,12 @@
             "show-caption": false
           }
         },
+        "0246a9cd-5da5-418b-8227-53758377ab89": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
         "4bb5899a-8948-45a5-b849-96c62a0860f8": {
           "type": "image-text-block",
           "settings": {
@@ -499,12 +505,20 @@
             "image-right": true,
             "show-caption": false
           }
+        },
+        "6a8529cc-c8df-4534-a3eb-6410be075afc": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
         }
       },
       "block_order": [
         "c0df6ce3-3a2a-4562-8a33-84dea2ce41c0",
         "5a19659c-e9b0-425c-aa48-f31cf87e0af6",
-        "4bb5899a-8948-45a5-b849-96c62a0860f8"
+        "0246a9cd-5da5-418b-8227-53758377ab89",
+        "4bb5899a-8948-45a5-b849-96c62a0860f8",
+        "6a8529cc-c8df-4534-a3eb-6410be075afc"
       ],
       "settings": {
       }
@@ -512,12 +526,6 @@
     "image-text-style2": {
       "type": "wax-london-text-image-style2",
       "blocks": {
-        "5687bb9c-26c9-4214-9147-8748410381cf": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 30
-          }
-        },
         "32274a06-399b-489b-aa09-2a8a960e1e32": {
           "type": "image-text-block",
           "settings": {
@@ -545,14 +553,39 @@
         "107a7591-6b54-4ce7-9473-a4c2387fefbb": {
           "type": "image-text-block",
           "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
             "caption": "",
-            "title": "",
-            "desc": "",
+            "title": "<p><strong>Whiting Overshirt<\/strong><\/p>",
+            "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat.<\/p>",
+            "title-text-size": 10,
+            "description-text-size": 10,
+            "title-color": "#fafafa",
+            "desc-color": "#fafafa",
+            "text-bg-color": "#454e3f",
+            "btn-text": "Shop The Look",
+            "btn-url": "",
+            "btn-bg-color": "#333333",
+            "btn-text-color": "#fff",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "image-right": true,
+            "show-caption": false,
+            "show-button": true,
+            "show-title": true
+          }
+        },
+        "69436685-ce76-47dd-b7bb-437b4ff4053b": {
+          "type": "image-text-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "caption": "",
+            "title": "<p>Whiting Overshirt<\/p>",
+            "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<\/p>",
             "title-text-size": 10,
             "description-text-size": 10,
             "title-color": "",
             "desc-color": "",
-            "text-bg-color": "",
+            "text-bg-color": "#a8a897",
             "btn-text": "",
             "btn-url": "",
             "btn-bg-color": "",
@@ -562,14 +595,21 @@
             "image-right": false,
             "show-caption": false,
             "show-button": false,
-            "show-title": false
+            "show-title": true
+          }
+        },
+        "5687bb9c-26c9-4214-9147-8748410381cf": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
           }
         }
       },
       "block_order": [
-        "5687bb9c-26c9-4214-9147-8748410381cf",
         "32274a06-399b-489b-aa09-2a8a960e1e32",
-        "107a7591-6b54-4ce7-9473-a4c2387fefbb"
+        "107a7591-6b54-4ce7-9473-a4c2387fefbb",
+        "69436685-ce76-47dd-b7bb-437b4ff4053b",
+        "5687bb9c-26c9-4214-9147-8748410381cf"
       ],
       "settings": {
       }
