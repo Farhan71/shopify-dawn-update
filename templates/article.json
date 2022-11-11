@@ -251,6 +251,27 @@
             "right-image-small": false,
             "space-between-images": false
           }
+        },
+        "2463c9ab-61d7-413a-a08a-4b364307d450": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "cb371a5d-9d98-42a2-b721-92ecd65aadb8": {
+          "type": "double-image-block",
+          "settings": {
+            "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "left-image-caption": "",
+            "right-image-caption": "",
+            "block-width": "small",
+            "custom-block-width": 800,
+            "show-caption": false,
+            "left-image-small": false,
+            "right-image-small": false,
+            "space-between-images": true
+          }
         }
       },
       "block_order": [
@@ -259,7 +280,9 @@
         "18e9926b-1a2a-4e73-8d17-d6e30590bbf4",
         "5076d45a-c454-4168-987c-bfa26e4ea5ef",
         "f3736e41-4416-4bbb-b17c-45278f4505bd",
-        "54ab9d28-59d0-4e38-ad3d-1c2893e7a508"
+        "54ab9d28-59d0-4e38-ad3d-1c2893e7a508",
+        "2463c9ab-61d7-413a-a08a-4b364307d450",
+        "cb371a5d-9d98-42a2-b721-92ecd65aadb8"
       ],
       "settings": {
       }
