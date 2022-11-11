@@ -710,8 +710,32 @@
         "7eeb7c09-7845-4fcd-9de0-507e3978e99c": {
           "type": "question",
           "settings": {
-            "question_text": "<p>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/p>",
+            "question_text": "<p><strong>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/strong><\/p>",
             "question_font_size": 18,
+            "question_colour": "#E37730",
+            "block_width": 600
+          }
+        },
+        "d758bff9-3afe-4972-9037-ea584d1f4ce9": {
+          "type": "answer",
+          "settings": {
+            "ans_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero. Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p>",
+            "ans_font_size": 16,
+            "ans_colour": "#333333",
+            "block_width": 600
+          }
+        },
+        "4aa77c50-12cb-4731-8b6b-75dd07a1e9f1": {
+          "type": "spacer",
+          "settings": {
+            "space_height": 30
+          }
+        },
+        "f922950b-e89f-41c2-8d79-2b7305066910": {
+          "type": "question",
+          "settings": {
+            "question_text": "<p><strong>This is the question, commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla?<\/strong><\/p>",
+            "question_font_size": 19,
             "question_colour": "#E37730",
             "block_width": 600
           }
@@ -719,7 +743,10 @@
       },
       "block_order": [
         "d906b181-9845-40cb-a768-210f57797356",
-        "7eeb7c09-7845-4fcd-9de0-507e3978e99c"
+        "7eeb7c09-7845-4fcd-9de0-507e3978e99c",
+        "d758bff9-3afe-4972-9037-ea584d1f4ce9",
+        "4aa77c50-12cb-4731-8b6b-75dd07a1e9f1",
+        "f922950b-e89f-41c2-8d79-2b7305066910"
       ],
       "settings": {
       }
