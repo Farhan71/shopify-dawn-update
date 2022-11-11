@@ -525,13 +525,66 @@
       "settings": {
       }
     },
-    "double-image-style2": {
-      "type": "wax-london-double-image-style2",
+    "image-text-style2": {
+      "type": "wax-london-text-image-style2",
+      "blocks": {
+        "5687bb9c-26c9-4214-9147-8748410381cf": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "32274a06-399b-489b-aa09-2a8a960e1e32": {
+          "type": "image-text-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "caption": "",
+            "title": "<p>Whiting Overshirt<\/p>",
+            "desc": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<\/p>",
+            "title-text-size": 16,
+            "description-text-size": 14,
+            "title-color": "",
+            "desc-color": "",
+            "text-bg-color": "",
+            "btn-text": "",
+            "btn-url": "",
+            "btn-bg-color": "",
+            "btn-text-color": "",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "image-right": false,
+            "show-caption": false,
+            "show-button": false,
+            "show-title": true
+          }
+        }
+      },
+      "block_order": [
+        "5687bb9c-26c9-4214-9147-8748410381cf",
+        "32274a06-399b-489b-aa09-2a8a960e1e32"
+      ],
       "settings": {
       }
     },
-    "image-text-style2": {
-      "type": "wax-london-text-image-style2",
+    "double-image-style2": {
+      "type": "wax-london-double-image-style2",
+      "blocks": {
+        "0ba5e8b5-ce1d-499f-abe4-879979e4cc8d": {
+          "type": "double-image-block",
+          "settings": {
+            "left-image-caption": "",
+            "right-image-caption": "",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "left-part-width": 50,
+            "show-caption": false,
+            "space-between-images": false
+          }
+        }
+      },
+      "block_order": [
+        "0ba5e8b5-ce1d-499f-abe4-879979e4cc8d"
+      ],
       "settings": {
       }
     },
@@ -565,8 +618,8 @@
     "d13d41c5-930e-40a8-a41c-977d1c3f7403",
     "image-text-style1",
     "784a7f6a-9827-4746-a67c-ae58f6c4f94d",
-    "double-image-style2",
     "image-text-style2",
+    "double-image-style2",
     "faq",
     "youtube",
     "d54a4200-86a0-42d1-a10a-26a1131ad4a8"
