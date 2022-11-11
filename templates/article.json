@@ -351,10 +351,49 @@
             "block-width": "medium",
             "custom-block-width": 800
           }
+        },
+        "cbbb7915-a48d-473a-9df5-3c2579e47aed": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
         }
       },
       "block_order": [
-        "56cc1d3e-a710-43a6-9321-339fca0eaa0a"
+        "56cc1d3e-a710-43a6-9321-339fca0eaa0a",
+        "cbbb7915-a48d-473a-9df5-3c2579e47aed"
+      ],
+      "settings": {
+      }
+    },
+    "05ba6569-58be-4d93-9699-e1d4549edbe1": {
+      "type": "wax-london-double-image-style1",
+      "blocks": {
+        "08c8b864-ce0b-4b98-9833-e7e2a80a6768": {
+          "type": "double-image-block",
+          "settings": {
+            "image-left": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "image-right": "shopify:\/\/shop_images\/04-10-2022-WAX1517.jpg",
+            "left-image-caption": "",
+            "right-image-caption": "",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "show-caption": false,
+            "left-image-small": false,
+            "right-image-small": true,
+            "space-between-images": false
+          }
+        },
+        "8f7d8b4a-cba8-47e0-bffd-e281d94d1497": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        }
+      },
+      "block_order": [
+        "08c8b864-ce0b-4b98-9833-e7e2a80a6768",
+        "8f7d8b4a-cba8-47e0-bffd-e281d94d1497"
       ],
       "settings": {
       }
@@ -394,6 +433,7 @@
     "single-image",
     "double-image-style1",
     "a60cdbf2-7474-48fa-98ae-48851b5578d1",
+    "05ba6569-58be-4d93-9699-e1d4549edbe1",
     "double-image-style2",
     "image-text-style1",
     "image-text-style2",
