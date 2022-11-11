@@ -17,8 +17,13 @@
                     </div>
 
                     <div class="text-part">
+                        <div class="text-part-inner">
+                            <span class="title"> {{ block.settings.title }} </span> 
+                            <span class="desc"> {{ block.settings.desc }}  </span>
+                            <button> <a href="{{ block.settings.btn-url }}"> {{ block.settings.btn-text }} </a> </button> 
+                        </div>
 
-                        {{ block.settings.text }}                 
+                        
                     </div>
 
                 </div>
@@ -44,10 +49,13 @@
         {% case block.type %}
 
             {% when "image-text-block" %}
-                .image-text-style2-block-{{ block.id }} span {
+                .image-text-style2-block-{{ block.id }} .caption span {
                     display: none;
                 }
                        
+                .image-text-style2-block-{{ block.id }} .title {
+                    display: none;
+                }
                
                 .image-text-style2-block-{{ block.id }}.style2-block-width-small {
                 max-width: 600px;
@@ -69,23 +77,43 @@
 
              .image-text-style2-block-{{ block.id }}  {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
               
              }
              
-            
+             .image-text-style2-block-{{ block.id }}  img {
+                height: 100%;
+                width: 100%;
+             }
 
              .image-text-style2-block-{{ block.id }} .image-part   {
-                width: calc(  {{ block.settings.image-part-width }}% - 1% );
+                width: 50%;
+
              }
 
              .image-text-style2-block-{{ block.id }} .text-part  {
-               padding: 120px 60px;
-                width: calc( 99% -  {{ block.settings.image-part-width }}% );
+                display: flex;
+                align-content: center;
+                flex-wrap: wrap;
+                background-color: {{ block.settings.text-bg-color }};
+                width: 50%;
+                
+             }
+             .image-text-style2-block-{{ block.id }} .text-part .text-part-inner {
+                margin: 20px auto;
+                width: 80%;
+             }
+             .image-text-style2-block-{{ block.id }} .text-part .title {
+                margin: 0px;
+                font-size: {{ block.settings.title-text-size }}px;
+                color: {{ block.settings.title-color }}
+             }
+             .image-text-style2-block-{{ block.id }} .text-part .desc {
                 font-size: {{ block.settings.description-text-size }}px;
+                color: {{ block.settings.desc-color }}
              }
 
-             .image-text-style2-block-{{ block.id }} .text-part p {
+             .image-text-style2-block-{{ block.id }} .text-part span p {
                 margin: 0 auto;
              }
 
@@ -95,14 +123,39 @@
              }
              
 
+             .image-text-style2-block-{{ block.id }} .text-part button {
+                background-color: {{ block.settings.btn-bg-color }};
+                display: none;
+                border-radius: 100px ;
+                padding: 10px 12px;
+                
+             }
 
+             .image-text-style2-block-{{ block.id }} .text-part button a {
+               
+                text-decoration: none;
+                color: {{ block.settings.btn-text-color }};
+             }
 
+             {% if block.settings.show-title %}
+                .image-text-style2-block-{{ block.id }} .title {
+                    display: inline;
+                }
+             {% endif %}
             
 
              {% if block.settings.show-caption %}
-                .image-text-style2-block-{{ block.id }} span {
+                .image-text-style2-block-{{ block.id }} .caption span {
                     display: inline;
                 }
+             {% endif %}
+
+             {% if block.settings.show-button %}
+                .image-text-style2-block-{{ block.id }} .text-part button {
+                    display: block;
+                    
+                    
+                 }
              {% endif %}
 
              {% if block.settings.image-right %}
@@ -118,7 +171,7 @@
 
 
             {% when "spacer-block" %}
-                .double-image-style2-{{ section.id }}  .spacer-{{ block.id }} {
+                .image-text-style2-{{ section.id }}  .spacer-{{ block.id }} {
                     height: {{ block.settings.spacer-height }}px;
                 }
             
@@ -154,9 +207,24 @@
                 }, 
                 {
                     "type":"richtext",
-                    "id":"text",
+                    "id":"title",
+                    "label":"title"
+                },
+                {
+                    "type":"richtext",
+                    "id":"desc",
                     "label":"description"
                 },
+                {
+                 "type":"range",
+                 "id":"title-text-size",
+                 "label":"title text size",
+                 "min":8,
+                 "max":40,
+                 "step":1,
+                 "unit":"px",
+                 "default":10
+              },
                 {
                  "type":"range",
                  "id":"description-text-size",
@@ -167,6 +235,41 @@
                  "unit":"px",
                  "default":10
               },
+              {
+                    "type":"color",
+                    "id":"title-color",
+                    "label":"title text color"
+                },
+                {
+                    "type":"color",
+                    "id":"desc-color",
+                    "label":"desc text color"
+                },
+              {
+                    "type":"color",
+                    "id":"text-bg-color",
+                    "label":"text part background color"
+                },
+              {
+                    "type":"text",
+                    "id":"btn-text",
+                    "label":"button text"
+                },
+                {
+                    "type":"url",
+                    "id":"btn-url",
+                    "label":"button url"
+                },
+                {
+                    "type":"color",
+                    "id":"btn-bg-color",
+                    "label":"button background color"
+                },
+                {
+                    "type":"color",
+                    "id":"btn-text-color",
+                    "label":"button text color"
+                },
                 {
                 "type": "select",
                 "id": "block-width",
@@ -202,16 +305,6 @@
                 "default": 800
             },
             {
-                "type": "range",
-                "id": "image-part-width",
-                "label": "image part width",
-                "min": 0,
-                "max": 100,
-                "step": 1,
-                "unit": "%",
-                "default": 50
-            }, 
-            {
         "type": "checkbox",
         "id": "image-right",
         "label": "image right",
@@ -221,6 +314,18 @@
         "type": "checkbox",
         "id": "show-caption",
         "label": "show caption",
+        "default": false
+      }, 
+      {
+        "type": "checkbox",
+        "id": "show-button",
+        "label": "show button",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show-title",
+        "label": "show title",
         "default": false
       }
             ]

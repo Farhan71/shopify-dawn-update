@@ -1,0 +1,257 @@
+<section id="section-{{ section.id }}" class="Section" data-section-id="{{ section.id }}">
+    {% assign count = 1 %}
+          {% for block in section.blocks %}
+              <div class="block-{{block.id}}">
+                  {% case block.type %}
+                  {% when 'question' %}
+                    <div class="question">{{ block.settings.question_text }}</div>
+                  {% when 'answer' %}
+                    <div class="answer">{{ block.settings.ans_text }}</div>
+                  {% when 'image' %}
+                    <div class="image-wrapper"><img src="{{ block.settings.image  | img_url: 'master' }}"></div>
+                  {% when 'list' %}
+                    <div class="list-wrapper"><div class="count">{{ count }}.</div><div>{{ block.settings.list_item }}</div></div>
+                    {% assign count = count | plus: 1 %}
+                  {% when 'button' %}
+                    <div class="button-wrapper"><a class="button" href="{{ block.settings.button_url }}">{{ block.settings.button_text }}</a></div>
+                  {% when 'spacer' %}
+                  <div class="spacer"></div>
+                  {% endcase %}
+              </div>
+        {% endfor %}   
+  </section>
+  <style>
+          .list-wrapper {
+              display: flex;
+          }
+          .list-wrapper p {
+              margin-left: 30px;
+                margin-bottom: 0;
+          }
+          .list-wrapper .count {
+              color: #E37730;
+          }
+      {% for block in section.blocks %}
+          #section-{{ section.id }} .block-{{block.id}} {
+              max-width: {{block.settings.block_width | append: "px"}};
+             margin: 0 auto;
+          }
+          #section-{{ section.id }} .block-{{block.id}} .question p {
+              font-size: {{block.settings.question_font_size | append: "px"}};
+              color: {{block.settings.question_colour }};
+          }
+          #section-{{ section.id }} .block-{{block.id}} .answer {
+              border-left: 2px solid #E6C1A9;
+              padding-left: 30px;
+          }
+          #section-{{ section.id }} .block-{{block.id}} .answer p {
+              font-size: {{block.settings.ans_font_size | append: "px"}};
+              color: {{block.settings.ans_colour }};
+          }
+          #section-{{ section.id }} .block-{{block.id}} .image-wrapper {
+              text-align: center;
+          }
+          #section-{{ section.id }} .block-{{block.id}} .button-wrapper {
+              text-align: center;
+          }
+          #section-{{ section.id }} .block-{{block.id}} .button-wrapper  a{
+              color: {{ block.settings.button_text_color }};
+              background: {{ block.settings.button_bg_color }};
+              font-size: {{block.settings.button_font_size | append: "px"}};
+              text-align: center;
+              padding: 13px 25px;
+              border-radius: 25px;
+              line-height: 1;
+              margin-top: 10px;
+          }
+          #section-{{ section.id }} .block-{{block.id}} .spacer {
+              height: {{block.settings.space_height | append: "px"}};
+          }
+      {% endfor %}
+  </style>
+    {% schema %}
+    {
+      "name": "FAQ",
+      "settings": [
+      ],
+      "blocks": [
+            {
+             "type": "question",
+              "name": "Question",
+                "settings":[
+                    {
+                        "type": "richtext",
+                        "id":  "question_text",
+                        "label": "Question"
+                    },
+                    {
+                      "type": "range",
+                      "id": "question_font_size",
+                      "label": "Question Font size",
+                      "min": 12,
+                      "max": 50,
+                      "step": 1,
+                      "unit": "px",
+                      "default": 16
+                    },
+                    {
+                      "type": "color",
+                      "id": "question_colour",
+                      "label": "Question Colour",
+                      "default": "#E37730"
+                    },
+                  {
+                    "type": "range",
+                    "id": "block_width",
+                    "label": "Block width",
+                    "min": 200,
+                    "max": 1900,
+                    "step": 50,
+                    "unit": "px",
+                    "default": 600
+                  }
+                ]
+            },
+            {
+             "type": "answer",
+              "name": "Answer",
+                "settings":[
+                    {
+                        "type": "richtext",
+                        "id":  "ans_text",
+                        "label": "Answer"
+                    },
+                    {
+                      "type": "range",
+                      "id": "ans_font_size",
+                      "label": "Answer Font size",
+                      "min": 12,
+                      "max": 50,
+                      "step": 1,
+                      "unit": "px",
+                      "default": 16
+                    },
+                    {
+                      "type": "color",
+                      "id": "ans_colour",
+                      "label": "Answer Colour",
+                      "default": "#333333"
+                    },
+                  {
+                    "type": "range",
+                    "id": "block_width",
+                    "label": "Block width",
+                    "min": 200,
+                    "max": 1900,
+                    "step": 50,
+                    "unit": "px",
+                    "default": 600
+                  }
+                ]
+            },
+            {
+             "type": "image",
+              "name": "Image",
+                "settings":[
+                  {
+                      "type": "image_picker",
+                      "id": "image",
+                      "label": "Choose image"
+                  },
+                  {
+                    "type": "range",
+                    "id": "block_width",
+                    "label": "Block width",
+                    "min": 200,
+                    "max": 1900,
+                    "step": 50,
+                    "unit": "px",
+                    "default": 600
+                  }
+                ]
+            },
+            {
+             "type": "button",
+              "name": "Button",
+                "settings":[
+                  {
+                        "type": "text",
+                        "id":  "button_text",
+                        "label": "Button Text",
+                        "default": "Listen Now"
+                    },
+                    {
+                        "type": "url",
+                        "id":  "button_url",
+                        "label": "Button URL"
+                    },
+                    {
+                      "type": "color",
+                      "id": "button_text_color",
+                      "label": "Button text colour",
+                      "default": "#ffffff"
+                    },
+                    {
+                      "type": "color",
+                      "id": "button_bg_color",
+                      "label": "Button background colour",
+                      "default": "#333333"
+                    },
+                    {
+                      "type": "range",
+                      "id": "button_font_size",
+                      "label": "Button font size",
+                      "min": 12,
+                      "max": 50,
+                      "step": 1,
+                      "unit": "px",
+                      "default": 15
+                    }
+                ]
+            },
+            {
+             "type": "list",
+              "name": "List",
+                "settings":[
+                  {
+                      "type": "richtext",
+                      "id": "list_item",
+                      "label": "Add item"
+                  },
+                  {
+                    "type": "range",
+                    "id": "block_width",
+                    "label": "Block width",
+                    "min": 200,
+                    "max": 1900,
+                    "step": 50,
+                    "unit": "px",
+                    "default": 400
+                  }
+                ]
+            },
+            {
+             "type": "spacer",
+              "name": "Spacer",
+                "settings":[
+                  {
+                      "type": "range",
+                      "id": "space_height",
+                      "label": "Space Height",
+                      "min": 0,
+                      "max": 200,
+                      "step": 5,
+                      "unit": "px",
+                      "default": 30
+                  }
+                ]
+            }
+        ],
+        "presets":[
+             {
+               "category": "Content",
+               "name": "FAQ"
+             }
+        ]
+    } 
+    {% endschema %}

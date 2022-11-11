@@ -1,12 +1,69 @@
 {
   "sections": {
-    "main": {
-      "type": "wax-london-text-and-spacer",
+    "blog-category-list": {
+      "type": "wax-london-blog-category-list",
+      "settings": {
+      }
+    },
+    "blog-header": {
+      "type": "wax-london-blog-header",
+      "settings": {
+      }
+    },
+    "single-column-text": {
+      "type": "wax-london-single-column-text",
+      "settings": {
+      }
+    },
+    "double-column-text": {
+      "type": "wax-london-double-column-text",
+      "settings": {
+      }
+    },
+    "single-image": {
+      "type": "wax-london-single-image",
+      "settings": {
+      }
+    },
+    "double-image-style1": {
+      "type": "wax-london-double-image-style1",
+      "settings": {
+      }
+    },
+    "double-image-style2": {
+      "type": "wax-london-double-image-style2",
+      "settings": {
+      }
+    },
+    "image-text-style1": {
+      "type": "wax-london-image-text-style1",
+      "settings": {
+      }
+    },
+    "image-text-style2": {
+      "type": "wax-london-text-image-style2",
+      "settings": {
+      }
+    },
+    "spacer": {
+      "type": "wax-london-spacer",
+      "settings": {
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "settings": {
+      }
+    },
+    "youtube": {
+      "type": "youtube-spotify",
       "settings": {
       }
     }
   },
   "order": [
-    "main"
+    "blog-category-list", "blog-header", "single-column-text", "double-column-text", "single-image",
+    "double-image-style1", "double-image-style2", "image-text-style1", "image-text-style2", "spacer",
+    "faq", "youtube"
   ]
 }
