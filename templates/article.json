@@ -485,25 +485,8 @@
             "image-right": false,
             "show-caption": false
           }
-        }
-      },
-      "block_order": [
-        "c0df6ce3-3a2a-4562-8a33-84dea2ce41c0",
-        "5a19659c-e9b0-425c-aa48-f31cf87e0af6"
-      ],
-      "settings": {
-      }
-    },
-    "784a7f6a-9827-4746-a67c-ae58f6c4f94d": {
-      "type": "wax-london-image-text-style1",
-      "blocks": {
-        "e2aeeaa2-d0ef-40a9-b5ec-aaf82f060895": {
-          "type": "spacer-block",
-          "settings": {
-            "spacer-height": 30
-          }
         },
-        "ef5cad17-3eb7-486a-9f00-a84e4b025e23": {
+        "4bb5899a-8948-45a5-b849-96c62a0860f8": {
           "type": "image-text-block",
           "settings": {
             "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
@@ -519,8 +502,9 @@
         }
       },
       "block_order": [
-        "e2aeeaa2-d0ef-40a9-b5ec-aaf82f060895",
-        "ef5cad17-3eb7-486a-9f00-a84e4b025e23"
+        "c0df6ce3-3a2a-4562-8a33-84dea2ce41c0",
+        "5a19659c-e9b0-425c-aa48-f31cf87e0af6",
+        "4bb5899a-8948-45a5-b849-96c62a0860f8"
       ],
       "settings": {
       }
@@ -557,11 +541,35 @@
             "show-button": false,
             "show-title": true
           }
+        },
+        "107a7591-6b54-4ce7-9473-a4c2387fefbb": {
+          "type": "image-text-block",
+          "settings": {
+            "caption": "",
+            "title": "",
+            "desc": "",
+            "title-text-size": 10,
+            "description-text-size": 10,
+            "title-color": "",
+            "desc-color": "",
+            "text-bg-color": "",
+            "btn-text": "",
+            "btn-url": "",
+            "btn-bg-color": "",
+            "btn-text-color": "",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "image-right": false,
+            "show-caption": false,
+            "show-button": false,
+            "show-title": false
+          }
         }
       },
       "block_order": [
         "5687bb9c-26c9-4214-9147-8748410381cf",
-        "32274a06-399b-489b-aa09-2a8a960e1e32"
+        "32274a06-399b-489b-aa09-2a8a960e1e32",
+        "107a7591-6b54-4ce7-9473-a4c2387fefbb"
       ],
       "settings": {
       }
@@ -617,7 +625,6 @@
     "2a32fd0d-0d81-49cd-9f37-f48af301e47a",
     "d13d41c5-930e-40a8-a41c-977d1c3f7403",
     "image-text-style1",
-    "784a7f6a-9827-4746-a67c-ae58f6c4f94d",
     "image-text-style2",
     "double-image-style2",
     "faq",
