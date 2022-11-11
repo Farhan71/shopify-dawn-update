@@ -448,21 +448,54 @@
             "right-image-small": false,
             "space-between-images": false
           }
+        },
+        "27e56164-fc20-4d17-8513-b26bf0f26d17": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
         }
       },
       "block_order": [
-        "140c89a1-5df2-442e-8a74-6eebe562555f"
+        "140c89a1-5df2-442e-8a74-6eebe562555f",
+        "27e56164-fc20-4d17-8513-b26bf0f26d17"
+      ],
+      "settings": {
+      }
+    },
+    "image-text-style1": {
+      "type": "wax-london-image-text-style1",
+      "blocks": {
+        "c0df6ce3-3a2a-4562-8a33-84dea2ce41c0": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "5a19659c-e9b0-425c-aa48-f31cf87e0af6": {
+          "type": "image-text-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/04-10-2022-WAX1307.jpg",
+            "caption": "",
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu euismod ante, quis finibus odio. Aenean scelerisque consectetur pharetra. In condimentum est eu eros malesuada aliquam. Aenean iaculis ligula a quam vehicula mattis. Nulla fringilla bibendum erat id molestie. Quisque id arcu in libero euismod rutrum sed ut libero. Nunc et dolor non ex elementum varius vel ut ligula. Sed id felis ex. Aenean tristique lobortis est, vitae consequat turpis sagittis varius. Quisque pharetra, dui ornare iaculis consectetur, magna velit condimentum nulla, non tristique nisl lorem ac risus. Cras accumsan eu est in dignissim. Aenean ligula felis, rutrum in augue quis, consectetur porta libero.<br\/><br\/> Nunc faucibus ornare risus nec accumsan. Donec sed nisi rutrum, mattis diam a, tempus risus. Morbi at lectus elementum, laoreet orci sit amet, rutrum ipsum. Integer vel aliquet risus, sed pharetra justo. Pellentesque commodo eu quam vel hendrerit. Mauris non turpis fermentum, faucibus nulla quis, convallis nulla. Ut efficitur metus eros, quis consequat nunc tincidunt et. Sed eleifend arcu vel porta cursus. Mauris ultrices mauris vel lacus hendrerit sodales. Quisque a mattis turpis. Sed nisl purus, malesuada ac ultricies iaculis, iaculis id tellus. Morbi hendrerit ipsum sit amet lacus convallis tincidunt. Praesent quis libero rutrum, pharetra ex non, tincidunt justo. Nulla facilisi.<\/p><p>CSS<\/p>",
+            "description-text-size": 12,
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "image-part-width": 50,
+            "image-right": false,
+            "show-caption": false
+          }
+        }
+      },
+      "block_order": [
+        "c0df6ce3-3a2a-4562-8a33-84dea2ce41c0",
+        "5a19659c-e9b0-425c-aa48-f31cf87e0af6"
       ],
       "settings": {
       }
     },
     "double-image-style2": {
       "type": "wax-london-double-image-style2",
-      "settings": {
-      }
-    },
-    "image-text-style1": {
-      "type": "wax-london-image-text-style1",
       "settings": {
       }
     },
@@ -494,8 +527,8 @@
     "05ba6569-58be-4d93-9699-e1d4549edbe1",
     "2a32fd0d-0d81-49cd-9f37-f48af301e47a",
     "d13d41c5-930e-40a8-a41c-977d1c3f7403",
-    "double-image-style2",
     "image-text-style1",
+    "double-image-style2",
     "image-text-style2",
     "faq",
     "youtube"
