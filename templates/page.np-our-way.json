@@ -1,14 +1,12 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "single-image": {
+      "type": "np-single-image",
       "settings": {
-        "padding_top": 28,
-        "padding_bottom": 28
       }
     }
   },
   "order": [
-    "main"
+    "single-image"
   ]
 }
