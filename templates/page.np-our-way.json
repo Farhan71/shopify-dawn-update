@@ -222,11 +222,12 @@
         "d199c5be-47b9-4f47-905f-a5e42528d0de": {
           "type": "image-text-block",
           "settings": {
+            "image": "shopify:\/\/shop_images\/np-image-text-1.jpg",
             "caption": "",
-            "pre-title": "",
-            "title": "",
-            "desc": "",
-            "btn-text": "",
+            "pre-title": "<p>Sharing with<\/p>",
+            "title": "<p>Our Causes<\/p>",
+            "desc": "<p>80% of our profits are shared between five charitable causes. Chosen because they speak to our values. Eclectic in their reach, but each cause is connected through their own care for people and planet. Our chosen charities are Big Life and Wild Aid, BRAC, Children’s Hope and War Child UK.<\/p>",
+            "btn-text": "<p>learn more about the causes<\/p>",
             "pre-title-text-size": 10,
             "title-text-size": 10,
             "desc-text-size": 10,
@@ -245,9 +246,9 @@
             "custom-block-width": 800,
             "image-right": false,
             "show-caption": false,
-            "show-pre-title": false,
-            "show-title": false,
-            "show-btn": false
+            "show-pre-title": true,
+            "show-title": true,
+            "show-btn": true
           }
         }
       },
