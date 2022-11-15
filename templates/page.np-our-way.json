@@ -260,12 +260,12 @@
         "16144ac8-1309-4c18-a4ce-98331a2742f6": {
           "type": "image-text-block",
           "settings": {
-            "image": "shopify:\/\/shop_images\/np-image-text-1.jpg",
-            "caption": "",
-            "pre-title": "",
-            "title": "",
-            "desc": "",
-            "btn-text": "",
+            "image": "shopify:\/\/shop_images\/np-image-text-2.jpg",
+            "caption": "<p>(above) image caption here.<\/p>",
+            "pre-title": "<p>Sharing With<\/p>",
+            "title": "<p>Our People<\/p>",
+            "desc": "<p>We’re a community. From<br\/>our headquarters to our factories, there is a connection between<br\/>all of the people behind our collections – everyone receives a share of the companies profits. 10% of our profits are reinvested into all of our peope. We know and<br\/>respect each of our suppliers, factories and garment makers in the<br\/>production chain. People make our collections happen, so all of them reap the rewards. This is how business should be done.<\/p>",
+            "btn-text": "<p>learn more about our people<\/p>",
             "pre-title-text-size": 10,
             "title-text-size": 10,
             "desc-text-size": 10,
@@ -283,10 +283,10 @@
             "block-width": "medium",
             "custom-block-width": 800,
             "image-right": true,
-            "show-caption": false,
-            "show-pre-title": false,
-            "show-title": false,
-            "show-btn": false
+            "show-caption": true,
+            "show-pre-title": true,
+            "show-title": true,
+            "show-btn": true
           }
         }
       },
