@@ -92,7 +92,7 @@
             "caption-text-size": 10,
             "caption-color": "",
             "caption-font-family": "Helvetica, Arial, sans-serif",
-            "block-width": "medium",
+            "block-width": "full",
             "custom-block-width": 800,
             "show-title": false,
             "show-desc": false,
@@ -102,6 +102,39 @@
       },
       "block_order": [
         "e1fc17e8-b9db-4d6f-8d0d-a6f10e9bd318"
+      ],
+      "settings": {
+      }
+    },
+    "8147ea26-590d-4000-a1d7-5a43e00bd10d": {
+      "type": "np-single-image",
+      "blocks": {
+        "688b6cee-8e5f-46c2-b04f-f0093e816d50": {
+          "type": "image-block",
+          "settings": {
+            "bg-image": "shopify:\/\/shop_images\/np-single-4.jpg",
+            "title": "<p>(above) look 00 from collection 20. shop here<\/p>",
+            "title-text-size": 10,
+            "title-color": "",
+            "title-font-family": "Helvetica, Arial, sans-serif",
+            "desc": "",
+            "desc-text-size": 10,
+            "desc-color": "",
+            "desc-font-family": "Helvetica, Arial, sans-serif",
+            "caption": "",
+            "caption-text-size": 10,
+            "caption-color": "",
+            "caption-font-family": "Helvetica, Arial, sans-serif",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "show-title": false,
+            "show-desc": false,
+            "show-caption": true
+          }
+        }
+      },
+      "block_order": [
+        "688b6cee-8e5f-46c2-b04f-f0093e816d50"
       ],
       "settings": {
       }
@@ -121,6 +154,7 @@
     "single-image",
     "9a5e43f3-94a9-441f-b6b2-1169659c2029",
     "f9511c80-0ff5-4ae5-8e25-c75089aa6c7d",
+    "8147ea26-590d-4000-a1d7-5a43e00bd10d",
     "639613d4-0bd6-4289-a46e-080d318c0bbb",
     "2bcf74b2-43d9-4d11-b2bb-c1312c2c8e60"
   ]
