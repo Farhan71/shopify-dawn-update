@@ -304,6 +304,39 @@
       ],
       "settings": {
       }
+    },
+    "7eeb6cc1-7d7d-457c-a9e0-e7a98bce00b8": {
+      "type": "np-single-image",
+      "blocks": {
+        "b17cefca-753f-4a0a-a172-23a3d8518911": {
+          "type": "image-block",
+          "settings": {
+            "bg-image": "shopify:\/\/shop_images\/rafi.jpg",
+            "title": "<p>Our Way<\/p>",
+            "title-text-size": 10,
+            "title-color": "",
+            "title-font-family": "Helvetica, Arial, sans-serif",
+            "desc": "",
+            "desc-text-size": 10,
+            "desc-color": "",
+            "desc-font-family": "Helvetica, Arial, sans-serif",
+            "caption": "",
+            "caption-text-size": 10,
+            "caption-color": "",
+            "caption-font-family": "Helvetica, Arial, sans-serif",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "show-title": false,
+            "show-desc": false,
+            "show-caption": false
+          }
+        }
+      },
+      "block_order": [
+        "b17cefca-753f-4a0a-a172-23a3d8518911"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -312,6 +345,7 @@
     "f9511c80-0ff5-4ae5-8e25-c75089aa6c7d",
     "8147ea26-590d-4000-a1d7-5a43e00bd10d",
     "639613d4-0bd6-4289-a46e-080d318c0bbb",
-    "2bcf74b2-43d9-4d11-b2bb-c1312c2c8e60"
+    "2bcf74b2-43d9-4d11-b2bb-c1312c2c8e60",
+    "7eeb6cc1-7d7d-457c-a9e0-e7a98bce00b8"
   ]
 }
