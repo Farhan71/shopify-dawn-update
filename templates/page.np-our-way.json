@@ -288,12 +288,19 @@
             "show-title": true,
             "show-btn": true
           }
+        },
+        "8a2dfbfa-b997-49c1-aab2-3f0ee747bfb3": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
         }
       },
       "block_order": [
         "d199c5be-47b9-4f47-905f-a5e42528d0de",
         "93343b0c-b7d1-42d0-889f-c50d1e6c7af7",
-        "16144ac8-1309-4c18-a4ce-98331a2742f6"
+        "16144ac8-1309-4c18-a4ce-98331a2742f6",
+        "8a2dfbfa-b997-49c1-aab2-3f0ee747bfb3"
       ],
       "settings": {
       }
