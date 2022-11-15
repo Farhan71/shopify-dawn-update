@@ -250,10 +250,50 @@
             "show-title": true,
             "show-btn": true
           }
+        },
+        "93343b0c-b7d1-42d0-889f-c50d1e6c7af7": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 50
+          }
+        },
+        "16144ac8-1309-4c18-a4ce-98331a2742f6": {
+          "type": "image-text-block",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/np-image-text-1.jpg",
+            "caption": "",
+            "pre-title": "",
+            "title": "",
+            "desc": "",
+            "btn-text": "",
+            "pre-title-text-size": 10,
+            "title-text-size": 10,
+            "desc-text-size": 10,
+            "btn-text-size": 10,
+            "pre-title-color": "",
+            "title-color": "",
+            "desc-color": "",
+            "btn-color": "",
+            "text-bg-color": "",
+            "pre-title-font-family": "Helvetica, Arial, sans-serif",
+            "title-font-family": "Helvetica, Arial, sans-serif",
+            "desc-font-family": "Helvetica, Arial, sans-serif",
+            "btn-font-family": "Helvetica, Arial, sans-serif",
+            "btn-url": "",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "image-right": true,
+            "show-caption": false,
+            "show-pre-title": false,
+            "show-title": false,
+            "show-btn": false
+          }
         }
       },
       "block_order": [
-        "d199c5be-47b9-4f47-905f-a5e42528d0de"
+        "d199c5be-47b9-4f47-905f-a5e42528d0de",
+        "93343b0c-b7d1-42d0-889f-c50d1e6c7af7",
+        "16144ac8-1309-4c18-a4ce-98331a2742f6"
       ],
       "settings": {
       }
