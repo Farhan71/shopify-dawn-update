@@ -25,16 +25,44 @@
             "show-desc": true,
             "show-caption": false
           }
+        },
+        "7f0802fa-c5c6-4893-a960-7c6f12701894": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
         }
       },
       "block_order": [
-        "5302985c-0025-417e-a866-c557d59f9ddd"
+        "5302985c-0025-417e-a866-c557d59f9ddd",
+        "7f0802fa-c5c6-4893-a960-7c6f12701894"
       ],
       "settings": {
       }
     },
     "9a5e43f3-94a9-441f-b6b2-1169659c2029": {
       "type": "np-single-column-text",
+      "blocks": {
+        "f009cf58-a66a-4952-a164-83c8652a7154": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "e28fbc69-51e9-4f0b-bf01-a4ba226c8ded": {
+          "type": "text-block",
+          "settings": {
+            "text-content": "<p>We’re focused on sustainable practices and materials, creating collections with longevity and circularity at their heart. But what sets us apart is our revolutionary profit sharing model, providing the tools of empowerment for everyone involved in the creation of those collections and giving back to the causes close to our heart.<\/p>",
+            "font-size": 16,
+            "block-width": "small",
+            "custom-block-width": 800
+          }
+        }
+      },
+      "block_order": [
+        "f009cf58-a66a-4952-a164-83c8652a7154",
+        "e28fbc69-51e9-4f0b-bf01-a4ba226c8ded"
+      ],
       "settings": {
       }
     },
