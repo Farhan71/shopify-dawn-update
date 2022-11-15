@@ -109,6 +109,12 @@
     "8147ea26-590d-4000-a1d7-5a43e00bd10d": {
       "type": "np-single-image",
       "blocks": {
+        "10a17b0d-1425-4195-995e-8a08f5b45040": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
         "688b6cee-8e5f-46c2-b04f-f0093e816d50": {
           "type": "image-block",
           "settings": {
@@ -131,21 +137,123 @@
             "show-desc": false,
             "show-caption": true
           }
+        },
+        "2d9e987f-8c25-42ed-a302-44552f9684ec": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
         }
       },
       "block_order": [
-        "688b6cee-8e5f-46c2-b04f-f0093e816d50"
+        "10a17b0d-1425-4195-995e-8a08f5b45040",
+        "688b6cee-8e5f-46c2-b04f-f0093e816d50",
+        "2d9e987f-8c25-42ed-a302-44552f9684ec"
       ],
       "settings": {
       }
     },
     "639613d4-0bd6-4289-a46e-080d318c0bbb": {
       "type": "np-double-column-text",
+      "blocks": {
+        "a5f52f5a-2aed-4032-a5a7-0938e4167f93": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "48a1af54-27f1-462b-bde7-6df05a8208c6": {
+          "type": "double-column-text-block",
+          "settings": {
+            "left-title": "<p>90%<\/p>",
+            "left-desc": "<p>of our profits are shared. 80% to charitable causes, 10% between all of the people who make our collections.<\/p>",
+            "left-btn-text": "<p>learn more about profit sharing<\/p>",
+            "left-title-text-size": 100,
+            "left-desc-text-size": 10,
+            "left-btn-text-size": 10,
+            "left-title-color": "",
+            "left-desc-color": "",
+            "left-btn-color": "",
+            "left-text-bg-color": "",
+            "left-title-font-family": "Helvetica, Arial, sans-serif",
+            "left-desc-font-family": "Helvetica, Arial, sans-serif",
+            "left-btn-font-family": "Helvetica, Arial, sans-serif",
+            "left-btn-url": "",
+            "right-title": "<p>10%<\/p>",
+            "right-desc": "<p>of our profits are reinvested into the business to help us grow and explore the newest in sustainable ways of doing.<\/p>",
+            "right-btn-text": "<p>explore sustainability & materials<\/p>",
+            "right-title-text-size": 100,
+            "right-desc-text-size": 10,
+            "right-btn-text-size": 10,
+            "right-title-color": "",
+            "right-desc-color": "",
+            "right-btn-color": "",
+            "right-text-bg-color": "",
+            "right-title-font-family": "Helvetica, Arial, sans-serif",
+            "right-desc-font-family": "Helvetica, Arial, sans-serif",
+            "right-btn-font-family": "Helvetica, Arial, sans-serif",
+            "right-btn-url": "",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "show-left-title": true,
+            "show-left-btn": true,
+            "show-right-title": true,
+            "show-right-btn": true
+          }
+        },
+        "39841e0a-c49d-4597-a65c-cea3f4d51522": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        }
+      },
+      "block_order": [
+        "a5f52f5a-2aed-4032-a5a7-0938e4167f93",
+        "48a1af54-27f1-462b-bde7-6df05a8208c6",
+        "39841e0a-c49d-4597-a65c-cea3f4d51522"
+      ],
       "settings": {
       }
     },
     "2bcf74b2-43d9-4d11-b2bb-c1312c2c8e60": {
       "type": "np-image-with-text",
+      "blocks": {
+        "d199c5be-47b9-4f47-905f-a5e42528d0de": {
+          "type": "image-text-block",
+          "settings": {
+            "caption": "",
+            "pre-title": "",
+            "title": "",
+            "desc": "",
+            "btn-text": "",
+            "pre-title-text-size": 10,
+            "title-text-size": 10,
+            "desc-text-size": 10,
+            "btn-text-size": 10,
+            "pre-title-color": "",
+            "title-color": "",
+            "desc-color": "",
+            "btn-color": "",
+            "text-bg-color": "",
+            "pre-title-font-family": "Helvetica, Arial, sans-serif",
+            "title-font-family": "Helvetica, Arial, sans-serif",
+            "desc-font-family": "Helvetica, Arial, sans-serif",
+            "btn-font-family": "Helvetica, Arial, sans-serif",
+            "btn-url": "",
+            "block-width": "medium",
+            "custom-block-width": 800,
+            "image-right": false,
+            "show-caption": false,
+            "show-pre-title": false,
+            "show-title": false,
+            "show-btn": false
+          }
+        }
+      },
+      "block_order": [
+        "d199c5be-47b9-4f47-905f-a5e42528d0de"
+      ],
       "settings": {
       }
     }
