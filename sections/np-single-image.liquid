@@ -5,8 +5,15 @@
             {% when "image-block" %}
                 <div class="block-{{ block.id }} block-width-{{ block.settings.block-width }}">
                     
-                        {{ block.settings.embedded-code }}
-        
+                        <div class="image-block-inner" >
+                            <img src="{{ block.settings.bg-image | img_url: 'grande' }}" alt="">
+                            <div class="image-block-text">
+                                <span class="image-block-title"> {{ block.settings.title }} </span>
+                                <span class="image-block-desc"> {{ block.settings.desc }} </span>
+                            </div>
+                            <span class="image-block-caption"> {{ block.settings.caption }} </span>
+                        </div>
+
                    
                 </div>
             
@@ -24,7 +31,7 @@
 <style>
     {% for block in section.blocks %}
         {% case block.type %}
-            {% when "youtube-spotify-block" %}
+            {% when "image-block" %}
                 .block-{{ block.id }}.block-width-small {
                     max-width: 600px !important;
                     margin: 0 auto;
@@ -32,6 +39,7 @@
                  .block-{{ block.id }}.block-width-medium {
                     max-width: 1148px !important;
                     margin: 0 auto;
+                
                  }
                  .block-{{ block.id }}.block-width-full {
                     max-width: 100% !important;
@@ -41,10 +49,75 @@
                     max-width: {{ block.settings.custom-block-width | append: "px" }} !important;
                     margin: 0 auto;
                  }
-                 .block-{{ block.id }} {
+                 .block-{{ block.id }} .image-block-inner {
+        
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
                     
                  }
+                 .block-{{ block.id }} .image-block-inner img {
+                    width: 100%;
+                    height: 100%;
+                 }
+                 .block-{{ block.id }} .image-block-inner .image-block-text {
+                    text-align: center;
+                    position: absolute;
+                    top: 210px;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                 } 
              
+                 .block-{{ block.id }} .image-block-inner span {
+                    display: none;
+                 
+                    
+                 }
+                 .block-{{ block.id }} .image-block-text .image-block-title {
+                    font-weight: 700;
+                    font-size: {{ block.settings.title-text-size }}px;
+                    color: {{ block.settings.title-color }};
+                    font-family: {{ block.settings.title-font-family }};
+                 }
+                 .block-{{ block.id }} .image-block-text .image-block-title p {
+                    margin: 0 auto;
+                 }
+
+                 .block-{{ block.id }} .image-block-text .image-block-desc {
+                    font-size: {{ block.settings.desc-text-size }}px;
+                    color: {{ block.settings.desc-color }};
+                    font-family: {{ block.settings.desc-font-family }};
+                 }
+
+                 .block-{{ block.id }} .image-block-inner .image-block-caption  {
+                    font-size: {{ block.settings.caption-text-size }}px;
+                    color: {{ block.settings.caption-color }};
+                    font-family: {{ block.settings.caption-font-family }};
+                 }
+                 .block-{{ block.id }} .image-block-inner .image-block-caption p {
+                    margin: 0 auto;
+                 }
+
+                 {% if block.settings.show-title %}
+                    .block-{{ block.id }} .image-block-text .image-block-title {
+                        display: block;
+                     }
+                 {% endif %}
+
+                 {% if block.settings.show-desc %}
+                    .block-{{ block.id }} .image-block-text .image-block-desc {
+                        display: block;
+                     }
+                 {% endif %}
+
+                 {% if block.settings.show-caption %}
+                    .block-{{ block.id }} .image-block-inner .image-block-caption {
+                        display: block;
+                     }
+                 {% endif %}
+
+                
             {% when 'spacer-block' %}
 
                 .section-wrapper-{{ section.id }}  .spacer-{{ block.id }} {
@@ -67,11 +140,91 @@
             "name": "Image",
             "settings": [
                 {
-           "type":"text",
-           "id":"embedded-code",
-           "label":"embedded-code"
-        },
-        {
+                    "type": "image_picker",
+                    "label": "Image Pick",
+                    "id": "bg-image"
+                },
+                {
+                    "type": "richtext",
+                    "label": "Add title",
+                    "id": "title",
+                    "default": "<p>Our Way</p>"
+                },
+              
+                {
+                    "type": "range",
+                    "id":"title-text-size",
+                    "label":"Title text size",
+                    "min":8,
+                    "max":100,
+                    "step":1,
+                    "unit":"px",
+                    "default":10
+                }, 
+                {
+                    "type":"color",
+                    "id":"title-color",
+                    "label":"title text color"
+                },
+                {
+                "type": "font",
+                "id": "title-font-family",
+                "label" : "Title Font Family"
+              },
+               
+                {
+                    "type": "richtext",
+                    "label": "Add description",
+                    "id": "desc"
+                  
+                },
+                {
+                    "type": "range",
+                    "id":"desc-text-size",
+                    "label":"Description text size",
+                    "min":8,
+                    "max":100,
+                    "step":1,
+                    "unit":"px",
+                    "default":10
+                }, 
+                {
+                    "type":"color",
+                    "id":"desc-color",
+                    "label":"desc text color"
+                },
+                {
+                "type": "font",
+                "id": "desc-font-family",
+                "label" : "Description Font Family"
+              },
+              {
+                    "type": "richtext",
+                    "label": "Add caption",
+                    "id": "caption"
+                
+                },
+                {
+                    "type": "range",
+                    "id":"caption-text-size",
+                    "label":"Caption text size",
+                    "min":8,
+                    "max":100,
+                    "step":1,
+                    "unit":"px",
+                    "default":10
+                }, 
+                {
+                    "type":"color",
+                    "id":"caption-color",
+                    "label":"caption text color"
+                },
+                {
+                "type": "font",
+                "id": "caption-font-family",
+                "label" : "caption Font Family"
+              },
+           {
                 "type": "select",
                 "id": "block-width",
                 "label": "Block width",
@@ -92,8 +245,8 @@
                 "value": "custom",
                 "label": "Custom"
                 }
-            ],
-            "default": "medium"
+                ],
+                "default": "medium"
             },
             {  
                 "type": "range",
@@ -104,7 +257,25 @@
                 "step": 50,
                 "unit": "px",
                 "default": 800
-            }
+            },
+            {
+        "type": "checkbox",
+        "id": "show-title",
+        "label": "Show Title",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show-desc",
+        "label": "Show Descriptions",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show-caption",
+        "label": "Show caption",
+        "default": false
+      }
             ]
         },
         {
