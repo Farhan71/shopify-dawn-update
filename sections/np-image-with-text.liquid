@@ -112,7 +112,7 @@
                 display: flex;
                 
 
-             align-content: center;
+               align-content: center;
                 flex-wrap: wrap; 
 
                 background-color: {{ block.settings.text-bg-color }};
@@ -130,7 +130,7 @@
                 font-family: {{ block.settings.title-font-family }};
              }
              .block-{{ block.id }} .text-part .desc {
-                font-size: {{ block.settings.description-text-size }}px;
+                font-size: {{ block.settings.desc-text-size }}px;
                 color: {{ block.settings.desc-color }};
                 font-family: {{ block.settings.desc-font-family }};
              }
@@ -293,7 +293,7 @@
               },
                 {
                  "type":"range",
-                 "id":"description-text-size",
+                 "id":"desc-text-size",
                  "label":"description text size",
                  "min":8,
                  "max":40,
@@ -411,7 +411,7 @@
       {
         "type": "checkbox",
         "id": "show-pre-title",
-        "label": "show title",
+        "label": "show pre title",
         "default": false
       },
       {
