@@ -169,7 +169,9 @@
             "right-btn-font-family": "Helvetica, Arial, sans-serif",
             "right-btn-url": "",
             "block-width": "full",
-            "custom-block-width": 800
+            "custom-block-width": 800,
+            "show-divider": true,
+            "block-height": 500
           }
         },
         "be455791-5efe-40fb-b4c8-27ceb3b1dde6": {
@@ -279,7 +281,8 @@
             "show-left-title": true,
             "show-left-btn": true,
             "show-right-title": true,
-            "show-right-btn": true
+            "show-right-btn": true,
+            "block-height": 500
           }
         },
         "39841e0a-c49d-4597-a65c-cea3f4d51522": {
@@ -482,7 +485,9 @@
             "right-btn-font-family": "Helvetica, Arial, sans-serif",
             "right-btn-url": "",
             "block-width": "full",
-            "custom-block-width": 800
+            "custom-block-width": 800,
+            "show-divider": false,
+            "block-height": 250
           }
         },
         "d9fcf025-489c-43c2-ba03-d676521dd969": {
