@@ -94,7 +94,7 @@
              .block-{{ block.id }}  {
                 display: flex;
                 justify-content: center;
-              
+                height: {{ block.settings.block-height }}px;
              }
              
              .block-{{ block.id }} .left-text-part  {
@@ -106,7 +106,7 @@
 
                 background-color: {{ block.settings.left-text-bg-color }};
                 width: 50%;
-                
+                border-right: 1px solid rgba(43, 39, 37, 0.5);
              }
 
              .block-{{ block.id }} .right-text-part  {
@@ -527,7 +527,17 @@
         "id": "show-right-btn",
         "label": "show right button",
         "default": false
-      }
+      },
+      {
+                 "type":"range",
+                 "id":"block-height",
+                 "label":"divider height",
+                 "min":150,
+                 "max":600,
+                 "step":5,
+                 "unit":"px",
+                 "default": 250
+              }
       
 
             ]
