@@ -76,6 +76,12 @@
     "f9511c80-0ff5-4ae5-8e25-c75089aa6c7d": {
       "type": "np-single-image",
       "blocks": {
+        "c6b5e24c-949d-499f-8cca-40111aeb36c3": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
         "e1fc17e8-b9db-4d6f-8d0d-a6f10e9bd318": {
           "type": "image-block",
           "settings": {
@@ -98,10 +104,18 @@
             "show-desc": false,
             "show-caption": true
           }
+        },
+        "8d079558-b95b-46f5-8abd-9270628dcd50": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
         }
       },
       "block_order": [
-        "e1fc17e8-b9db-4d6f-8d0d-a6f10e9bd318"
+        "c6b5e24c-949d-499f-8cca-40111aeb36c3",
+        "e1fc17e8-b9db-4d6f-8d0d-a6f10e9bd318",
+        "8d079558-b95b-46f5-8abd-9270628dcd50"
       ],
       "settings": {
       }
