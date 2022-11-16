@@ -375,6 +375,12 @@
     "7eeb6cc1-7d7d-457c-a9e0-e7a98bce00b8": {
       "type": "np-single-image",
       "blocks": {
+        "c2ed9176-0f0e-4bb8-83bd-b396bff025e4": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
         "b17cefca-753f-4a0a-a172-23a3d8518911": {
           "type": "image-block",
           "settings": {
@@ -397,10 +403,18 @@
             "show-desc": false,
             "show-caption": false
           }
+        },
+        "b880eb78-f26d-48ca-bc7b-1f1cf9cfba50": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
         }
       },
       "block_order": [
-        "b17cefca-753f-4a0a-a172-23a3d8518911"
+        "c2ed9176-0f0e-4bb8-83bd-b396bff025e4",
+        "b17cefca-753f-4a0a-a172-23a3d8518911",
+        "b880eb78-f26d-48ca-bc7b-1f1cf9cfba50"
       ],
       "settings": {
       }
