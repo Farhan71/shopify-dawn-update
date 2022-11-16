@@ -1,12 +1,12 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "multicolumn": {
+      "type": "np-multicolumn",
       "settings": {
       }
     }
   },
   "order": [
-    "main"
+    "multicolumn"
   ]
 }
