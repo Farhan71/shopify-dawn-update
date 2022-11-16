@@ -109,6 +109,12 @@
     "f5727b35-7a29-4794-8c7f-312d0459da29": {
       "type": "np-double-column-text-style2",
       "blocks": {
+        "838b02d3-63f9-4b8b-acb2-c6449db60ad5": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
         "5d67487c-84de-445d-9927-e08e60bb9472": {
           "type": "double-column-text-block",
           "settings": {
@@ -151,10 +157,18 @@
             "block-width": "medium",
             "custom-block-width": 800
           }
+        },
+        "be455791-5efe-40fb-b4c8-27ceb3b1dde6": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
         }
       },
       "block_order": [
-        "5d67487c-84de-445d-9927-e08e60bb9472"
+        "838b02d3-63f9-4b8b-acb2-c6449db60ad5",
+        "5d67487c-84de-445d-9927-e08e60bb9472",
+        "be455791-5efe-40fb-b4c8-27ceb3b1dde6"
       ],
       "settings": {
       }
@@ -390,6 +404,73 @@
       ],
       "settings": {
       }
+    },
+    "03ed0870-dd18-4597-81c7-de3e0a108a7a": {
+      "type": "np-double-column-text-style2",
+      "blocks": {
+        "2040173c-da85-457e-9e8a-871a64789411": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        },
+        "2b22b4ab-530f-444d-92ed-79214bfbb2d0": {
+          "type": "double-column-text-block",
+          "settings": {
+            "left-pre-title": "",
+            "left-title": "",
+            "left-desc": "",
+            "left-btn-text": "",
+            "left-pre-title-text-size": 10,
+            "left-title-text-size": 10,
+            "left-desc-text-size": 10,
+            "left-btn-text-size": 10,
+            "left-pre-title-color": "",
+            "left-title-color": "",
+            "left-desc-color": "",
+            "left-btn-color": "",
+            "left-text-bg-color": "",
+            "left-pre-title-font-family": "Helvetica, Arial, sans-serif",
+            "left-title-font-family": "Helvetica, Arial, sans-serif",
+            "left-desc-font-family": "Helvetica, Arial, sans-serif",
+            "left-btn-font-family": "Helvetica, Arial, sans-serif",
+            "left-btn-url": "",
+            "right-pre-title": "<p>Longevity:<\/p>",
+            "right-title": "<p>Caretaking<\/p>",
+            "right-desc": "<p>Clothes designed for longevity still require care and consideration. By properly caring for your pieces you’re helping your garments to last a long time, whilst preserving our planets natural resources and your energy consumption.<\/p>",
+            "right-btn-text": "<p>how to: garment care<\/p>",
+            "right-pre-title-text-size": 10,
+            "right-title-text-size": 10,
+            "right-desc-text-size": 10,
+            "right-btn-text-size": 10,
+            "right-pre-title-color": "",
+            "right-title-color": "",
+            "right-desc-color": "",
+            "right-btn-color": "",
+            "right-text-bg-color": "",
+            "right-pre-title-font-family": "Helvetica, Arial, sans-serif",
+            "right-title-font-family": "Helvetica, Arial, sans-serif",
+            "right-desc-font-family": "Helvetica, Arial, sans-serif",
+            "right-btn-font-family": "Helvetica, Arial, sans-serif",
+            "right-btn-url": "",
+            "block-width": "medium",
+            "custom-block-width": 800
+          }
+        },
+        "d9fcf025-489c-43c2-ba03-d676521dd969": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 30
+          }
+        }
+      },
+      "block_order": [
+        "2040173c-da85-457e-9e8a-871a64789411",
+        "2b22b4ab-530f-444d-92ed-79214bfbb2d0",
+        "d9fcf025-489c-43c2-ba03-d676521dd969"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -400,6 +481,7 @@
     "8147ea26-590d-4000-a1d7-5a43e00bd10d",
     "639613d4-0bd6-4289-a46e-080d318c0bbb",
     "2bcf74b2-43d9-4d11-b2bb-c1312c2c8e60",
-    "7eeb6cc1-7d7d-457c-a9e0-e7a98bce00b8"
+    "7eeb6cc1-7d7d-457c-a9e0-e7a98bce00b8",
+    "03ed0870-dd18-4597-81c7-de3e0a108a7a"
   ]
 }
