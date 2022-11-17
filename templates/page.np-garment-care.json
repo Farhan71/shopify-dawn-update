@@ -303,7 +303,7 @@
         "a9065578-bf91-40ad-a59e-16e556b198e5": {
           "type": "spacer",
           "settings": {
-            "spacer": 10
+            "spacer": 40
           }
         },
         "ac877a70-78cb-4bf1-a159-444dbad3b945": {
@@ -321,7 +321,7 @@
         "6fb4d06d-4232-4c5a-a03b-21657b1fb0dd": {
           "type": "spacer",
           "settings": {
-            "spacer": 10
+            "spacer": 35
           }
         },
         "2607df02-9451-45af-9572-1139e0f9701e": {
@@ -347,7 +347,7 @@
       "settings": {
         "image-first-layout": true,
         "image": "shopify:\/\/shop_images\/8500c76dc9a9b1abe49e2480648ce5f0.jpg",
-        "image-width": 70,
+        "image-width": 75,
         "section-width": 100
       }
     }
