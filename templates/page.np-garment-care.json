@@ -283,6 +283,12 @@
         "padding_bottom": 36
       }
     },
+    "37b2da69-079c-4176-b77a-865b35fc543a": {
+      "type": "wax-london-spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
     "bd7cb364-2327-4736-81da-42631201d432": {
       "type": "np-image-with-text-style2",
       "blocks": {
@@ -409,6 +415,7 @@
     "03d68f7c-9079-4fd8-92d7-e2d2fffca285",
     "8826c9a5-88d9-4a69-b8e4-2b8e8cd344dc",
     "89e2ec97-bea5-4296-a783-319cb2825474",
+    "37b2da69-079c-4176-b77a-865b35fc543a",
     "bd7cb364-2327-4736-81da-42631201d432",
     "c9f123db-6c93-494e-b830-0b2421927694",
     "d7ad914a-fbb7-4ec5-ae1f-bf828d7da5e4"
