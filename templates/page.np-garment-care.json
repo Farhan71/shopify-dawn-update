@@ -57,13 +57,26 @@
             "font-weight": 400,
             "text-width": 100
           }
+        },
+        "dfa6ce40-70cb-4d5e-a9a5-5993003c9b6d": {
+          "type": "text",
+          "settings": {
+            "text": "You needn’t wash an item every time you wear it. Spot clean marks or stains and hang your pieces to air out before putting them away at the end of the day. You can freshen garments between washes with a steamer or by hanging them in the bathroom whilst you shower.",
+            "font-size": 16,
+            "line-height": 37,
+            "letter-spacing": 0,
+            "font": "Helvetica, Arial, sans-serif",
+            "font-weight": 400,
+            "text-width": 100
+          }
         }
       },
       "block_order": [
         "1a2f7993-5723-40a4-9bf1-d328fd21ebbd",
         "0943e205-8d7c-42ff-9915-cd50d73bc778",
         "a7e96510-8fb9-41b7-bdd4-bfe28256a9fd",
-        "4b5b97bf-f5c1-47c3-9fa8-eaf8f25e3f09"
+        "4b5b97bf-f5c1-47c3-9fa8-eaf8f25e3f09",
+        "dfa6ce40-70cb-4d5e-a9a5-5993003c9b6d"
       ],
       "settings": {
         "image-first-layout": false,
