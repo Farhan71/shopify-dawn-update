@@ -8,7 +8,7 @@
           "settings": {
             "text": "Caretaking",
             "font-size": 100,
-            "line-height": 90,
+            "line-height": 100,
             "letter-spacing": 0,
             "font": "Helvetica, Arial, sans-serif",
             "font-weight": 400,
@@ -46,7 +46,7 @@
           "settings": {
             "text": "Clothes designed for longevity still require care and consideration. By properly caring for your pieces you’re helping your garments to last a long time, whilst preserving our planets natural resources and your energy consumption.",
             "font-size": 16,
-            "line-height": 37,
+            "line-height": 28,
             "letter-spacing": 0,
             "font": "Helvetica, Arial, sans-serif",
             "font-weight": 900,
