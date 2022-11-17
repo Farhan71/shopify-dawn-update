@@ -3,10 +3,91 @@
     "multicolumn": {
       "type": "np-multicolumn",
       "settings": {
+        "section-width": "custom",
+        "custom-section-width": 1400,
+        "column-gap": 90,
+        "multicolumn-style": "style1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "03d68f7c-9079-4fd8-92d7-e2d2fffca285": {
+      "type": "np-image-with-text-style2",
+      "blocks": {
+        "1a2f7993-5723-40a4-9bf1-d328fd21ebbd": {
+          "type": "text",
+          "settings": {
+            "text": "Caretaking",
+            "font-size": 100,
+            "line-height": 37,
+            "letter-spacing": 0,
+            "font": "Helvetica, Arial, sans-serif",
+            "font-weight": 400,
+            "text-width": 100
+          }
+        },
+        "0943e205-8d7c-42ff-9915-cd50d73bc778": {
+          "type": "spacer",
+          "settings": {
+            "spacer": 140
+          }
+        },
+        "a7e96510-8fb9-41b7-bdd4-bfe28256a9fd": {
+          "type": "bullet-point",
+          "settings": {
+            "point": "HOW TO",
+            "point-text": "GARMENT CARE",
+            "point-text-padding": 5,
+            "point-font-size": 18,
+            "point-font-weight": 400,
+            "point-text-font-size": 18,
+            "point-text-font-weight": 400,
+            "point-font": "Helvetica, Arial, sans-serif",
+            "point-text-font": "Helvetica, Arial, sans-serif"
+          }
+        },
+        "4b5b97bf-f5c1-47c3-9fa8-eaf8f25e3f09": {
+          "type": "text",
+          "settings": {
+            "text": "Clothes designed for longevity still require care and consideration. By properly caring for your pieces you’re helping your garments to last a long time, whilst preserving our planets natural resources and your energy consumption.",
+            "font-size": 16,
+            "line-height": 37,
+            "letter-spacing": 0,
+            "font": "Helvetica, Arial, sans-serif",
+            "font-weight": 900,
+            "text-width": 100
+          }
+        },
+        "dfa6ce40-70cb-4d5e-a9a5-5993003c9b6d": {
+          "type": "text",
+          "settings": {
+            "text": "You needn’t wash an item every time you wear it. Spot clean marks or stains and hang your pieces to air out before putting them away at the end of the day. You can freshen garments between washes with a steamer or by hanging them in the bathroom whilst you shower.",
+            "font-size": 16,
+            "line-height": 37,
+            "letter-spacing": 0,
+            "font": "Helvetica, Arial, sans-serif",
+            "font-weight": 400,
+            "text-width": 100
+          }
+        }
+      },
+      "block_order": [
+        "1a2f7993-5723-40a4-9bf1-d328fd21ebbd",
+        "0943e205-8d7c-42ff-9915-cd50d73bc778",
+        "a7e96510-8fb9-41b7-bdd4-bfe28256a9fd",
+        "4b5b97bf-f5c1-47c3-9fa8-eaf8f25e3f09",
+        "dfa6ce40-70cb-4d5e-a9a5-5993003c9b6d"
+      ],
+      "settings": {
+        "image-first-layout": true,
+        "image": "shopify:\/\/shop_images\/98b4755cb2d888430e5c0b4fec0e8442.jpg",
+        "image-width": 100,
+        "section-width": 100
       }
     }
   },
   "order": [
-    "multicolumn"
+    "multicolumn",
+    "03d68f7c-9079-4fd8-92d7-e2d2fffca285"
   ]
 }
