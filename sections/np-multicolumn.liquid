@@ -137,9 +137,42 @@
             position: absolute;
             top: calc(100% + 45px);
             border-bottom: 0.25px solid #b8afab;
-            width: 1400px;
+           
        }
-  
+
+       {% if section.settings.section-width == "small" %} 
+       .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(6n-5)::after {
+            width: 600px;
+           
+       }
+
+       {% endif %}
+
+       
+       {% if section.settings.section-width == "medium" %} 
+       .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(6n-5)::after {
+            width: 900px;
+           
+       }
+
+       {% endif %}
+
+       
+       {% if section.settings.section-width == "full" %} 
+       .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(6n-5)::after {
+            width: 2000px;
+           
+       }
+
+       {% endif %}
+
+       {% if section.settings.section-width == "custom" %} 
+       .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(6n-5)::after {
+        width: {{ section.settings.custom-section-width | append: "px" }};
+           
+       }
+
+       {% endif %}
                 
     {% endif %}
 
