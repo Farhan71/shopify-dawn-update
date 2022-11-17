@@ -79,9 +79,9 @@
         "dfa6ce40-70cb-4d5e-a9a5-5993003c9b6d"
       ],
       "settings": {
-        "image-first-layout": false,
+        "image-first-layout": true,
         "image": "shopify:\/\/shop_images\/98b4755cb2d888430e5c0b4fec0e8442.jpg",
-        "image-width": 70,
+        "image-width": 63,
         "section-width": 100
       }
     }
