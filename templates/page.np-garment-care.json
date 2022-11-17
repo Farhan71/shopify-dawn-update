@@ -45,12 +45,25 @@
             "point-font": "Helvetica, Arial, sans-serif",
             "point-text-font": "Helvetica, Arial, sans-serif"
           }
+        },
+        "4b5b97bf-f5c1-47c3-9fa8-eaf8f25e3f09": {
+          "type": "text",
+          "settings": {
+            "text": "Clothes designed for longevity still require care and consideration. By properly caring for your pieces you’re helping your garments to last a long time, whilst preserving our planets natural resources and your energy consumption.",
+            "font-size": 16,
+            "line-height": 37,
+            "letter-spacing": 0,
+            "font": "Helvetica, Arial, sans-serif",
+            "font-weight": 400,
+            "text-width": 100
+          }
         }
       },
       "block_order": [
         "1a2f7993-5723-40a4-9bf1-d328fd21ebbd",
         "0943e205-8d7c-42ff-9915-cd50d73bc778",
-        "a7e96510-8fb9-41b7-bdd4-bfe28256a9fd"
+        "a7e96510-8fb9-41b7-bdd4-bfe28256a9fd",
+        "4b5b97bf-f5c1-47c3-9fa8-eaf8f25e3f09"
       ],
       "settings": {
         "image-first-layout": false,
