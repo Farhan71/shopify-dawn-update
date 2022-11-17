@@ -350,12 +350,67 @@
         "image-width": 75,
         "section-width": 89
       }
+    },
+    "c9f123db-6c93-494e-b830-0b2421927694": {
+      "type": "wax-london-spacer",
+      "settings": {
+        "spacer-height": 200
+      }
+    },
+    "d7ad914a-fbb7-4ec5-ae1f-bf828d7da5e4": {
+      "type": "np-three-column-image",
+      "blocks": {
+        "3be53147-b248-4b6a-a3ed-ef2734c4a470": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 200
+          }
+        },
+        "bfef848b-b89c-44d3-9d39-6c7430e18f1f": {
+          "type": "three-image-block",
+          "settings": {
+            "first-image": "shopify:\/\/shop_images\/755953c88e084c64718ad6e82289bc85.jpg",
+            "second-image": "shopify:\/\/shop_images\/0109973ee647552ffc85e66f270341e1.jpg",
+            "third-image": "shopify:\/\/shop_images\/9c9795de606fca139434e0353396f189.jpg",
+            "first-product-name": "<p>Hydra Blouse in Pine Bark<\/p>",
+            "first-fabric-brand": "<p>Tencel<\/p>",
+            "first-product-price": "<p>$240<\/p>",
+            "second-product-name": "<p>Hydra Blouse in Pine Bark<br\/><\/p>",
+            "second-fabric-brand": "<p>Tencel<\/p>",
+            "second-product-price": "<p>$240<\/p>",
+            "third-product-name": "<p>Hydra Blouse in Pine Bark<\/p>",
+            "third-fabric-brand": "<p>Tencel<\/p>",
+            "third-product-price": "<p>$240<\/p>",
+            "caption-font-size": 16,
+            "caption-font-family": "Helvetica, Arial, sans-serif",
+            "caption-color": "",
+            "show-caption": true,
+            "block-width": "medium",
+            "custom-block-width": 800
+          }
+        },
+        "92cccaec-387c-490f-ab1a-5a599f22a287": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 200
+          }
+        }
+      },
+      "block_order": [
+        "3be53147-b248-4b6a-a3ed-ef2734c4a470",
+        "bfef848b-b89c-44d3-9d39-6c7430e18f1f",
+        "92cccaec-387c-490f-ab1a-5a599f22a287"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "03d68f7c-9079-4fd8-92d7-e2d2fffca285",
     "8826c9a5-88d9-4a69-b8e4-2b8e8cd344dc",
     "89e2ec97-bea5-4296-a783-319cb2825474",
-    "bd7cb364-2327-4736-81da-42631201d432"
+    "bd7cb364-2327-4736-81da-42631201d432",
+    "c9f123db-6c93-494e-b830-0b2421927694",
+    "d7ad914a-fbb7-4ec5-ae1f-bf828d7da5e4"
   ]
 }
