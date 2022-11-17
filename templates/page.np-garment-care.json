@@ -87,9 +87,199 @@
         "image-width": 82,
         "section-width": 90
       }
+    },
+    "89e2ec97-bea5-4296-a783-319cb2825474": {
+      "type": "np-multicolumn",
+      "blocks": {
+        "template--16597170356478__89e2ec97-bea5-4296-a783-319cb2825474-166869156721f3faed-0": {
+          "type": "column",
+          "settings": {
+            "custom-image-width": 400,
+            "caption": "",
+            "caption-font-family": "",
+            "caption-font-weight": 100,
+            "caption-font-color": "",
+            "caption-size": 16,
+            "caption-line-height": 1.2,
+            "caption-spacer-height": 5,
+            "image-vertical-alignment": "top",
+            "heading": "Cold Wash",
+            "heading-font-family": "",
+            "heading-font-weight": 700,
+            "heading-font-color": "",
+            "heading-size": 28,
+            "heading-line-height": 1.2,
+            "heading-spacer-height": 15,
+            "description": "<p>Washing in cold water is better for your garments and the planet. Turn your machine to 30° to reduce colour fading and use less energy. Always separate colours and wash similar shades together, turning dark, zipped or embellished clothing inside out.<\/p>",
+            "text-font-family": "",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "description-size": 16,
+            "description-line-height": 1.2,
+            "description-spacer-height": 0
+          }
+        },
+        "template--16597170356478__89e2ec97-bea5-4296-a783-319cb2825474-166869156721f3faed-1": {
+          "type": "column",
+          "settings": {
+            "custom-image-width": 400,
+            "caption": "",
+            "caption-font-family": "",
+            "caption-font-weight": 100,
+            "caption-font-color": "",
+            "caption-size": 16,
+            "caption-line-height": 1.2,
+            "caption-spacer-height": 5,
+            "image-vertical-alignment": "top",
+            "heading": "Column",
+            "heading-font-family": "",
+            "heading-font-weight": 700,
+            "heading-font-color": "",
+            "heading-size": 28,
+            "heading-line-height": 1.2,
+            "heading-spacer-height": 15,
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-font-family": "",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "description-size": 16,
+            "description-line-height": 1.2,
+            "description-spacer-height": 0
+          }
+        },
+        "template--16597170356478__89e2ec97-bea5-4296-a783-319cb2825474-166869156721f3faed-2": {
+          "type": "column",
+          "settings": {
+            "custom-image-width": 400,
+            "caption": "",
+            "caption-font-family": "",
+            "caption-font-weight": 100,
+            "caption-font-color": "",
+            "caption-size": 16,
+            "caption-line-height": 1.2,
+            "caption-spacer-height": 5,
+            "image-vertical-alignment": "top",
+            "heading": "Column",
+            "heading-font-family": "",
+            "heading-font-weight": 700,
+            "heading-font-color": "",
+            "heading-size": 28,
+            "heading-line-height": 1.2,
+            "heading-spacer-height": 15,
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-font-family": "",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "description-size": 16,
+            "description-line-height": 1.2,
+            "description-spacer-height": 0
+          }
+        },
+        "d7780100-3090-4791-88be-475e82d3811a": {
+          "type": "column",
+          "settings": {
+            "custom-image-width": 400,
+            "caption": "",
+            "caption-font-family": "Helvetica, Arial, sans-serif",
+            "caption-font-weight": 100,
+            "caption-font-color": "",
+            "caption-size": 16,
+            "caption-line-height": 1.2,
+            "caption-spacer-height": 5,
+            "image-vertical-alignment": "top",
+            "heading": "Column",
+            "heading-font-family": "Helvetica, Arial, sans-serif",
+            "heading-font-weight": 700,
+            "heading-font-color": "",
+            "heading-size": 28,
+            "heading-line-height": 1.2,
+            "heading-spacer-height": 15,
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-font-family": "Helvetica, Arial, sans-serif",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "description-size": 16,
+            "description-line-height": 1.2,
+            "description-spacer-height": 0
+          }
+        },
+        "87bd063f-69d2-4889-9d8d-6d9ae785d67c": {
+          "type": "column",
+          "settings": {
+            "custom-image-width": 400,
+            "caption": "",
+            "caption-font-family": "Helvetica, Arial, sans-serif",
+            "caption-font-weight": 100,
+            "caption-font-color": "",
+            "caption-size": 16,
+            "caption-line-height": 1.2,
+            "caption-spacer-height": 5,
+            "image-vertical-alignment": "top",
+            "heading": "Column",
+            "heading-font-family": "Helvetica, Arial, sans-serif",
+            "heading-font-weight": 700,
+            "heading-font-color": "",
+            "heading-size": 28,
+            "heading-line-height": 1.2,
+            "heading-spacer-height": 15,
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-font-family": "Helvetica, Arial, sans-serif",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "description-size": 16,
+            "description-line-height": 1.2,
+            "description-spacer-height": 0
+          }
+        },
+        "8c474b96-5444-4160-9851-bf26406b1c97": {
+          "type": "column",
+          "settings": {
+            "custom-image-width": 400,
+            "caption": "",
+            "caption-font-family": "Helvetica, Arial, sans-serif",
+            "caption-font-weight": 100,
+            "caption-font-color": "",
+            "caption-size": 16,
+            "caption-line-height": 1.2,
+            "caption-spacer-height": 5,
+            "image-vertical-alignment": "top",
+            "heading": "",
+            "heading-font-family": "Helvetica, Arial, sans-serif",
+            "heading-font-weight": 700,
+            "heading-font-color": "",
+            "heading-size": 28,
+            "heading-line-height": 1.2,
+            "heading-spacer-height": 15,
+            "description": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text-font-family": "Helvetica, Arial, sans-serif",
+            "text-font-weight": 300,
+            "text-font-color": "",
+            "description-size": 16,
+            "description-line-height": 1.2,
+            "description-spacer-height": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16597170356478__89e2ec97-bea5-4296-a783-319cb2825474-166869156721f3faed-0",
+        "template--16597170356478__89e2ec97-bea5-4296-a783-319cb2825474-166869156721f3faed-1",
+        "template--16597170356478__89e2ec97-bea5-4296-a783-319cb2825474-166869156721f3faed-2",
+        "d7780100-3090-4791-88be-475e82d3811a",
+        "87bd063f-69d2-4889-9d8d-6d9ae785d67c",
+        "8c474b96-5444-4160-9851-bf26406b1c97"
+      ],
+      "settings": {
+        "section-width": "custom",
+        "custom-section-width": 1400,
+        "column-gap": 90,
+        "multicolumn-style": "style1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "03d68f7c-9079-4fd8-92d7-e2d2fffca285"
+    "03d68f7c-9079-4fd8-92d7-e2d2fffca285",
+    "89e2ec97-bea5-4296-a783-319cb2825474"
   ]
 }
