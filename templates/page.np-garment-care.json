@@ -409,6 +409,46 @@
       ],
       "settings": {
       }
+    },
+    "ff28dfdb-cbf4-4f7f-b130-d19bd5d26835": {
+      "type": "np-single-image",
+      "blocks": {
+        "6ef2c851-c8f1-4b0b-b3b8-502f0fdd751d": {
+          "type": "spacer-block",
+          "settings": {
+            "spacer-height": 200
+          }
+        },
+        "2900d75d-e379-4c2a-8350-fff7e7cfd7f7": {
+          "type": "image-block",
+          "settings": {
+            "bg-image": "shopify:\/\/shop_images\/53eb5451bc9e7fe4302ace1dacee65c2.jpg",
+            "title": "<p>Our Way<\/p>",
+            "title-text-size": 10,
+            "title-color": "",
+            "title-font-family": "Helvetica, Arial, sans-serif",
+            "desc": "",
+            "desc-text-size": 10,
+            "desc-color": "",
+            "desc-font-family": "Helvetica, Arial, sans-serif",
+            "caption": "<p>(above) look 00 from collection 20 made of x material. shop here<\/p>",
+            "caption-text-size": 10,
+            "caption-color": "",
+            "caption-font-family": "Helvetica, Arial, sans-serif",
+            "block-width": "full",
+            "custom-block-width": 800,
+            "show-title": false,
+            "show-desc": false,
+            "show-caption": true
+          }
+        }
+      },
+      "block_order": [
+        "6ef2c851-c8f1-4b0b-b3b8-502f0fdd751d",
+        "2900d75d-e379-4c2a-8350-fff7e7cfd7f7"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -418,6 +458,7 @@
     "37b2da69-079c-4176-b77a-865b35fc543a",
     "bd7cb364-2327-4736-81da-42631201d432",
     "c9f123db-6c93-494e-b830-0b2421927694",
-    "d7ad914a-fbb7-4ec5-ae1f-bf828d7da5e4"
+    "d7ad914a-fbb7-4ec5-ae1f-bf828d7da5e4",
+    "ff28dfdb-cbf4-4f7f-b130-d19bd5d26835"
   ]
 }
