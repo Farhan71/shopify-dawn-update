@@ -46,6 +46,12 @@
             "point-text-font": "Helvetica, Arial, sans-serif"
           }
         },
+        "6a2be649-b588-4413-8521-22beb62c762c": {
+          "type": "spacer",
+          "settings": {
+            "spacer": 30
+          }
+        },
         "4b5b97bf-f5c1-47c3-9fa8-eaf8f25e3f09": {
           "type": "text",
           "settings": {
@@ -75,13 +81,14 @@
         "1a2f7993-5723-40a4-9bf1-d328fd21ebbd",
         "0943e205-8d7c-42ff-9915-cd50d73bc778",
         "a7e96510-8fb9-41b7-bdd4-bfe28256a9fd",
+        "6a2be649-b588-4413-8521-22beb62c762c",
         "4b5b97bf-f5c1-47c3-9fa8-eaf8f25e3f09",
         "dfa6ce40-70cb-4d5e-a9a5-5993003c9b6d"
       ],
       "settings": {
         "image-first-layout": true,
         "image": "shopify:\/\/shop_images\/98b4755cb2d888430e5c0b4fec0e8442.jpg",
-        "image-width": 100,
+        "image-width": 75,
         "section-width": 100
       }
     }
