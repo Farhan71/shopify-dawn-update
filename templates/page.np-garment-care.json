@@ -88,6 +88,12 @@
         "section-width": 90
       }
     },
+    "8826c9a5-88d9-4a69-b8e4-2b8e8cd344dc": {
+      "type": "wax-london-spacer",
+      "settings": {
+        "spacer-height": 50
+      }
+    },
     "89e2ec97-bea5-4296-a783-319cb2825474": {
       "type": "np-multicolumn",
       "blocks": {
@@ -280,6 +286,7 @@
   },
   "order": [
     "03d68f7c-9079-4fd8-92d7-e2d2fffca285",
+    "8826c9a5-88d9-4a69-b8e4-2b8e8cd344dc",
     "89e2ec97-bea5-4296-a783-319cb2825474"
   ]
 }
