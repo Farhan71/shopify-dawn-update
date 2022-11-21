@@ -437,7 +437,7 @@
             "desc-font-family": "Helvetica, Arial, sans-serif",
             "btn-font-family": "Helvetica, Arial, sans-serif",
             "btn-url": "",
-            "desc-line-height": 37,
+            "desc-line-height": 28,
             "mobile-desc-line-height": 37,
             "padding": 20,
             "block-width": "full",
