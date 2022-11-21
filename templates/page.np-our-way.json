@@ -499,7 +499,7 @@
             "caption-font-family": "Helvetica, Arial, sans-serif",
             "caption-line-height": 37,
             "mobile-caption-line-height": 37,
-            "padding": 0,
+            "padding": 20,
             "block-width": "full",
             "custom-block-width": 800,
             "show-title": false,
