@@ -127,18 +127,23 @@
 
     /* condition dynamic css */
     {% if section.settings.multicolumn-style == "style1" %}
-        .section-{{ section.id }} .np-multicolumn-wrapper.divider-bg{
+      .section-{{ section.id }} .np-multicolumn-wrapper.divider-bg{
             background: linear-gradient(#2B2725, #2B2725) center/0.25px 100% no-repeat,
                         linear-gradient(#2B2725, #2B2725) center/0.25px 100% no-repeat;
             background-position: 33% 0, 67% 0;
         }
-        .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(6n-5)::after {
+        .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(3n+1)::after {
             content: "";
             position: absolute;
             top: calc(100% + 45px);
             border-bottom: 0.25px solid #b8afab;
-           
+
        }
+       .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-last-child(3)::after , 
+       .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-last-child(2)::after,
+       .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-last-child(1)::after {
+              display: none;
+        }
 
        {% if section.settings.section-width == "small" %} 
        .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(6n-5)::after {
