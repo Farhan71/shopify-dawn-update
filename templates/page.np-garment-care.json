@@ -8,11 +8,16 @@
           "settings": {
             "text": "Caretaking",
             "font-size": 100,
-            "line-height": 100,
+            "font-mobile-size": 16,
             "letter-spacing": 0,
+            "mobile-letter-spacing": -0.1,
+            "line-height": 100,
+            "line-mobile-height": 37,
             "font": "Helvetica, Arial, sans-serif",
             "font-weight": 400,
-            "text-width": 100
+            "font-mobile-weight": 400,
+            "text-width": 100,
+            "text-mobile-width": 100
           }
         },
         "0943e205-8d7c-42ff-9915-cd50d73bc778": {
@@ -28,8 +33,10 @@
             "point-text": "GARMENT CARE",
             "point-text-padding": 5,
             "point-font-size": 18,
+            "point-mobile-font-size": 16,
             "point-font-weight": 400,
             "point-text-font-size": 18,
+            "point-mobile-text-font-size": 16,
             "point-text-font-weight": 400,
             "point-font": "Helvetica, Arial, sans-serif",
             "point-text-font": "Helvetica, Arial, sans-serif"
@@ -46,11 +53,16 @@
           "settings": {
             "text": "Clothes designed for longevity still require care and consideration. By properly caring for your pieces you’re helping your garments to last a long time, whilst preserving our planets natural resources and your energy consumption.",
             "font-size": 16,
-            "line-height": 28,
+            "font-mobile-size": 16,
             "letter-spacing": 0,
+            "mobile-letter-spacing": -0.1,
+            "line-height": 28,
+            "line-mobile-height": 37,
             "font": "Helvetica, Arial, sans-serif",
             "font-weight": 900,
-            "text-width": 100
+            "font-mobile-weight": 400,
+            "text-width": 100,
+            "text-mobile-width": 100
           }
         },
         "580eb3e0-5cf7-464e-a12f-8a04684ad28a": {
@@ -64,11 +76,16 @@
           "settings": {
             "text": "You needn’t wash an item every time you wear it. Spot clean marks or stains and hang your pieces to air out before putting them away at the end of the day. You can freshen garments between washes with a steamer or by hanging them in the bathroom whilst you shower.",
             "font-size": 16,
-            "line-height": 37,
+            "font-mobile-size": 16,
             "letter-spacing": 0,
+            "mobile-letter-spacing": -0.1,
+            "line-height": 37,
+            "line-mobile-height": 37,
             "font": "Helvetica, Arial, sans-serif",
             "font-weight": 400,
-            "text-width": 100
+            "font-mobile-weight": 400,
+            "text-width": 100,
+            "text-mobile-width": 100
           }
         }
       },
@@ -299,8 +316,10 @@
             "point-text": "GARMENT CARE",
             "point-text-padding": 5,
             "point-font-size": 16,
+            "point-mobile-font-size": 16,
             "point-font-weight": 400,
             "point-text-font-size": 16,
+            "point-mobile-text-font-size": 16,
             "point-text-font-weight": 400,
             "point-font": "Helvetica, Arial, sans-serif",
             "point-text-font": "Helvetica, Arial, sans-serif"
@@ -317,11 +336,16 @@
           "settings": {
             "text": "Clothes designed for longevity still require care and consideration. By properly caring for your pieces you’re helping your garments to last a long time, whilst preserving our planets natural resources and your energy consumption.",
             "font-size": 16,
-            "line-height": 37,
+            "font-mobile-size": 16,
             "letter-spacing": 0,
+            "mobile-letter-spacing": -0.1,
+            "line-height": 37,
+            "line-mobile-height": 37,
             "font": "Helvetica, Arial, sans-serif",
             "font-weight": 400,
-            "text-width": 100
+            "font-mobile-weight": 400,
+            "text-width": 100,
+            "text-mobile-width": 100
           }
         },
         "6fb4d06d-4232-4c5a-a03b-21657b1fb0dd": {
@@ -335,11 +359,16 @@
           "settings": {
             "text": "You needn’t wash an item every time you wear it. Spot clean marks or stains and hang your pieces to air out before putting them away at the end of the day. You can freshen garments between washes with a steamer or by hanging them in the bathroom whilst you shower.",
             "font-size": 16,
-            "line-height": 37,
+            "font-mobile-size": 16,
             "letter-spacing": 0,
+            "mobile-letter-spacing": -0.1,
+            "line-height": 37,
+            "line-mobile-height": 37,
             "font": "Helvetica, Arial, sans-serif",
             "font-weight": 400,
-            "text-width": 100
+            "font-mobile-weight": 400,
+            "text-width": 100,
+            "text-mobile-width": 100
           }
         }
       },
@@ -352,7 +381,7 @@
       ],
       "settings": {
         "image-first-layout": true,
-        "image": "shopify:\/\/shop_images\/8500c76dc9a9b1abe49e2480648ce5f0.jpg",
+        "image": "shopify:\/\/shop_images\/98b4755cb2d888430e5c0b4fec0e8442.jpg",
         "image-width": 75,
         "section-width": 89
       }
@@ -388,8 +417,11 @@
             "third-fabric-brand": "<p>Tencel<\/p>",
             "third-product-price": "<p>$240<\/p>",
             "caption-font-size": 16,
+            "mobile-caption-font-size": 16,
             "caption-font-family": "Helvetica, Arial, sans-serif",
             "caption-color": "",
+            "caption-line-height": 37,
+            "mobile-caption-line-height": 37,
             "show-caption": true,
             "block-width": "medium",
             "custom-block-width": 800
@@ -425,16 +457,26 @@
             "bg-image": "shopify:\/\/shop_images\/53eb5451bc9e7fe4302ace1dacee65c2.jpg",
             "title": "<p>Our Way<\/p>",
             "title-text-size": 10,
+            "mobile-title-text-size": 10,
             "title-color": "",
             "title-font-family": "Helvetica, Arial, sans-serif",
+            "title-line-height": 37,
+            "mobile-title-line-height": 37,
             "desc": "",
             "desc-text-size": 10,
+            "mobile-desc-text-size": 10,
             "desc-color": "",
             "desc-font-family": "Helvetica, Arial, sans-serif",
+            "desc-line-height": 37,
+            "mobile-desc-line-height": 37,
             "caption": "<p>(above) look 00 from collection 20 made of x material. shop here<\/p>",
             "caption-text-size": 10,
+            "mobile-caption-text-size": 10,
             "caption-color": "",
             "caption-font-family": "Helvetica, Arial, sans-serif",
+            "caption-line-height": 37,
+            "mobile-caption-line-height": 37,
+            "padding": 0,
             "block-width": "custom",
             "custom-block-width": 1050,
             "show-title": false,
