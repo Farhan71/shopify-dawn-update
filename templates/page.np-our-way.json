@@ -580,7 +580,7 @@
             "right-desc-font-family": "Helvetica, Arial, sans-serif",
             "right-btn-font-family": "Helvetica, Arial, sans-serif",
             "right-btn-url": "",
-            "right-desc-line-height": 37,
+            "right-desc-line-height": 28,
             "mobile-right-desc-line-height": 37,
             "block-width": "full",
             "custom-block-width": 800,
