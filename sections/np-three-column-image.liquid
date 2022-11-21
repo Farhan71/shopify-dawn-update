@@ -102,6 +102,7 @@
                  }
                  .block-{{ block.id }} {
                    display: flex;
+                   flex-direction: row;
                    gap: 6px;
                  }
                  .block-{{ block.id }} .first-part, .block-{{ block.id }}  .second-part , .block-{{ block.id }}  .third-part {
@@ -123,6 +124,7 @@
                     color: {{ block.settings.caption-color }};
                     font-size: {{ block.settings.caption-font-size }}px;
                     font-family: {{ block.settings.caption-font-family }};
+                    line-height: {{ block.settings.caption-line-height }}px;
                  }
                  .block-{{ block.id }} .first-caption-part ,  .block-{{ block.id }} .second-caption-part, .block-{{ block.id }} .third-caption-part {
                     display: flex;
@@ -136,6 +138,18 @@
                         display: inline;
                      }
                  {% endif %}
+                 @media only screen and (max-width: 768px) {
+                    .block-{{ block.id }} span {
+                        
+               
+                        font-size: {{ block.settings.mobile-caption-font-size }}px;
+                 
+                        line-height: {{ block.settings.mobile-caption-line-height }}px;
+                     }
+                     .block-{{ block.id }} {
+                        flex-direction: column;
+                      }
+                  }
             {% when 'spacer-block' %}
 
                 .section-wrapper-{{ section.id }}  .spacer-{{ block.id }} {
@@ -228,6 +242,16 @@
                   "default": 16
                   },
                   {
+                  "type": "range",
+                  "id": "mobile-caption-font-size",
+                  "label": "Caption Font size for mobile devices",
+                  "min": 12,
+                  "max": 50,
+                  "step": 1,
+                  "unit": "px",
+                  "default": 16
+                  },
+                  {
                     "type": "font",
                     "label": "caption font family",
                     "id": "caption-font-family"
@@ -237,6 +261,26 @@
                     "label": "caption color",
                     "id": "caption-color"
                   },
+                  {
+                  "type": "range",
+                  "id": "caption-line-height",
+                  "min": 10,
+                  "max": 100,
+                  "step": 1,                 
+                  "unit": "px",
+                  "default": 37,
+                  "label": "Caption Line Height"
+              },
+              {
+                  "type": "range",
+                  "id": "mobile-caption-line-height",
+                  "min": 10,
+                  "max": 100,
+                  "step": 1,
+                  "unit": "px",
+                  "default": 37,
+                  "label": "Caption Line Height for Mobile Devices"
+              },
                 {
                     "type": "checkbox",
                     "id": "show-caption",

@@ -44,9 +44,18 @@
            }
           .section-wrapper-{{ section.id }} .text-block-{{ block.id }} p {
               font-size: {{ block.settings.font-size | append: "px" }};
+              font-family: {{ block.settings.font }};
+              color: {{ block.settings.text-color }};
+              line-height: {{ block.settings.line-height }}px;
           }
           .section-wrapper-{{ section.id }} .text-block-{{ block.id }} {
               text-align: center;
+          }
+          @media only screen and (max-width: 768px) { 
+            .section-wrapper-{{ section.id }} .text-block-{{ block.id }} p {
+              font-size: {{ block.settings.mobile-font-size | append: "px" }};
+              line-height: {{ block.settings.mobile-line-height }}px;
+          }
           }
   
           {% when "spacer-block" %}
@@ -83,6 +92,47 @@
                   "unit": "px",
                   "default": 16
                   },
+                  {
+                  "type": "range",
+                  "id": "mobile-font-size",
+                  "label": "Mobile Font size",
+                  "min": 12,
+                  "max": 50,
+                  "step": 1,
+                  "unit": "px",
+                  "default": 16
+                  },
+                  {
+                  "type": "range",
+                  "id": "line-height",
+                  "min": 10,
+                  "max": 100,
+                  "step": 1,
+                  "unit": "px",
+                  "default": 37,
+                  "label": "Line Height"
+              },
+              {
+                  "type": "range",
+                  "id": "mobile-line-height",
+                  "min": 10,
+                  "max": 100,
+                  "step": 1,
+                  "unit": "px",
+                  "default": 37,
+                  "label": "Mobile Line Height"
+              },
+              {
+                  "type": "font",
+                  "id": "font",
+                  "label": "Font Family"
+              },
+              {
+                    "type":"color",
+                    "id":"text-color",
+                    "label":"Text Color",
+                    "default": "#000000"
+                },
                   {
                   "type": "select",
                   "id": "block-width",
