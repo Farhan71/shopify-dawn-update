@@ -338,7 +338,7 @@
             "show-left-btn": true,
             "show-right-title": true,
             "show-right-btn": true,
-            "block-height": 500
+            "block-height": 600
           }
         },
         "39841e0a-c49d-4597-a65c-cea3f4d51522": {
@@ -391,7 +391,7 @@
             "btn-url": "",
             "desc-line-height": 37,
             "mobile-desc-line-height": 37,
-            "padding": 0,
+            "padding": 20,
             "block-width": "full",
             "custom-block-width": 800,
             "image-right": false,
