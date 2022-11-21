@@ -173,7 +173,7 @@
 
        {% if section.settings.section-width == "custom" %} 
        .section-{{ section.id }} .np-grid-container.column-3 > .np-grid-item:nth-child(3n+1)::after {
-        max-width: {{ section.settings.custom-section-width | append: "px" }};
+        width: {{ section.settings.custom-section-width | append: "px" }};
            
        }
 
