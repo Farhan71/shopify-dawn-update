@@ -56,7 +56,7 @@
         "f009cf58-a66a-4952-a164-83c8652a7154": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 30
+            "spacer-height": 140
           }
         },
         "e28fbc69-51e9-4f0b-bf01-a4ba226c8ded": {
@@ -75,7 +75,7 @@
         "0acef024-c59a-41c0-b1d9-f0d4498e893b": {
           "type": "spacer-block",
           "settings": {
-            "spacer-height": 30
+            "spacer-height": 140
           }
         }
       },
