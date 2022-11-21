@@ -69,6 +69,7 @@
         width: {{ section.settings.section-width }}%;
     }
     .image-container-{{ section.id }} {
+        flex: 1;
         width: calc({{ section.settings.image-width }}% - 35px);
         display: flex;
         justify-content: center;
@@ -76,17 +77,8 @@
     }
     
     .text-container-{{ section.id }} {
+        flex: 1;
         width: calc(100% - 35px);
-    }
-    @media (min-width: 1800px) {
-        .hero-{{ section.id }} {
-            gap: 0px;
-        }
-    }
-    @media (min-width: 2000px) {
-        .hero-{{ section.id }} {
-            gap: 0px;
-        }
     }
 
     {% for block in section.blocks %}
@@ -148,6 +140,7 @@
             {% when 'spacer' %}
                 .custom-spacer-{{ block.id }} {
                     height: {{ block.settings.spacer }}px;
+                    width: 10%;
                 }
         {% endcase %}
     {% endfor %}
